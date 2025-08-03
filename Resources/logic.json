@@ -1,0 +1,1930 @@
+[
+  {
+    "name": "DreamOrb_Crossroads_1",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_2",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_3",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_4",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_5",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_6",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_7",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_8",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_9",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_10",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_11",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_12",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_13",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_14",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_15",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_16",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_17",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_18",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_19",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_20",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_21",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_22",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_23",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_24",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_25",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_26",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_27",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_28",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Crossroads_29",
+    "logic": "*Whispering_Root-Crossroads"
+  },
+  {
+    "name": "DreamOrb_Greenpath_1",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_2",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_3",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_4",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_5",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_6",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_7",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_8",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_9",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_10",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_11",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_12",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_13",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_14",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_15",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_16",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_17",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_18",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_19",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_20",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_21",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_22",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_23",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_24",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_25",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_26",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_27",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_28",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_29",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_30",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_31",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_32",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_33",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_34",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_35",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_36",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_37",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_38",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_39",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_40",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_41",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_42",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_43",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_Greenpath_44",
+    "logic": "*Whispering_Root-Greenpath"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Canyon_1",
+    "logic": "*Whispering_Root-Leg_Eater"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Canyon_2",
+    "logic": "*Whispering_Root-Leg_Eater"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Canyon_3",
+    "logic": "*Whispering_Root-Leg_Eater"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Canyon_4",
+    "logic": "*Whispering_Root-Leg_Eater"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Canyon_5",
+    "logic": "*Whispering_Root-Leg_Eater"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Canyon_6",
+    "logic": "*Whispering_Root-Leg_Eater"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Canyon_7",
+    "logic": "*Whispering_Root-Leg_Eater"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Canyon_8",
+    "logic": "*Whispering_Root-Leg_Eater"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Canyon_9",
+    "logic": "*Whispering_Root-Leg_Eater"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Canyon_10",
+    "logic": "*Whispering_Root-Leg_Eater"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Canyon_11",
+    "logic": "*Whispering_Root-Leg_Eater"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Canyon_12",
+    "logic": "*Whispering_Root-Leg_Eater"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Canyon_13",
+    "logic": "*Whispering_Root-Leg_Eater"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Canyon_14",
+    "logic": "*Whispering_Root-Leg_Eater"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Canyon_15",
+    "logic": "*Whispering_Root-Leg_Eater"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Canyon_16",
+    "logic": "*Whispering_Root-Leg_Eater"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Canyon_17",
+    "logic": "*Whispering_Root-Leg_Eater"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Canyon_18",
+    "logic": "*Whispering_Root-Leg_Eater"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Canyon_19",
+    "logic": "*Whispering_Root-Leg_Eater"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Canyon_20",
+    "logic": "*Whispering_Root-Leg_Eater"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Village_1",
+    "logic": "*Whispering_Root-Mantis_Village"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Village_2",
+    "logic": "*Whispering_Root-Mantis_Village"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Village_3",
+    "logic": "*Whispering_Root-Mantis_Village"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Village_4",
+    "logic": "*Whispering_Root-Mantis_Village"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Village_5",
+    "logic": "*Whispering_Root-Mantis_Village"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Village_6",
+    "logic": "*Whispering_Root-Mantis_Village"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Village_7",
+    "logic": "*Whispering_Root-Mantis_Village"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Village_8",
+    "logic": "*Whispering_Root-Mantis_Village"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Village_9",
+    "logic": "*Whispering_Root-Mantis_Village"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Village_10",
+    "logic": "*Whispering_Root-Mantis_Village"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Village_11",
+    "logic": "*Whispering_Root-Mantis_Village"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Village_12",
+    "logic": "*Whispering_Root-Mantis_Village"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Village_13",
+    "logic": "*Whispering_Root-Mantis_Village"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Village_14",
+    "logic": "*Whispering_Root-Mantis_Village"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Village_15",
+    "logic": "*Whispering_Root-Mantis_Village"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Village_16",
+    "logic": "*Whispering_Root-Mantis_Village"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Village_17",
+    "logic": "*Whispering_Root-Mantis_Village"
+  },
+  {
+    "name": "DreamOrb_FungalWastes_Village_18",
+    "logic": "*Whispering_Root-Mantis_Village"
+  },
+  {
+    "name": "DreamOrb_Deepnest_1",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_2",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_3",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_4",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_5",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_6",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_7",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_8",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_9",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_10",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_11",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_12",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_13",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_14",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_15",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_16",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_17",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_18",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_19",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_20",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_21",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_22",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_23",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_24",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_25",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_26",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_27",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_28",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_29",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_30",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_31",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_32",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_33",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_34",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_35",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_36",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_37",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_38",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_39",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_40",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_41",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_42",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_43",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_44",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_Deepnest_45",
+    "logic": "*Whispering_Root-Deepnest"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_1",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_2",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_3",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_4",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_5",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_6",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_7",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_8",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_9",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_10",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_11",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_12",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_13",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_14",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_15",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_16",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_17",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_18",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_19",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_20",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_21",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_22",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_23",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_24",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_25",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_26",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_27",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_28",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_QueensGardens_29",
+    "logic": "*Whispering_Root-Queens_Gardens"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_1",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_2",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_3",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_4",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_5",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_6",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_7",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_8",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_9",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_10",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_11",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_12",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_13",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_14",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_15",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_16",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_17",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_18",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_19",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_20",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_21",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_22",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_23",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_24",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_25",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_26",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_27",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_28",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_29",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_30",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_31",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_32",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_33",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_34",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_35",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_36",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_37",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_38",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_39",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_40",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_41",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_42",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_43",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_44",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_45",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_46",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_47",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_48",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_49",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_50",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_51",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_Waterways_1",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_2",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_3",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_4",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_5",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_6",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_7",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_8",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_9",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_10",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_11",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_12",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_13",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_14",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_15",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_16",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_17",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_18",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_19",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_20",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_21",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_22",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_23",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_24",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_25",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_26",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_27",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_28",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_29",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_30",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_31",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_32",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_33",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_34",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_Waterways_35",
+    "logic": "*Whispering_Root-Waterways"
+  },
+  {
+    "name": "DreamOrb_City_1",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_2",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_3",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_4",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_5",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_6",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_7",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_8",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_9",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_10",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_11",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_12",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_13",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_14",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_15",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_16",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_17",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_18",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_19",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_20",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_21",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_22",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_23",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_24",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_25",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_26",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_27",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_City_28",
+    "logic": "*Whispering_Root-City"
+  },
+  {
+    "name": "DreamOrb_RestingGrounds_1",
+    "logic": "*Whispering_Root-Resting_Grounds"
+  },
+  {
+    "name": "DreamOrb_RestingGrounds_2",
+    "logic": "*Whispering_Root-Resting_Grounds"
+  },
+  {
+    "name": "DreamOrb_RestingGrounds_3",
+    "logic": "*Whispering_Root-Resting_Grounds"
+  },
+  {
+    "name": "DreamOrb_RestingGrounds_4",
+    "logic": "*Whispering_Root-Resting_Grounds"
+  },
+  {
+    "name": "DreamOrb_RestingGrounds_5",
+    "logic": "*Whispering_Root-Resting_Grounds"
+  },
+  {
+    "name": "DreamOrb_RestingGrounds_6",
+    "logic": "*Whispering_Root-Resting_Grounds"
+  },
+  {
+    "name": "DreamOrb_RestingGrounds_7",
+    "logic": "*Whispering_Root-Resting_Grounds"
+  },
+  {
+    "name": "DreamOrb_RestingGrounds_8",
+    "logic": "*Whispering_Root-Resting_Grounds"
+  },
+  {
+    "name": "DreamOrb_RestingGrounds_9",
+    "logic": "*Whispering_Root-Resting_Grounds"
+  },
+  {
+    "name": "DreamOrb_RestingGrounds_10",
+    "logic": "*Whispering_Root-Resting_Grounds"
+  },
+  {
+    "name": "DreamOrb_RestingGrounds_11",
+    "logic": "*Whispering_Root-Resting_Grounds"
+  },
+  {
+    "name": "DreamOrb_RestingGrounds_12",
+    "logic": "*Whispering_Root-Resting_Grounds"
+  },
+  {
+    "name": "DreamOrb_RestingGrounds_13",
+    "logic": "*Whispering_Root-Resting_Grounds"
+  },
+  {
+    "name": "DreamOrb_RestingGrounds_14",
+    "logic": "*Whispering_Root-Resting_Grounds"
+  },
+  {
+    "name": "DreamOrb_RestingGrounds_15",
+    "logic": "*Whispering_Root-Resting_Grounds"
+  },
+  {
+    "name": "DreamOrb_RestingGrounds_16",
+    "logic": "*Whispering_Root-Resting_Grounds"
+  },
+  {
+    "name": "DreamOrb_RestingGrounds_17",
+    "logic": "*Whispering_Root-Resting_Grounds"
+  },
+  {
+    "name": "DreamOrb_RestingGrounds_18",
+    "logic": "*Whispering_Root-Resting_Grounds"
+  },
+  {
+    "name": "DreamOrb_RestingGrounds_19",
+    "logic": "*Whispering_Root-Resting_Grounds"
+  },
+  {
+    "name": "DreamOrb_RestingGrounds_20",
+    "logic": "*Whispering_Root-Resting_Grounds"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_1",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_2",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_3",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_4",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_5",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_6",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_7",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_8",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_9",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_10",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_11",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_12",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_13",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_14",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_15",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_16",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_17",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_18",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_19",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_20",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_21",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_22",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_23",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_24",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_25",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_26",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_27",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_28",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_29",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_30",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_31",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_32",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_33",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_SpiritsGlade_34",
+    "logic": "*Whispering_Root-Spirits_Glade"
+  },
+  {
+    "name": "DreamOrb_CrystalPeak_1",
+    "logic": "*Whispering_Root-Crystal_Peak"
+  },
+  {
+    "name": "DreamOrb_CrystalPeak_2",
+    "logic": "*Whispering_Root-Crystal_Peak"
+  },
+  {
+    "name": "DreamOrb_CrystalPeak_3",
+    "logic": "*Whispering_Root-Crystal_Peak"
+  },
+  {
+    "name": "DreamOrb_CrystalPeak_4",
+    "logic": "*Whispering_Root-Crystal_Peak"
+  },
+  {
+    "name": "DreamOrb_CrystalPeak_5",
+    "logic": "*Whispering_Root-Crystal_Peak"
+  },
+  {
+    "name": "DreamOrb_CrystalPeak_6",
+    "logic": "*Whispering_Root-Crystal_Peak"
+  },
+  {
+    "name": "DreamOrb_CrystalPeak_7",
+    "logic": "*Whispering_Root-Crystal_Peak"
+  },
+  {
+    "name": "DreamOrb_CrystalPeak_8",
+    "logic": "*Whispering_Root-Crystal_Peak"
+  },
+  {
+    "name": "DreamOrb_CrystalPeak_9",
+    "logic": "*Whispering_Root-Crystal_Peak"
+  },
+  {
+    "name": "DreamOrb_CrystalPeak_10",
+    "logic": "*Whispering_Root-Crystal_Peak"
+  },
+  {
+    "name": "DreamOrb_CrystalPeak_11",
+    "logic": "*Whispering_Root-Crystal_Peak"
+  },
+  {
+    "name": "DreamOrb_CrystalPeak_12",
+    "logic": "*Whispering_Root-Crystal_Peak"
+  },
+  {
+    "name": "DreamOrb_CrystalPeak_13",
+    "logic": "*Whispering_Root-Crystal_Peak"
+  },
+  {
+    "name": "DreamOrb_CrystalPeak_14",
+    "logic": "*Whispering_Root-Crystal_Peak"
+  },
+  {
+    "name": "DreamOrb_CrystalPeak_15",
+    "logic": "*Whispering_Root-Crystal_Peak"
+  },
+  {
+    "name": "DreamOrb_CrystalPeak_16",
+    "logic": "*Whispering_Root-Crystal_Peak"
+  },
+  {
+    "name": "DreamOrb_CrystalPeak_17",
+    "logic": "*Whispering_Root-Crystal_Peak"
+  },
+  {
+    "name": "DreamOrb_CrystalPeak_18",
+    "logic": "*Whispering_Root-Crystal_Peak"
+  },
+  {
+    "name": "DreamOrb_CrystalPeak_19",
+    "logic": "*Whispering_Root-Crystal_Peak"
+  },
+  {
+    "name": "DreamOrb_CrystalPeak_20",
+    "logic": "*Whispering_Root-Crystal_Peak"
+  },
+  {
+    "name": "DreamOrb_CrystalPeak_21",
+    "logic": "*Whispering_Root-Crystal_Peak"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_1",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_2",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_3",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_4",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_5",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_6",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_7",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_8",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_9",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_10",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_11",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_12",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_13",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_14",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_15",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_16",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_17",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_18",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_19",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_20",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_21",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_22",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_23",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_24",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_25",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_26",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_27",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_28",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_29",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_30",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_31",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_32",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_33",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_34",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_35",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_36",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_37",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_38",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_39",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_40",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_41",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_42",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_43",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_44",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_45",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_46",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_1",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_2",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_3",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_4",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_5",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_6",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_7",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_8",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_9",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_10",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_11",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_12",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_13",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_14",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_15",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_16",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_17",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_18",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_19",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_20",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_21",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_22",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_23",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_24",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_25",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_26",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_27",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_28",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_29",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_30",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_31",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_32",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_33",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_34",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_35",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_36",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_37",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_38",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_39",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_40",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_41",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_AncestralMound_42",
+    "logic": "*Whispering_Root-Ancestral_Mound"
+  },
+  {
+    "name": "DreamOrb_Hive_1",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_2",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_3",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_4",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_5",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_6",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_7",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_8",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_9",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_10",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_11",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_12",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_13",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_14",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_15",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_16",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_17",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_18",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_19",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_20",
+    "logic": "*Whispering_Root-Hive"
+  }
+]
