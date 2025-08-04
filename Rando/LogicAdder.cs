@@ -19,6 +19,9 @@ namespace YetAnotherRandoConnection {
             using Stream s = typeof(LogicAdder).Assembly.GetManifestResourceStream("YetAnotherRandoConnection.Resources.logic.json");
             lmb.DeserializeFile(LogicFileType.Locations, fmt, s);
 
+            using Stream st = typeof(LogicAdder).Assembly.GetManifestResourceStream("YetAnotherRandoConnection.Resources.waypoints.json");
+            lmb.DeserializeFile(LogicFileType.Waypoints, fmt, st);
+
             DefineTermsAndItems(lmb, fmt);
         }
 
