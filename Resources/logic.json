@@ -1926,5 +1926,85 @@
   {
     "name": "DreamOrb_Hive_20",
     "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Chain-Storerooms",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Vine-Cornifer_Grub",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Vine-Cornifer_Left_1",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Vine-Cornifer_Left_2",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Vine-Cornifer_Left_3",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Vine-Cornifer_Shortcut",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Vine-Cornifer_Spikes",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Vine-Cornifer_Upper",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Vine-Durandas",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Vine-Hunter_Left",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Vine-Hunter_Lower",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Vine-Hunter_Middle",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Vine-Hunter_Upper",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Vine-Moss_Knight",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Vine-Root_Left",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Vine-Root_Right",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Vine-Stag_Journal",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Vine-Stag_Lower",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Vine-Thorns",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Vine-Vessel_Fragment",
+    "logic": "*Whispering_Root-Hive"
   }
 ]

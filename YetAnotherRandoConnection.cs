@@ -22,16 +22,6 @@ namespace YetAnotherRandoConnection {
         public override void Initialize(Dictionary<string, Dictionary<string, GameObject>> preloadedObjects) {
             RandoInterop.Hook();
             CustomCheckEdits.Hook();
-            On.DreamPlantOrb.Awake += orbLogger;
-        }
-
-        private void orbLogger(On.DreamPlantOrb.orig_Awake orig, DreamPlantOrb self) {
-            orig(self);
-            string area = Consts.OrbAreas[self.gameObject.scene.name];
-            float x = self.gameObject.transform.position.x;
-            float y = self.gameObject.transform.position.y;
-            string name = self.gameObject.name;
-            Log($"{name}\t{area}\t{x}\t{y}");
         }
     }
 }

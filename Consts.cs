@@ -1,5 +1,5 @@
-﻿using ItemChanger;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using ItemChanger;
 
 namespace YetAnotherRandoConnection {
     public class Consts {
@@ -39,6 +39,29 @@ namespace YetAnotherRandoConnection {
             { SceneNames.Cliffs_01, "HowlingCliffs" },
             { SceneNames.Crossroads_ShamanTemple, "AncestralMound" },
             { SceneNames.Hive_02, "Hive" }
+        };
+
+        public static readonly List<string> VineNames = new() {
+            //"Chain-Storerooms",
+            "Vine-Root_Left",
+            "Vine-Root_Right",
+            "Vine-Vessel_Fragment",
+            "Vine-Hunter_Upper",
+            "Vine-Hunter_Middle",
+            "Vine-Hunter_Lower",
+            "Vine-Hunter_Left",
+            "Vine-Cornifer_Grub",
+            "Vine-Cornifer_Spikes",
+            "Vine-Cornifer_Upper",
+            "Vine-Cornifer_Shortcut",
+            "Vine-Cornifer_Left_1",
+            "Vine-Cornifer_Left_2",
+            "Vine-Cornifer_Left_3",
+            "Vine-Thorns",
+            "Vine-Moss_Knight",
+            "Vine-Stag_Journal",
+            "Vine-Stag_Lower",
+            "Vine-Durandas"
         };
     }
 }
