@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Can_Break_Vines",
+        "logic": "SIDESLASH | CYCLONE | GREATSLASH | ANYDASHSLASH",
+        "stateless": true
+    },
+    {
+        "name": "Fungus1_06",
+        "logic": "Fungus1_06[left1] + (Vine-Cornifer_Left_2 | ENEMYPOGOS | RIGHTDASH | RIGHTSUPERDASH | RIGHTCLAW | WINGS | SPELLAIRSTALL + $CASTSPELL[before:AREASOUL,after:ROOMSOUL]) | Fungus1_06[bot1]",
+        "stateless": false
+    }
+]
