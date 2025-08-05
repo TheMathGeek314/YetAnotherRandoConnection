@@ -8,6 +8,7 @@ namespace YetAnotherRandoConnection {
             RequestBuilder.OnUpdate.Subscribe(-100, ApplyOrbDefs);
             RequestBuilder.OnUpdate.Subscribe(-100, ApplyVineDefs);
             RequestBuilder.OnUpdate.Subscribe(-499, SetupItems);
+            RequestBuilder.OnUpdate.Subscribe(1200, RemoveRoots);
         }
 
         public static void ApplyOrbDefs(RequestBuilder rb) {
@@ -85,6 +86,13 @@ namespace YetAnotherRandoConnection {
                 if(YetAnotherRandoConnection.Settings.Vines) {
                     rb.AddItemByName(vine);
                 }
+            }
+        }
+
+        private static void RemoveRoots(RequestBuilder rb) {
+            if(YetAnotherRandoConnection.Settings.DreamOrbs) {
+                rb.RemoveItemsWhere(item => item.StartsWith("Whispering_Root-"));
+                //rb.RemoveLocationsWhere(location => location.StartsWith("Whispering_Root-"));
             }
         }
     }
