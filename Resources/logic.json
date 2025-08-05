@@ -1929,82 +1929,82 @@
   },
   {
     "name": "Chain-Storerooms",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "(Ruins1_28 | Ruins1_28[bot1] | Ruins1_28[right1]) + Can_Break_Vines"
   },
   {
     "name": "Vine-Cornifer_Grub",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "(Fungus1_06 | Fungus1_06[bot1]) + (SIDESLASH | GREATSLASH | CYCLONE | LEFTDASHSLASH + DASHMASTER + OBSCURESKIPS | RIGHTDASHSLASH)"
   },
   {
     "name": "Vine-Cornifer_Left_1",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "(Fungus1_06[left1] | Fungus1_06[bot1]) + Can_Break_Vines"
   },
   {
     "name": "Vine-Cornifer_Left_2",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "(Fungus1_06[left1] | Fungus1_06[bot1]) + (SIDESLASH | GREATSLASH | CYCLONE | LEFTDASHSLASH + RIGHTCLAW + DASHMASTER + OBSCURESKIPS | RIGHTDASHSLASH)"
   },
   {
     "name": "Vine-Cornifer_Left_3",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "(Fungus1_06 | Fungus1_06[bot1]) + Can_Break_Vines"
   },
   {
     "name": "Vine-Cornifer_Shortcut",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "(Fungus1_06 | Fungus1_06[bot1]) + Can_Break_Vines"
   },
   {
     "name": "Vine-Cornifer_Spikes",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "(Fungus1_06 | Fungus1_06[bot1]) + Can_Break_Vines"
   },
   {
     "name": "Vine-Cornifer_Upper",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "(Fungus1_06 | Fungus1_06[bot1]) + Can_Break_Vines"
   },
   {
     "name": "Vine-Durandas",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "(Fungus1_09[left1] + (LEFTCLAW | RIGHTCLAW + WINGS | WINGS + $SHADESKIP | $SHRIEKPOGO[before:ROOMSOUL,after:AREASOUL]) | Fungus1_09[right1] + ((Vine-Durandas + WINGS + (RIGHTCLAW | $SHADESKIP | $SHRIEKPOGO[2])) | (LEFTCLAW + (LEFTSUPERDASH + RIGHTCLAW + (LEFTDASH | WINGS) | WINGS + LEFTDASH) | RIGHTCLAW + LEFTDASH + WINGS + LEFTSUPERDASH + DANGEROUSSKIPS + PRECISEMOVEMENT | LEFTDASH + (RIGHTCLAW + $SHRIEKPOGO[1,1,1,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[1,1,1,1,1,1,before:AREASOUL,after:AREASOUL]) | LEFTCLAW + (RIGHTCLAW | DIFFICULTSKIPS) + $SHRIEKPOGO[2,before:AREASOUL,after:AREASOUL,NOSTALL]))) + Can_Break_Vines"
   },
   {
     "name": "Vine-Hunter_Left",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "(Fungus1_07[left1] | Fungus1_07[top1] | Fungus1_07[right1]) + Can_Break_Vines"
   },
   {
     "name": "Vine-Hunter_Lower",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "(Fungus1_07[left1] | Fungus1_07[top1] | Fungus1_07[right1]) + Can_Break_Vines"
   },
   {
     "name": "Vine-Hunter_Middle",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "(Fungus1_07[left1] | Fungus1_07[top1] | Fungus1_07[right1]) + Can_Break_Vines"
   },
   {
     "name": "Vine-Hunter_Upper",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "(Fungus1_07[left1] | Fungus1_07[top1] | Fungus1_07[right1]) + Can_Break_Vines"
   },
   {
     "name": "Vine-Moss_Knight",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "Fungus1_21 + Can_Break_Vines | Fungus1_21[right1] + (CYCLONE | GREATSLASH) + OBSCURESKIPS"
   },
   {
     "name": "Vine-Root_Left",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "(Fungus1_13[left1] | Fungus1_13[right1] + Vine-Root_Left + Vine-Root_Right + (LEFTCLAW | WINGS + Vine-Vessel_Fragment | DAMAGEBOOSTS + $TAKEDAMAGE + WINGS | WINGS + RIGHTCLAW + (LEFTDASH | LEFTSUPERDASH) | ENEMYPOGOS + $SHRIEKPOGO[2,before:AREASOUL])) + Can_Break_Vines"
   },
   {
     "name": "Vine-Root_Right",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "(Fungus1_13[left1] + Vine-Root_Left + Vine-Root_Right + WINGS + (ANYCLAW | PRECISEMOVEMENT) | Fungus1_13[right1] + (LEFTCLAW | WINGS + Vine-Vessel_Fragment | DAMAGEBOOSTS + $TAKEDAMAGE + WINGS | WINGS + RIGHTCLAW + (LEFTDASH | LEFTSUPERDASH) | ENEMYPOGOS + $SHRIEKPOGO[2,before:AREASOUL])) + Can_Break_Vines"
   },
   {
     "name": "Vine-Stag_Journal",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "(Fungus1_22[left1] | Fungus1_22[top1]) + Can_Break_Vines"
   },
   {
     "name": "Vine-Stag_Lower",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "(Fungus1_22[left1] | Fungus1_22[top1]) + Can_Break_Vines"
   },
   {
     "name": "Vine-Thorns",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "Fungus1_14[left1] + (RIGHTDASH | LEFTCLAW + RIGHTSUPERDASH | Vine-Thorns) + Can_Break_Vines"
   },
   {
     "name": "Vine-Vessel_Fragment",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "(Fungus1_13[left1] + Vine-Root_Left + Vine-Root_Right + WINGS + (ANYCLAW | PRECISEMOVEMENT + ENEMYPOGOS) | Fungus1_13[right1] + (LEFTCLAW | WINGS + Vine-Vessel_Fragment | DAMAGEBOOSTS + $TAKEDAMAGE + WINGS + ENEMYPOGOS | WINGS + RIGHTCLAW + (LEFTDASH | LEFTSUPERDASH) | ENEMYPOGOS + $SHRIEKPOGO[2,before:AREASOUL])) + Can_Break_Vines"
   }
 ]

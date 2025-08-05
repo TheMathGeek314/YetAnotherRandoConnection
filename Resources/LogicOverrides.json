@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Fungus1_06[bot1]",
+        "logic": "Fungus1_06[bot1] | Fungus1_06"
+    },
+    {
+        "name": "Fungus1_09[left1]",
+        "logic": "ORIG | Fungus1_09[right1] + (Vine-Durandas + WINGS + (RIGHTCLAW | $SHADESKIP | $SHRIEKPOGO[2]))"
+    },
+    {
+        "name": "Fungus1_09[right1]",
+        "logic": "Fungus1_09[right1] | Fungus1_09[left1] + (Vine-Durandas + (LEFTCLAW | RIGHTCLAW + WINGS | WINGS + $SHADESKIP | $SHRIEKPOGO[before:ROOMSOUL,after:AREASOUL]) | RIGHTDASH + FULLCLAW + $SHRIEKPOGO[before:ROOMSOUL,after:AREASOUL])"
+    },
+    {
+        "name": "Fungus1_13[left1]",
+        "logic": "ORIG | Fungus1_13[right1] + Vine-Root_Left + Vine-Root_Right + (LEFTCLAW | WINGS + RIGHTCLAW + (Vine-Vessel_Fragment | LEFTDASH | LEFTSUPERDASH))"
+    },
+    {
+        "name": "Fungus1_13[right1]",
+        "logic": "ORIG | Fungus1_13[left1] + Vine-Root_Left + Vine-Root_Right + WINGS + (ANYCLAW | PRECISEMOVEMENT)"
+    },
+    {
+        "name": "Geo_Chest-Greenpath",
+        "logic": "ORIG | Fungus1_13[left1] + Vine-Root_Left + Vine-Root_Right + WINGS + (ANYCLAW | PRECISEMOVEMENT)"
+    },
+    {
+        "name": "Greenpath_Map",
+        "logic": "Fungus1_06[bot1] | Fungus1_06"
+    },
+    {
+        "name": "Grub-Greenpath_Cornifer",
+        "logic": "(Fungus1_06[bot1] | Fungus1_06) + (Vine-Cornifer_Grub | RIGHTDASH | RIGHTCLAW | WINGS | RIGHTSUPERDASH | ENEMYPOGOS)"
+    },
+    {
+        "name": "Grub-Greenpath_Journal",
+        "logic": "(Fungus1_07[left1] | Fungus1_07[top1] | Fungus1_07[right1]) + (Vine-Hunter_Lower | RIGHTDASH | WINGS | ACID + (RIGHTCLAW | ENEMYPOGOS) | ENEMYPOGOS + DIFFICULTSKIPS)"
+    },
+    {
+        "name": "Grub-Greenpath_MMC",
+        "logic": "ORIG | Fungus1_13[left1] + Vine-Root_Left + Vine-Root_Right + WINGS + (ANYCLAW | PRECISEMOVEMENT)"
+    },
+    {
+        "name": "Lore_Tablet-Greenpath_QG",
+        "logic": "Fungus1_13[left1] + Vine-Root_Left | Fungus1_13[right1] + Vine-Root_Right + (LEFTCLAW | WINGS + RIGHTCLAW + (Vine-Vessel_Fragment | LEFTDASH | LEFTSUPERDASH))"
+    },
+    {
+        "name": "Thorns_of_Agony",
+        "logic": "ORIG | Fungus1_14[left1] + Vine-Thorns"
+    },
+    {
+        "name": "Vessel_Fragment-Greenpath",
+        "logic": "ORIG | Fungus1_13[right1] + WINGS + Vine-Vessel_Fragment | Fungus1_13[left1] + Vine-Root_Left + Vine-Root_Right + WINGS + (ANYCLAW | PRECISEMOVEMENT + ENEMYPOGOS)"
+    },
+    {
+        "name": "Whispering_Root-Greenpath",
+        "logic": "ORIG + Vine-Root_Left + Vine-Root_Right"
+    }
+]
