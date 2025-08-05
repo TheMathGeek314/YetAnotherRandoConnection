@@ -1,8 +1,9 @@
 ﻿using Modding;
+using System;
 using System.IO;
 using System.Linq;
-using System.Numerics;
 using System.Reflection;
+using UnityEngine;
 using ConnectionMetadataInjector;
 using ItemChanger;
 using ItemChanger.Items;
@@ -58,15 +59,15 @@ namespace YetAnotherRandoConnection {
                 for(int i = 1; i <= count; i++) {
                     string name = $"DreamOrb_{area}_{i}";
                     Vector2 coords = DreamOrbCoords.data[name];
-                    DefineLoc(name, scene, "pin_dream_tree", coords.X, coords.Y);
+                    DefineLoc(name, scene, "pin_dream_orb", coords.x, coords.y);
                 }
             }
             foreach(string name in Consts.VineNames) {
                 string scene = VineCoords.placementToPosition[name].Item1;
                 Vector2 coords = VineCoords.placementToPosition[name].Item2;
-                DefineLoc(name, scene, "pin_todo", coords.X, coords.Y);
+                DefineLoc(name, scene, "pin_vine", coords.x, coords.y);
             }
-            DefineLoc("Chain-Storerooms", SceneNames.Ruins1_28, "pin_todo", 96.39f, 15.7f);
+            DefineLoc("Chain-Storerooms", SceneNames.Ruins1_28, "pin_vine", 96.39f, 15.7f);
         }
 
         public static void DefineItems() {
@@ -75,15 +76,17 @@ namespace YetAnotherRandoConnection {
             AddTag(orbItem);
             Finder.DefineCustomItem(orbItem);
 
+            System.Random rand = new();
             foreach(string vName in Consts.VineNames) {
                 VoidItem vineItem = new() { name = vName };
                 InteropTag tag = AddTag(vineItem);
-                //tag.Properties["PinSprite"] = new EmbeddedSprite("pin_todo");
+                tag.Properties["PinSprite"] = new EmbeddedSprite("pin_vine");
                 vineItem.UIDef = new MsgUIDef {
-                    name = new BoxedString(vName),
-                    shopDesc = new BoxedString("Do it for the vine!"),
-                    sprite = new EmbeddedSprite("pin_dream_tree")//todo
+                    name = new BoxedString(vName.Replace("_", " ").Replace("-", " - ")),
+                    shopDesc = PullRandomVine(rand),
+                    sprite = new EmbeddedSprite("pin_vine")
                 };
+                vineItem.OnGive += remoteVineCut;
                 Finder.DefineCustomItem(vineItem);
             }
         }
@@ -93,6 +96,18 @@ namespace YetAnotherRandoConnection {
             tag.Message = SupplementalMetadata.InteropTagMessage;
             tag.Properties["ModSource"] = YetAnotherRandoConnection.instance.GetName();
             return tag;
+        }
+
+        private static BoxedString PullRandomVine(System.Random rand) {
+            string description = Consts.VineDescriptions[rand.Next(Consts.VineDescriptions.Count)];
+            return new BoxedString(description);
+        }
+
+        private static void remoteVineCut(ReadOnlyGiveEventArgs args) {
+            string name = args.Item.name;
+            if(GameManager.instance.sceneName == VineCoords.placementToPosition[name].Item1) {
+                GameObject.Find(VineCoords.placementToName[name]).GetComponentInChildren<VinePlatformCut>().Cut();
+            }
         }
     }
 }
