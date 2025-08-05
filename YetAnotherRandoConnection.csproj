@@ -55,7 +55,6 @@
     <None Remove="Resources\DreamOrbCoords.json" />
     <None Remove="Resources\logic.json" />
     <None Remove="Resources\LogicOverrides.json" />
-    <None Remove="Resources\LogicSubstitutions.json" />
     <None Remove="Resources\Pins\pin_dream_tree.png" />
     <None Remove="Resources\terms.json" />
     <None Remove="Resources\VineCoords.json" />
@@ -65,7 +64,6 @@
     <EmbeddedResource Include="Resources\DreamOrbCoords.json" />
     <EmbeddedResource Include="Resources\logic.json" />
     <EmbeddedResource Include="Resources\LogicOverrides.json" />
-    <EmbeddedResource Include="Resources\LogicSubstitutions.json" />
     <EmbeddedResource Include="Resources\Pins\pin_dream_tree.png" />
     <EmbeddedResource Include="Resources\terms.json" />
     <EmbeddedResource Include="Resources\VineCoords.json" />
