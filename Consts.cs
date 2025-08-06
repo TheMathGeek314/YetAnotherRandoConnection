@@ -1,9 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using ItemChanger;
 
 namespace YetAnotherRandoConnection {
     public class Consts {
         public const string EssenceOrb = "Essence_Orb";
+        public const string Chain = "Chain-Storerooms";
+        public const string SoulJar = "Soul_Jar";
 
         public static readonly List<(string, string, int)> RootCounts = [
             ("Crossroads", SceneNames.Crossroads_07, 29),
@@ -22,6 +25,64 @@ namespace YetAnotherRandoConnection {
             ("AncestralMound", SceneNames.Crossroads_ShamanTemple, 42),
             ("Hive", SceneNames.Hive_02, 20)
         ];
+
+        public static string GetOrbNumName(string area, int num) {
+            string prefix = $"DreamOrb_{area}_";
+            switch(area) {
+                case "Hive":
+                    if(num < 3)
+                        return $"{prefix}{num + 1}";
+                    if(num == 3)
+                        return $"{prefix}5";
+                    if(num < 8)
+                        return $"{prefix}{num + 3}";
+                    return $"{prefix}{num + 4}";
+                case "HowlingCliffs":
+                    if(num < 4)
+                        return $"{prefix}{num + 2}";
+                    if(num == 4)
+                        return $"{prefix}7";
+                    if(num < 7)
+                        return $"{prefix}{num + 4}";
+                    if(num == 7)
+                        return $"{prefix}12";
+                    if(num < 15)
+                        return $"{prefix}{num + 6}";
+                    if(num == 15)
+                        return $"{prefix}23";
+                    if(num < 24)
+                        return $"{prefix}{num + 9}";
+                    if(num == 24)
+                        return $"{prefix}34";
+                    if(num < 27)
+                        return $"{prefix}{num + 11}";
+                    if(num < 29)
+                        return $"{prefix}{num + 12}";
+                    if(num < 31)
+                        return $"{prefix}{num + 13}";
+                    if(num == 31)
+                        return $"{prefix}46";
+                    if(num < 34)
+                        return $"{prefix}{num + 16}";
+                    if(num == 34)
+                        return $"{prefix}51";
+                    if(num < 37)
+                        return $"{prefix}{num + 18}";
+                    if(num < 42)
+                        return $"{prefix}{num + 19}";
+                    if(num == 42)
+                        return $"{prefix}62";
+                    if(num < 45)
+                        return $"{prefix}{num + 21}";
+                    return $"{prefix}{num + 22}";
+                case "KingdomsEdge":
+                    if(num < 39)
+                        return $"{prefix}{num}";
+                    return $"{prefix}{num + 1}";
+                default:
+                    return $"{prefix}{num}";
+            }
+        }
 
         public static readonly Dictionary<string, string> OrbAreas = new() {
             { SceneNames.Crossroads_07, "Crossroads" },
@@ -64,6 +125,17 @@ namespace YetAnotherRandoConnection {
             "Vine-Durandas"
         };
 
+        public static readonly List<string> UsefulVines = new() {
+            "Vine-Root_Left",
+            "Vine-Root_Right",
+            "Vine-Vessel_Fragment",
+            "Vine-Hunter_Lower",
+            "Vine-Cornifer_Grub",
+            "Vine-Cornifer_Left_2",
+            "Vine-Thorns",
+            "Vine-Durandas"
+        };
+
         public static readonly List<string> VineDescriptions = new() {
             "And they were roommates!\r\n\r\nOh my god they were roommates.",
             "Can you guys say \"Colorado!\"\r\nI'M A GIRAFFE!",
@@ -88,6 +160,24 @@ namespace YetAnotherRandoConnection {
             "Well, when life gives you lemons!",
             "WHAT ARE THOOOOOOOSE?\r\n\r\nThey are my crocs.",
             "You stupid.\r\n\r\nNo I not.\r\n\r\nWhat's 9 + 10?\r\n\r\n21.\r\n\r\nYou stupid."
+        };
+
+        public static readonly List<string> JarNames = new() {
+            "Soul_Jar-Shade_Soul",
+            "Soul_Jar-Entrance_Lower",
+            "Soul_Jar-Entrance_Middle",
+            "Soul_Jar-Entrance_Upper",
+            "Soul_Jar-East_Lower",
+            "Soul_Jar-East_Upper",
+            "Soul_Jar-Center_1",
+            "Soul_Jar-Center_2",
+            "Soul_Jar-Center_2_Dupe",
+            "Soul_Jar-Soul_Master",
+            "Soul_Jar-Soul_Master_Dupe",
+            "Soul_Jar-Soul_Master_Dupe_2",
+            "Soul_Jar-West",
+            "Soul_Jar-Lighthouse",
+            "Soul_Jar-Lighthouse_Dupe"
         };
     }
 }

@@ -1483,397 +1483,397 @@
   },
   {
     "area": "Hive",
-    "num": 1,
+    "num": 2,
     "x": 176.5361,
     "y": 25.91689
   },
   {
     "area": "Hive",
-    "num": 2,
+    "num": 3,
     "x": 182.9,
     "y": 25.91689
   },
   {
     "area": "Hive",
-    "num": 3,
+    "num": 5,
     "x": 182.9,
     "y": 33.89
   },
   {
     "area": "Hive",
-    "num": 4,
+    "num": 7,
     "x": 165.1303,
     "y": 42.7464
   },
   {
     "area": "Hive",
-    "num": 5,
+    "num": 8,
     "x": 173.5665,
     "y": 50.1953
   },
   {
     "area": "Hive",
-    "num": 6,
+    "num": 9,
     "x": 183.7526,
     "y": 51.81072
   },
   {
     "area": "Hive",
-    "num": 7,
+    "num": 10,
     "x": 180.7012,
     "y": 54.95182
   },
   {
     "area": "Hive",
-    "num": 8,
+    "num": 12,
     "x": 188.8232,
     "y": 56.88
   },
   {
     "area": "Hive",
-    "num": 9,
+    "num": 13,
     "x": 188.8232,
     "y": 62.18
   },
   {
     "area": "Hive",
-    "num": 10,
+    "num": 14,
     "x": 188.8232,
     "y": 68.06
   },
   {
     "area": "Hive",
-    "num": 11,
+    "num": 15,
     "x": 184.1564,
     "y": 68.95746
   },
   {
     "area": "Hive",
-    "num": 12,
+    "num": 16,
     "x": 174.0152,
     "y": 64.78428
   },
   {
     "area": "Hive",
-    "num": 13,
+    "num": 17,
     "x": 161.4824,
     "y": 35.94822
   },
   {
     "area": "Hive",
-    "num": 14,
+    "num": 18,
     "x": 189.2048,
     "y": 29.16937
   },
   {
     "area": "Hive",
-    "num": 15,
+    "num": 19,
     "x": 189.2048,
     "y": 33.97
   },
   {
     "area": "Hive",
-    "num": 16,
+    "num": 20,
     "x": 189.2048,
     "y": 38.39776
   },
   {
     "area": "Hive",
-    "num": 17,
+    "num": 21,
     "x": 175.0566,
     "y": 33.75731
   },
   {
     "area": "Hive",
-    "num": 18,
+    "num": 22,
     "x": 161.4824,
     "y": 40.05
   },
   {
     "area": "Hive",
-    "num": 19,
+    "num": 23,
     "x": 175.0122,
     "y": 43.58218
   },
   {
     "area": "Hive",
-    "num": 20,
+    "num": 24,
     "x": 179.191,
     "y": 46.18783
   },
   {
     "area": "HowlingCliffs",
-    "num": 1,
+    "num": 3,
     "x": 58.71,
     "y": 20.59
   },
   {
     "area": "HowlingCliffs",
-    "num": 2,
+    "num": 4,
     "x": 69.61,
     "y": 25.15
   },
   {
     "area": "HowlingCliffs",
-    "num": 3,
+    "num": 5,
     "x": 112.5523,
     "y": 23.68431
   },
   {
     "area": "HowlingCliffs",
-    "num": 4,
+    "num": 7,
     "x": 105.67,
     "y": 30.68
   },
   {
     "area": "HowlingCliffs",
-    "num": 5,
+    "num": 9,
     "x": 95.12,
     "y": 34.14
   },
   {
     "area": "HowlingCliffs",
-    "num": 6,
+    "num": 10,
     "x": 80.64,
     "y": 36.33
   },
   {
     "area": "HowlingCliffs",
-    "num": 7,
+    "num": 12,
     "x": 77.06,
     "y": 43.72
   },
   {
     "area": "HowlingCliffs",
-    "num": 8,
+    "num": 14,
     "x": 60.5,
     "y": 39.68
   },
   {
     "area": "HowlingCliffs",
-    "num": 9,
+    "num": 15,
     "x": 69.5,
     "y": 49.31
   },
   {
     "area": "HowlingCliffs",
-    "num": 10,
+    "num": 16,
     "x": 62,
     "y": 51.85
   },
   {
     "area": "HowlingCliffs",
-    "num": 11,
+    "num": 17,
     "x": 67.13,
     "y": 61.6
   },
   {
     "area": "HowlingCliffs",
-    "num": 12,
+    "num": 18,
     "x": 84.55,
     "y": 53.06
   },
   {
     "area": "HowlingCliffs",
-    "num": 13,
+    "num": 19,
     "x": 95.49,
     "y": 53.06
   },
   {
     "area": "HowlingCliffs",
-    "num": 14,
+    "num": 20,
     "x": 105.34,
     "y": 55.08
   },
   {
     "area": "HowlingCliffs",
-    "num": 15,
+    "num": 23,
     "x": 76.52,
     "y": 64.06
   },
   {
     "area": "HowlingCliffs",
-    "num": 16,
+    "num": 25,
     "x": 55.28,
     "y": 64.88
   },
   {
     "area": "HowlingCliffs",
-    "num": 17,
+    "num": 26,
     "x": 62.68,
     "y": 70.22
   },
   {
     "area": "HowlingCliffs",
-    "num": 18,
+    "num": 27,
     "x": 69.19,
     "y": 73.99
   },
   {
     "area": "HowlingCliffs",
-    "num": 19,
+    "num": 28,
     "x": 86.52,
     "y": 73.99
   },
   {
     "area": "HowlingCliffs",
-    "num": 20,
+    "num": 29,
     "x": 94.81,
     "y": 75.98
   },
   {
     "area": "HowlingCliffs",
-    "num": 21,
+    "num": 30,
     "x": 120.5,
     "y": 73.92
   },
   {
     "area": "HowlingCliffs",
-    "num": 22,
+    "num": 31,
     "x": 113.24,
     "y": 70.97
   },
   {
     "area": "HowlingCliffs",
-    "num": 23,
+    "num": 32,
     "x": 96.32,
     "y": 84.81
   },
   {
     "area": "HowlingCliffs",
-    "num": 24,
+    "num": 34,
     "x": 84.53,
     "y": 81.8
   },
   {
     "area": "HowlingCliffs",
-    "num": 25,
+    "num": 36,
     "x": 67.75,
     "y": 81.73
   },
   {
     "area": "HowlingCliffs",
-    "num": 26,
+    "num": 37,
     "x": 57.06,
     "y": 84.74
   },
   {
     "area": "HowlingCliffs",
-    "num": 27,
+    "num": 39,
     "x": 67.82,
     "y": 90.7
   },
   {
     "area": "HowlingCliffs",
-    "num": 28,
+    "num": 40,
     "x": 72.96,
     "y": 98.58
   },
   {
     "area": "HowlingCliffs",
-    "num": 29,
+    "num": 42,
     "x": 114.42,
     "y": 91.98
   },
   {
     "area": "HowlingCliffs",
-    "num": 30,
+    "num": 43,
     "x": 99.71,
     "y": 91.98
   },
   {
     "area": "HowlingCliffs",
-    "num": 31,
+    "num": 46,
     "x": 94.34,
     "y": 104.83
   },
   {
     "area": "HowlingCliffs",
-    "num": 32,
+    "num": 48,
     "x": 81.89,
     "y": 104.83
   },
   {
     "area": "HowlingCliffs",
-    "num": 33,
+    "num": 49,
     "x": 73.91,
     "y": 106.79
   },
   {
     "area": "HowlingCliffs",
-    "num": 34,
+    "num": 51,
     "x": 51.52,
     "y": 108.89
   },
   {
     "area": "HowlingCliffs",
-    "num": 35,
+    "num": 53,
     "x": 39.61,
     "y": 113.42
   },
   {
     "area": "HowlingCliffs",
-    "num": 36,
+    "num": 54,
     "x": 49.96,
     "y": 115.86
   },
   {
     "area": "HowlingCliffs",
-    "num": 37,
+    "num": 56,
     "x": 41.91,
     "y": 127.23
   },
   {
     "area": "HowlingCliffs",
-    "num": 38,
+    "num": 57,
     "x": 48.67,
     "y": 129.53
   },
   {
     "area": "HowlingCliffs",
-    "num": 39,
+    "num": 58,
     "x": 62.61,
     "y": 127.97
   },
   {
     "area": "HowlingCliffs",
-    "num": 40,
+    "num": 59,
     "x": 67.21,
     "y": 138.25
   },
   {
     "area": "HowlingCliffs",
-    "num": 41,
+    "num": 60,
     "x": 107.68,
     "y": 129.21
   },
   {
     "area": "HowlingCliffs",
-    "num": 42,
+    "num": 62,
     "x": 98.08,
     "y": 132.83
   },
   {
     "area": "HowlingCliffs",
-    "num": 43,
+    "num": 64,
     "x": 87.72,
     "y": 140.76
   },
   {
     "area": "HowlingCliffs",
-    "num": 44,
+    "num": 65,
     "x": 78.82,
     "y": 138.88
   },
   {
     "area": "HowlingCliffs",
-    "num": 45,
+    "num": 67,
     "x": 105.83,
     "y": 118.77
   },
   {
     "area": "HowlingCliffs",
-    "num": 46,
+    "num": 68,
     "x": 97.5,
     "y": 144.34
   },
@@ -2107,79 +2107,79 @@
   },
   {
     "area": "KingdomsEdge",
-    "num": 39,
+    "num": 40,
     "x": 68.73,
     "y": 144.25
   },
   {
     "area": "KingdomsEdge",
-    "num": 40,
+    "num": 41,
     "x": 68.73,
     "y": 151.85
   },
   {
     "area": "KingdomsEdge",
-    "num": 41,
-    "x": 68.73,
-    "y": 155.72
-  },
-  {
-    "area": "KingdomsEdge",
     "num": 42,
-    "x": 62.12,
+    "x": 68.73,
     "y": 155.72
   },
   {
     "area": "KingdomsEdge",
     "num": 43,
     "x": 62.12,
-    "y": 152.2
+    "y": 155.72
   },
   {
     "area": "KingdomsEdge",
     "num": 44,
+    "x": 62.12,
+    "y": 152.2
+  },
+  {
+    "area": "KingdomsEdge",
+    "num": 45,
     "x": 70.53,
     "y": 161.86
   },
   {
     "area": "KingdomsEdge",
-    "num": 45,
+    "num": 46,
     "x": 81.44,
     "y": 165.89
   },
   {
     "area": "KingdomsEdge",
-    "num": 46,
+    "num": 47,
     "x": 59.89,
     "y": 161.86
   },
   {
     "area": "KingdomsEdge",
-    "num": 47,
+    "num": 48,
     "x": 48.99,
     "y": 157.88
   },
   {
     "area": "KingdomsEdge",
-    "num": 48,
+    "num": 49,
     "x": 39.56,
     "y": 158.57
   },
   {
     "area": "KingdomsEdge",
-    "num": 49,
+    "num": 50,
     "x": 33.94,
     "y": 164.54
   },
   {
     "area": "KingdomsEdge",
-    "num": 50,
+    "num": 51,
     "x": 27.8,
     "y": 151.91
   },
   {
     "area": "KingdomsEdge",
-    "num": 51,
+    "num": 52,
     "x": 55.77,
     "y": 133.09
   },

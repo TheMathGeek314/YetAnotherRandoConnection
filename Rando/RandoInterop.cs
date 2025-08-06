@@ -9,6 +9,7 @@ using ItemChanger;
 using ItemChanger.Items;
 using ItemChanger.Tags;
 using ItemChanger.UIDefs;
+using ItemChanger.Locations;
 
 namespace YetAnotherRandoConnection {
     internal static class RandoInterop {
@@ -17,7 +18,7 @@ namespace YetAnotherRandoConnection {
             RequestModifier.Hook();
             LogicAdder.Hook();
 
-            //Container.DefineContainer<>();
+            Container.DefineContainer<SoulJarContainer>();
 
             DefineLocations();
             DefineItems();
@@ -32,42 +33,54 @@ namespace YetAnotherRandoConnection {
         }
 
         public static void DefineLocations() {
-            static void DefineLoc(string name, string scene, string sprite, float x, float y) {
-                VoidLocation voidLoc = new() { name = name, sceneName = scene };
-                InteropTag tag = AddTag(voidLoc);
-                if(sprite != "pin_todo")
-                    tag.Properties["PinSprite"] = new EmbeddedSprite(sprite);
+            static void DefineLoc(AbstractLocation loc, string scene, string sprite, float x, float y) {
+                InteropTag tag = AddTag(loc);
+                tag.Properties["PinSprite"] = new EmbeddedSprite(sprite);
                 tag.Properties["WorldMapLocation"] = (scene, x, y);
-
-                Finder.DefineCustomLocation(voidLoc);
+                Finder.DefineCustomLocation(loc);
             }
 
             Assembly assembly = Assembly.GetExecutingAssembly();
 
-            string jsonCoords = assembly.GetManifestResourceNames().Single(str => str.EndsWith("DreamOrbCoords.json"));
+            string orbCoords = assembly.GetManifestResourceNames().Single(str => str.EndsWith("DreamOrbCoords.json"));
             string vineCoords = assembly.GetManifestResourceNames().Single(str => str.EndsWith("VineCoords.json"));
+            string jarCoords = assembly.GetManifestResourceNames().Single(str => str.EndsWith("JarCoords.json"));
 
-            using Stream coordsStream = assembly.GetManifestResourceStream(jsonCoords);
+            using Stream orbStream = assembly.GetManifestResourceStream(orbCoords);
             using Stream vineStream = assembly.GetManifestResourceStream(vineCoords);
+            using Stream jarStream = assembly.GetManifestResourceStream(jarCoords);
 
-            foreach(JsonDreamOrbCoords jsonOrb in new ParseJson(coordsStream).parseFile<JsonDreamOrbCoords>())
+            foreach(JsonDreamOrbCoords jsonOrb in new ParseJson(orbStream).parseFile<JsonDreamOrbCoords>())
                 jsonOrb.translate();
             foreach(JsonVineCoords jsonVine in new ParseJson(vineStream).parseFile<JsonVineCoords>())
                 jsonVine.translate();
+            foreach(JsonJarCoords jsonJar in new ParseJson(jarStream).parseFile<JsonJarCoords>())
+                jsonJar.translate();
 
             foreach((string area, string scene, int count) in Consts.RootCounts) {
                 for(int i = 1; i <= count; i++) {
-                    string name = $"DreamOrb_{area}_{i}";
+                    string name = Consts.GetOrbNumName(area, i);
+                    Modding.Logger.Log($"[YARC] - ({area}, {i}) => DefineLoc({name})");
                     Vector2 coords = DreamOrbCoords.data[name];
-                    DefineLoc(name, scene, "pin_dream_orb", coords.x, coords.y);
+                    DreamOrbLocation orbLoc = new() { name = name, sceneName = scene };
+                    DefineLoc(orbLoc, scene, "pin_dream_orb", coords.x, coords.y);
                 }
             }
             foreach(string name in Consts.VineNames) {
                 string scene = VineCoords.placementToPosition[name].Item1;
                 Vector2 coords = VineCoords.placementToPosition[name].Item2;
-                DefineLoc(name, scene, "pin_vine", coords.x, coords.y);
+                VineLocation vineLoc = new() { name = name, sceneName = scene };
+                DefineLoc(vineLoc, scene, "pin_vine", coords.x, coords.y);
             }
-            DefineLoc("Chain-Storerooms", SceneNames.Ruins1_28, "pin_vine", 96.39f, 15.7f);
+            //SomethingLocation chainLoc = new() { name = Consts.Chain, sceneName = SceneNames.Ruins1_28 };
+            //DefineLoc(chainLoc, SceneNames.Ruins1_28, "pin_vine", 96.39f, 15.7f);
+
+            foreach(string name in Consts.JarNames) {
+                string scene = JarCoords.placementToPosition[name].Item1;
+                Vector2 coords = JarCoords.placementToPosition[name].Item2;
+                ObjectLocation objLoc = new() { name = name, objectName = JarCoords.placementToName[name], sceneName = scene, forceShiny = false, flingType = FlingType.Everywhere };
+                DefineLoc(objLoc, scene, "pin_soul_jar", coords.x, coords.y);
+            }
         }
 
         public static void DefineItems() {
@@ -82,13 +95,24 @@ namespace YetAnotherRandoConnection {
                 InteropTag tag = AddTag(vineItem);
                 tag.Properties["PinSprite"] = new EmbeddedSprite("pin_vine");
                 vineItem.UIDef = new MsgUIDef {
-                    name = new BoxedString(vName.Replace("_", " ").Replace("-", " - ")),
+                    name = new BoxedString(clean(vName)),
                     shopDesc = PullRandomVine(rand),
                     sprite = new EmbeddedSprite("pin_vine")
                 };
                 vineItem.OnGive += remoteVineCut;
                 Finder.DefineCustomItem(vineItem);
             }
+            //define chain item
+
+            SoulJarItem jarItem = new() { name = Consts.SoulJar };
+            InteropTag tag2 = AddTag(jarItem);
+            tag2.Properties["PinSprite"] = new EmbeddedSprite("pin_soul_jar");
+            jarItem.UIDef = new MsgUIDef {
+                name = new BoxedString(clean(Consts.SoulJar)),
+                shopDesc = new BoxedString("idk soul juice I guess"),
+                sprite = new EmbeddedSprite("pin_soul_jar")
+            };
+            Finder.DefineCustomItem(jarItem);
         }
 
         public static InteropTag AddTag(TaggableObject obj) {
@@ -108,6 +132,10 @@ namespace YetAnotherRandoConnection {
             if(GameManager.instance.sceneName == VineCoords.placementToPosition[name].Item1) {
                 GameObject.Find(VineCoords.placementToName[name]).GetComponentInChildren<VinePlatformCut>().Cut();
             }
+        }
+
+        private static string clean(string name) {
+            return name.Replace("_", " ").Replace("-", " - ");
         }
     }
 }

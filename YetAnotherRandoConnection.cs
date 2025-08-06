@@ -20,8 +20,21 @@ namespace YetAnotherRandoConnection {
         }
 
         public override void Initialize(Dictionary<string, Dictionary<string, GameObject>> preloadedObjects) {
+            SoulJarContainer.jarPrefab = preloadedObjects["Ruins1_31"]["Ruins Vial Empty"];
             RandoInterop.Hook();
-            CustomCheckEdits.Hook();
+
+            On.DreamPlantOrb.Awake += LogOrbs;
+        }
+
+        private void LogOrbs(On.DreamPlantOrb.orig_Awake orig, DreamPlantOrb self) {
+            orig(self);
+            Log($"scene\t{self.gameObject.scene.name}\tname\t{self.gameObject.name}\tcoords\t{self.gameObject.transform.position.x}\t{self.gameObject.transform.position.y}");
+        }
+
+        public override List<(string, string)> GetPreloadNames() {
+            return [
+                ("Ruins1_31", "Ruins Vial Empty")
+            ];
         }
     }
 }

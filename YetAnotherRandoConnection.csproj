@@ -53,9 +53,11 @@
   </Target>
   <ItemGroup>
     <None Remove="Resources\DreamOrbCoords.json" />
+    <None Remove="Resources\JarCoords.json" />
     <None Remove="Resources\logic.json" />
     <None Remove="Resources\LogicOverrides.json" />
     <None Remove="Resources\Pins\pin_dream_orb.png" />
+    <None Remove="Resources\Pins\pin_soul_jar.png" />
     <None Remove="Resources\Pins\pin_vine.png" />
     <None Remove="Resources\terms.json" />
     <None Remove="Resources\VineCoords.json" />
@@ -63,9 +65,11 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\DreamOrbCoords.json" />
+    <EmbeddedResource Include="Resources\JarCoords.json" />
     <EmbeddedResource Include="Resources\logic.json" />
     <EmbeddedResource Include="Resources\LogicOverrides.json" />
     <EmbeddedResource Include="Resources\Pins\pin_dream_orb.png" />
+    <EmbeddedResource Include="Resources\Pins\pin_soul_jar.png" />
     <EmbeddedResource Include="Resources\Pins\pin_vine.png" />
     <EmbeddedResource Include="Resources\terms.json" />
     <EmbeddedResource Include="Resources\VineCoords.json" />
@@ -128,6 +132,9 @@
     </Reference>
     <Reference Include="RandoSettingsManager">
       <HintPath>..\_dependencies\RandoSettingsManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Satchel">
+      <HintPath>..\_dependencies\Satchel.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.Composition">
       <HintPath>$(HollowKnightRefs)/System.ComponentModel.Composition.dll</HintPath>

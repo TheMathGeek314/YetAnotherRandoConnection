@@ -892,10 +892,6 @@
     "logic": "*Whispering_Root-Kingdoms_Edge"
   },
   {
-    "name": "DreamOrb_KingdomsEdge_39",
-    "logic": "*Whispering_Root-Kingdoms_Edge"
-  },
-  {
     "name": "DreamOrb_KingdomsEdge_40",
     "logic": "*Whispering_Root-Kingdoms_Edge"
   },
@@ -941,6 +937,10 @@
   },
   {
     "name": "DreamOrb_KingdomsEdge_51",
+    "logic": "*Whispering_Root-Kingdoms_Edge"
+  },
+  {
+    "name": "DreamOrb_KingdomsEdge_52",
     "logic": "*Whispering_Root-Kingdoms_Edge"
   },
   {
@@ -1496,14 +1496,6 @@
     "logic": "*Whispering_Root-Crystal_Peak"
   },
   {
-    "name": "DreamOrb_HowlingCliffs_1",
-    "logic": "*Whispering_Root-Howling_Cliffs"
-  },
-  {
-    "name": "DreamOrb_HowlingCliffs_2",
-    "logic": "*Whispering_Root-Howling_Cliffs"
-  },
-  {
     "name": "DreamOrb_HowlingCliffs_3",
     "logic": "*Whispering_Root-Howling_Cliffs"
   },
@@ -1516,15 +1508,7 @@
     "logic": "*Whispering_Root-Howling_Cliffs"
   },
   {
-    "name": "DreamOrb_HowlingCliffs_6",
-    "logic": "*Whispering_Root-Howling_Cliffs"
-  },
-  {
     "name": "DreamOrb_HowlingCliffs_7",
-    "logic": "*Whispering_Root-Howling_Cliffs"
-  },
-  {
-    "name": "DreamOrb_HowlingCliffs_8",
     "logic": "*Whispering_Root-Howling_Cliffs"
   },
   {
@@ -1536,15 +1520,7 @@
     "logic": "*Whispering_Root-Howling_Cliffs"
   },
   {
-    "name": "DreamOrb_HowlingCliffs_11",
-    "logic": "*Whispering_Root-Howling_Cliffs"
-  },
-  {
     "name": "DreamOrb_HowlingCliffs_12",
-    "logic": "*Whispering_Root-Howling_Cliffs"
-  },
-  {
-    "name": "DreamOrb_HowlingCliffs_13",
     "logic": "*Whispering_Root-Howling_Cliffs"
   },
   {
@@ -1576,19 +1552,7 @@
     "logic": "*Whispering_Root-Howling_Cliffs"
   },
   {
-    "name": "DreamOrb_HowlingCliffs_21",
-    "logic": "*Whispering_Root-Howling_Cliffs"
-  },
-  {
-    "name": "DreamOrb_HowlingCliffs_22",
-    "logic": "*Whispering_Root-Howling_Cliffs"
-  },
-  {
     "name": "DreamOrb_HowlingCliffs_23",
-    "logic": "*Whispering_Root-Howling_Cliffs"
-  },
-  {
-    "name": "DreamOrb_HowlingCliffs_24",
     "logic": "*Whispering_Root-Howling_Cliffs"
   },
   {
@@ -1624,15 +1588,7 @@
     "logic": "*Whispering_Root-Howling_Cliffs"
   },
   {
-    "name": "DreamOrb_HowlingCliffs_33",
-    "logic": "*Whispering_Root-Howling_Cliffs"
-  },
-  {
     "name": "DreamOrb_HowlingCliffs_34",
-    "logic": "*Whispering_Root-Howling_Cliffs"
-  },
-  {
-    "name": "DreamOrb_HowlingCliffs_35",
     "logic": "*Whispering_Root-Howling_Cliffs"
   },
   {
@@ -1644,19 +1600,11 @@
     "logic": "*Whispering_Root-Howling_Cliffs"
   },
   {
-    "name": "DreamOrb_HowlingCliffs_38",
-    "logic": "*Whispering_Root-Howling_Cliffs"
-  },
-  {
     "name": "DreamOrb_HowlingCliffs_39",
     "logic": "*Whispering_Root-Howling_Cliffs"
   },
   {
     "name": "DreamOrb_HowlingCliffs_40",
-    "logic": "*Whispering_Root-Howling_Cliffs"
-  },
-  {
-    "name": "DreamOrb_HowlingCliffs_41",
     "logic": "*Whispering_Root-Howling_Cliffs"
   },
   {
@@ -1668,15 +1616,67 @@
     "logic": "*Whispering_Root-Howling_Cliffs"
   },
   {
-    "name": "DreamOrb_HowlingCliffs_44",
-    "logic": "*Whispering_Root-Howling_Cliffs"
-  },
-  {
-    "name": "DreamOrb_HowlingCliffs_45",
-    "logic": "*Whispering_Root-Howling_Cliffs"
-  },
-  {
     "name": "DreamOrb_HowlingCliffs_46",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_48",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_49",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_51",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_53",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_54",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_56",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_57",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_58",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_59",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_60",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_62",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_64",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_65",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_67",
+    "logic": "*Whispering_Root-Howling_Cliffs"
+  },
+  {
+    "name": "DreamOrb_HowlingCliffs_68",
     "logic": "*Whispering_Root-Howling_Cliffs"
   },
   {
@@ -1848,10 +1848,6 @@
     "logic": "*Whispering_Root-Ancestral_Mound"
   },
   {
-    "name": "DreamOrb_Hive_1",
-    "logic": "*Whispering_Root-Hive"
-  },
-  {
     "name": "DreamOrb_Hive_2",
     "logic": "*Whispering_Root-Hive"
   },
@@ -1860,15 +1856,7 @@
     "logic": "*Whispering_Root-Hive"
   },
   {
-    "name": "DreamOrb_Hive_4",
-    "logic": "*Whispering_Root-Hive"
-  },
-  {
     "name": "DreamOrb_Hive_5",
-    "logic": "*Whispering_Root-Hive"
-  },
-  {
-    "name": "DreamOrb_Hive_6",
     "logic": "*Whispering_Root-Hive"
   },
   {
@@ -1885,10 +1873,6 @@
   },
   {
     "name": "DreamOrb_Hive_10",
-    "logic": "*Whispering_Root-Hive"
-  },
-  {
-    "name": "DreamOrb_Hive_11",
     "logic": "*Whispering_Root-Hive"
   },
   {
@@ -1925,6 +1909,22 @@
   },
   {
     "name": "DreamOrb_Hive_20",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_21",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_22",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_23",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "DreamOrb_Hive_24",
     "logic": "*Whispering_Root-Hive"
   },
   {
@@ -2006,5 +2006,65 @@
   {
     "name": "Vine-Vessel_Fragment",
     "logic": "(Fungus1_13[left1] + Vine-Root_Left + Vine-Root_Right + WINGS + (ANYCLAW | PRECISEMOVEMENT + ENEMYPOGOS) | Fungus1_13[right1] + (LEFTCLAW | WINGS + Vine-Vessel_Fragment | DAMAGEBOOSTS + $TAKEDAMAGE + WINGS + ENEMYPOGOS | WINGS + RIGHTCLAW + (LEFTDASH | LEFTSUPERDASH) | ENEMYPOGOS + $SHRIEKPOGO[2,before:AREASOUL])) + Can_Break_Vines"
+  },
+  {
+    "name": "Soul_Jar-Center_1",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Soul_Jar-Center_2",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Soul_Jar-Center_2_Dupe",
+    "logic": "*Soul_Jar-Center_2"
+  },
+  {
+    "name": "Soul_Jar-East_Lower",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Soul_Jar-East_Upper",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Soul_Jar-Entrance_Lower",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Soul_Jar-Entrance_Middle",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Soul_Jar-Entrance_Upper",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Soul_Jar-Shade_Soul",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Soul_Jar-Soul_Master",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Soul_Jar-Soul_Master_Dupe",
+    "logic": "*Soul_Jar-Soul_Master"
+  },
+  {
+    "name": "Soul_Jar-Soul_Master_Dupe_2",
+    "logic": "*Soul_Jar-Soul_Master"
+  },
+  {
+    "name": "Soul_Jar-West",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Soul_Jar-Lighthouse",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Soul_Jar-Lighthouse_Dupe",
+    "logic": "*Soul_Jar-Lighthouse"
   }
 ]

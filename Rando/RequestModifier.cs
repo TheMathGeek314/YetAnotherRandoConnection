@@ -7,6 +7,7 @@ namespace YetAnotherRandoConnection {
         public static void Hook() {
             RequestBuilder.OnUpdate.Subscribe(-100, ApplyOrbDefs);
             RequestBuilder.OnUpdate.Subscribe(-100, ApplyVineDefs);
+            RequestBuilder.OnUpdate.Subscribe(-100, ApplyJarDefs);
             RequestBuilder.OnUpdate.Subscribe(-499, SetupItems);
             RequestBuilder.OnUpdate.Subscribe(1200, RemoveRoots);
         }
@@ -15,7 +16,8 @@ namespace YetAnotherRandoConnection {
             if(YetAnotherRandoConnection.Settings.DreamOrbs) {
                 foreach((string area, string scene, int count) in Consts.RootCounts) {
                     for(int num = 1; num <= count; num++) {
-                        string name = $"DreamOrb_{area}_{num}";
+                        string name = Consts.GetOrbNumName(area, num);
+                        Modding.Logger.Log($"[YARC] - ({area}, {num}) => AddLocationByName({name})");
                         rb.AddLocationByName(name);
                         rb.EditLocationRequest(name, info => {
                             info.customPlacementFetch = (factory, placement) => {
@@ -60,6 +62,29 @@ namespace YetAnotherRandoConnection {
             }
         }
 
+        public static void ApplyJarDefs(RequestBuilder rb) {
+            if(YetAnotherRandoConnection.Settings.SoulJars) {
+                foreach(string jarName in Consts.JarNames) {
+                    rb.AddLocationByName(jarName);
+                    rb.EditLocationRequest(jarName, info => {
+                        info.customPlacementFetch = (factory, placement) => {
+                            AbstractLocation jarLoc = Finder.GetLocation(jarName);
+                            jarLoc.flingType = FlingType.Everywhere;
+                            AbstractPlacement ap = jarLoc.Wrap();
+                            factory.AddPlacement(ap);
+                            return ap;
+                        };
+                        info.getLocationDef = () => new() {
+                            Name = jarName,
+                            FlexibleCount = false,
+                            AdditionalProgressionPenalty = false,
+                            SceneName = JarCoords.placementToPosition[jarName].Item1
+                        };
+                    });
+                }
+            }
+        }
+
         private static void SetupItems(RequestBuilder rb) {
             if(!YetAnotherRandoConnection.Settings.Any)
                 return;
@@ -86,6 +111,29 @@ namespace YetAnotherRandoConnection {
                 if(YetAnotherRandoConnection.Settings.Vines) {
                     rb.AddItemByName(vine);
                 }
+            }
+
+            /*foreach(string jar in Consts.JarNames) {
+                rb.EditItemRequest(jar, info => {
+                    info.getItemDef = () => new ItemDef() {
+                        Name = jar,
+                        MajorItem = false,
+                        PriceCap = 1
+                    };
+                });
+                if(YetAnotherRandoConnection.Settings.SoulJars) {
+                    rb.AddItemByName(jar);
+                }
+            }*/
+            rb.EditItemRequest(Consts.SoulJar, info => {
+                info.getItemDef = () => new ItemDef() {
+                    Name = Consts.SoulJar,
+                    MajorItem = false,
+                    PriceCap = 1
+                };
+            });
+            if(YetAnotherRandoConnection.Settings.SoulJars) {
+                rb.AddItemByName(Consts.SoulJar, 13);
             }
         }
 
