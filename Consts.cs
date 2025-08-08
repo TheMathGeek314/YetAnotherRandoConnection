@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using ItemChanger;
 
 namespace YetAnotherRandoConnection {
@@ -103,7 +102,6 @@ namespace YetAnotherRandoConnection {
         };
 
         public static readonly List<string> VineNames = new() {
-            //"Chain-Storerooms",
             "Vine-Root_Left",
             "Vine-Root_Right",
             "Vine-Vessel_Fragment",

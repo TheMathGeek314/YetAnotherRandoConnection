@@ -2,6 +2,7 @@
 using HutongGames.PlayMaker;
 using HutongGames.PlayMaker.Actions;
 using ItemChanger;
+using ItemChanger.Components;
 using ItemChanger.Extensions;
 using ItemChanger.Util;
 using Satchel;
@@ -16,6 +17,7 @@ namespace YetAnotherRandoConnection {
 
         public override GameObject GetNewContainer(ContainerInfo info) {
             GameObject jar = GameObject.Instantiate(jarPrefab);
+            jar.name = $"{jar.name}-{info.giveInfo.placement.Name}";
             jar.SetActive(true);
             FsmState soulState = jar.GetComponent<PlayMakerFSM>().GetValidState("Soul");
             soulState.RemoveFirstActionOfType<FlingObjectsFromGlobalPool>();
@@ -30,25 +32,33 @@ namespace YetAnotherRandoConnection {
                 GameObject itemParent = new("Item parent");
                 itemParent.transform.position = jar.transform.position;
                 foreach(AbstractItem item in cGiveInfo.items) {
-                    if(!item.IsObtained()) {
-                        if(item.GiveEarly(Container.Totem)) {
-                            item.Give(cGiveInfo.placement, giveInfo.Clone());
-                        }
-                        else {
-                            GameObject shiny = ShinyUtility.MakeNewShiny(cGiveInfo.placement, item, cGiveInfo.flingType);
-                            ShinyUtility.PutShinyInContainer(itemParent, shiny);
-                            if(giveInfo.FlingType == FlingType.Everywhere)
-                                ShinyUtility.FlingShinyRandomly(shiny.LocateMyFSM("Shiny Control"));
-                            else
-                                ShinyUtility.FlingShinyDown(shiny.LocateMyFSM("ShinyControl"));
-                        }
+                    if(item.GiveEarly(Container.Totem)) {
+                        item.Give(cGiveInfo.placement, giveInfo.Clone());
+                    }
+                    else {
+                        GameObject shiny = ShinyUtility.MakeNewShiny(cGiveInfo.placement, item, cGiveInfo.flingType);
+                        ShinyUtility.PutShinyInContainer(itemParent, shiny);
+                        if(giveInfo.FlingType == FlingType.Everywhere)
+                            ShinyUtility.FlingShinyRandomly(shiny.LocateMyFSM("Shiny Control"));
+                        else
+                            ShinyUtility.FlingShinyDown(shiny.LocateMyFSM("ShinyControl"));
                     }
                 }
                 foreach(Transform t in itemParent.transform)
                     t.gameObject.SetActive(true);
                 cGiveInfo.placement.AddVisitFlag(VisitState.Opened);
             });
+            //jar.AddComponent<DropIntoPlace>();
             return jar;
+        }
+
+        public override void ApplyTargetContext(GameObject obj, float x, float y, float elevation) {
+            obj.transform.position = new Vector3(x, y - elevation + 0.8719f, -0.01f);
+            obj.SetActive(true);
+        }
+
+        public override void ApplyTargetContext(GameObject obj, GameObject target, float elevation) {
+            ApplyTargetContext(obj, target.transform.position.x, target.transform.position.y, elevation);
         }
     }
 }

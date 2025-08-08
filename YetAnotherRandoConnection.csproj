@@ -64,15 +64,15 @@
     <None Remove="Resources\waypoints.json" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\DreamOrbCoords.json" />
-    <EmbeddedResource Include="Resources\JarCoords.json" />
+    <EmbeddedResource Include="Resources\Coords\DreamOrbCoords.json" />
+    <EmbeddedResource Include="Resources\Coords\JarCoords.json" />
     <EmbeddedResource Include="Resources\logic.json" />
     <EmbeddedResource Include="Resources\LogicOverrides.json" />
     <EmbeddedResource Include="Resources\Pins\pin_dream_orb.png" />
     <EmbeddedResource Include="Resources\Pins\pin_soul_jar.png" />
     <EmbeddedResource Include="Resources\Pins\pin_vine.png" />
     <EmbeddedResource Include="Resources\terms.json" />
-    <EmbeddedResource Include="Resources\VineCoords.json" />
+    <EmbeddedResource Include="Resources\Coords\VineCoords.json" />
     <EmbeddedResource Include="Resources\waypoints.json" />
   </ItemGroup>
   <ItemGroup>

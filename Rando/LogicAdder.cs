@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using ItemChanger;
-using ItemChanger.Items;
 using RandomizerCore;
 using RandomizerCore.Json;
 using RandomizerCore.Logic;
@@ -60,7 +59,8 @@ namespace YetAnotherRandoConnection {
                 lmb.AddItem(new SingleItem(vine, new TermValue(lmb.GetTerm(vine), 1)));
             }
 
-            //lmb.AddItem(new SingleItem(Consts.SoulJar, new TermValue(lmb.GetTerm("SOUL"), 1)));//this is incorrect
+            lmb.AddItem(new SingleItem(Consts.Chain, new TermValue(lmb.GetTerm(Consts.Chain), 1)));
+
             lmb.AddItem(new EmptyItem(Consts.SoulJar));
         }
     }

@@ -12,13 +12,32 @@ namespace YetAnotherRandoConnection {
             RequestBuilder.OnUpdate.Subscribe(1200, RemoveRoots);
         }
 
+        private static void AddAndEditLocation(RequestBuilder rb, string name, FlingType flingType, bool progressionPenalty, string scene) {
+            rb.AddLocationByName(name);
+            rb.EditLocationRequest(name, info => {
+                info.customPlacementFetch = (factory, placement) => {
+                    AbstractLocation absLoc = Finder.GetLocation(name);
+                    absLoc.flingType = flingType;
+                    AbstractPlacement ap = absLoc.Wrap();
+                    factory.AddPlacement(ap);
+                    return ap;
+                };
+                info.getLocationDef = () => new() {
+                    Name = name,
+                    FlexibleCount = false,
+                    AdditionalProgressionPenalty = progressionPenalty,
+                    SceneName = scene
+                };
+            });
+        }
+
         public static void ApplyOrbDefs(RequestBuilder rb) {
             if(YetAnotherRandoConnection.Settings.DreamOrbs) {
                 foreach((string area, string scene, int count) in Consts.RootCounts) {
                     for(int num = 1; num <= count; num++) {
                         string name = Consts.GetOrbNumName(area, num);
-                        Modding.Logger.Log($"[YARC] - ({area}, {num}) => AddLocationByName({name})");
-                        rb.AddLocationByName(name);
+                        AddAndEditLocation(rb, name, FlingType.DirectDeposit, true, scene);
+                        /*rb.AddLocationByName(name);
                         rb.EditLocationRequest(name, info => {
                             info.customPlacementFetch = (factory, placement) => {
                                 AbstractLocation orbLoc = Finder.GetLocation(name);
@@ -33,7 +52,7 @@ namespace YetAnotherRandoConnection {
                                 AdditionalProgressionPenalty = true,
                                 SceneName = scene
                             };
-                        });
+                        });*/
                     }
                 }
             }
@@ -42,7 +61,8 @@ namespace YetAnotherRandoConnection {
         public static void ApplyVineDefs(RequestBuilder rb) {
             if(YetAnotherRandoConnection.Settings.Vines) {
                 foreach(string vineName in Consts.VineNames) {
-                    rb.AddLocationByName(vineName);
+                    AddAndEditLocation(rb, vineName, FlingType.DirectDeposit, false, VineCoords.placementToPosition[vineName].Item1);
+                    /*rb.AddLocationByName(vineName);
                     rb.EditLocationRequest(vineName, info => {
                         info.customPlacementFetch = (factory, placement) => {
                             AbstractLocation vineLoc = Finder.GetLocation(vineName);
@@ -57,15 +77,33 @@ namespace YetAnotherRandoConnection {
                             AdditionalProgressionPenalty = false,
                             SceneName = VineCoords.placementToPosition[vineName].Item1
                         };
-                    });
+                    });*/
                 }
+                AddAndEditLocation(rb, Consts.Chain, FlingType.DirectDeposit, false, SceneNames.Ruins1_28);
+                /*rb.AddLocationByName(Consts.Chain);
+                rb.EditLocationRequest(Consts.Chain, info => {
+                    info.customPlacementFetch = (factory, placement) => {
+                        AbstractLocation chainLoc = Finder.GetLocation(Consts.Chain);
+                        chainLoc.flingType = FlingType.DirectDeposit;
+                        AbstractPlacement ap = chainLoc.Wrap();
+                        factory.AddPlacement(ap);
+                        return ap;
+                    };
+                    info.getLocationDef = () => new() {
+                        Name = Consts.Chain,
+                        FlexibleCount = false,
+                        AdditionalProgressionPenalty = false,
+                        SceneName = SceneNames.Ruins1_28
+                    };
+                });*/
             }
         }
 
         public static void ApplyJarDefs(RequestBuilder rb) {
             if(YetAnotherRandoConnection.Settings.SoulJars) {
                 foreach(string jarName in Consts.JarNames) {
-                    rb.AddLocationByName(jarName);
+                    AddAndEditLocation(rb, jarName, FlingType.Everywhere, false, JarCoords.placementToPosition[jarName].Item1);
+                    /*rb.AddLocationByName(jarName);
                     rb.EditLocationRequest(jarName, info => {
                         info.customPlacementFetch = (factory, placement) => {
                             AbstractLocation jarLoc = Finder.GetLocation(jarName);
@@ -80,7 +118,7 @@ namespace YetAnotherRandoConnection {
                             AdditionalProgressionPenalty = false,
                             SceneName = JarCoords.placementToPosition[jarName].Item1
                         };
-                    });
+                    });*/
                 }
             }
         }
@@ -112,35 +150,32 @@ namespace YetAnotherRandoConnection {
                     rb.AddItemByName(vine);
                 }
             }
+            rb.EditItemRequest(Consts.Chain, info => {
+                info.getItemDef = () => new ItemDef() {
+                    Name = Consts.Chain,
+                    MajorItem = false,
+                    PriceCap = 50
+                };
+            });
+            if(YetAnotherRandoConnection.Settings.Vines) {
+                rb.AddItemByName(Consts.Chain);
+            }
 
-            /*foreach(string jar in Consts.JarNames) {
-                rb.EditItemRequest(jar, info => {
-                    info.getItemDef = () => new ItemDef() {
-                        Name = jar,
-                        MajorItem = false,
-                        PriceCap = 1
-                    };
-                });
-                if(YetAnotherRandoConnection.Settings.SoulJars) {
-                    rb.AddItemByName(jar);
-                }
-            }*/
             rb.EditItemRequest(Consts.SoulJar, info => {
                 info.getItemDef = () => new ItemDef() {
-                    Name = Consts.SoulJar,
+                    Name = "Soul Refill",
                     MajorItem = false,
                     PriceCap = 1
                 };
             });
             if(YetAnotherRandoConnection.Settings.SoulJars) {
-                rb.AddItemByName(Consts.SoulJar, 13);
+                rb.AddItemByName(Consts.SoulJar, Consts.JarNames.Count);
             }
         }
 
         private static void RemoveRoots(RequestBuilder rb) {
             if(YetAnotherRandoConnection.Settings.DreamOrbs) {
                 rb.RemoveItemsWhere(item => item.StartsWith("Whispering_Root-"));
-                //rb.RemoveLocationsWhere(location => location.StartsWith("Whispering_Root-"));
             }
         }
     }

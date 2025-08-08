@@ -24,15 +24,17 @@ namespace YetAnotherRandoConnection {
         }
 
         private static void HookOrbs() {
-            IL.DreamPlantOrb.OnTriggerEnter2D += OrbTrigger;
+            IL.DreamPlantOrb.OnTriggerEnter2D += OrbGrant;
+            if(!RandomizerMod.RandomizerMod.RS.GenerationSettings.PoolSettings.WhisperingRoots)
+                IL.DreamPlantOrb.OnTriggerEnter2D += RemoveEssence;
         }
 
         private static void UnhookOrbs() {
-            IL.DreamPlantOrb.OnTriggerEnter2D -= OrbTrigger;
+            IL.DreamPlantOrb.OnTriggerEnter2D -= OrbGrant;
+            IL.DreamPlantOrb.OnTriggerEnter2D -= RemoveEssence;
         }
 
-        private static void OrbTrigger(ILContext il) {
-            //remove essence if roots are disabled??
+        private static void OrbGrant(ILContext il) {
             ILCursor cursor = new ILCursor(il).Goto(0);
             cursor.GotoNext(i => i.MatchLdstr("DREAM ORB COLLECT"),
                             i => i.MatchCall<EventRegister>("SendEvent"));
@@ -62,6 +64,21 @@ namespace YetAnotherRandoConnection {
                     ap.GiveAll(gi);
                 }
             });
+        }
+
+        private static void RemoveEssence(ILContext il) {
+            ILCursor cursor = new ILCursor(il).Goto(0);
+            if(cursor.TryGotoNext(i => i.MatchCall<GameManager>("get_instance"),
+                                  i => i.MatchLdstr(nameof(PlayerData.dreamOrbs)),
+                                  i => i.MatchCallvirt<GameManager>(nameof(GameManager.IncrementPlayerDataInt)))) {
+                cursor.RemoveRange(3);
+                cursor.Emit(OpCodes.Ldarg_0);
+                cursor.EmitDelegate<Action<DreamPlantOrb>>(orb => {
+                    if(!SubscribedLocations.ContainsKey(orb.gameObject.scene.name)) {
+                        GameManager.instance.IncrementPlayerDataInt(nameof(PlayerData.dreamOrbs));
+                    }
+                });
+            }
         }
     }
 }
