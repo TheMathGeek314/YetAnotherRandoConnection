@@ -2008,44 +2008,44 @@
     "logic": "(Fungus1_13[left1] + Vine-Root_Left + Vine-Root_Right + WINGS + (ANYCLAW | PRECISEMOVEMENT + ENEMYPOGOS) | Fungus1_13[right1] + (LEFTCLAW | WINGS + Vine-Vessel_Fragment | DAMAGEBOOSTS + $TAKEDAMAGE + WINGS + ENEMYPOGOS | WINGS + RIGHTCLAW + (LEFTDASH | LEFTSUPERDASH) | ENEMYPOGOS + $SHRIEKPOGO[2,before:AREASOUL])) + Can_Break_Vines"
   },
   {
-    "name": "Soul_Jar-Center_1",
-    "logic": "*Whispering_Root-Hive"
+    "name": "Soul_Jar-Center_Left",
+    "logic": "(Ruins1_30[left2] + (LEFTCLAW | (RIGHTCLAW | WINGS) + BACKGROUNDPOGOS | RIGHTCLAW + WINGS) | Ruins1_30 + Dive_Floor-Sanctum_Escape_1?FALSE + Dive_Floor-Sanctum_Escape_2?FALSE + (ANYCLAW | WINGS + $SHADESKIP))"
   },
   {
-    "name": "Soul_Jar-Center_2",
-    "logic": "*Whispering_Root-Hive"
+    "name": "Soul_Jar-Center_Left_Dupe",
+    "logic": "*Soul_Jar-Center_Left"
   },
   {
-    "name": "Soul_Jar-Center_2_Dupe",
-    "logic": "*Soul_Jar-Center_2"
+    "name": "Soul_Jar-Center_Right",
+    "logic": "Ruins1_30[right1] | Ruins1_30 + (ANYCLAW | WINGS)"
   },
   {
     "name": "Soul_Jar-East_Lower",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "Ruins1_25[left1] | Ruins1_25[left2] | Ruins1_25[left3] + (ANYCLAW | WINGS)"
   },
   {
     "name": "Soul_Jar-East_Upper",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "Ruins1_25[left1] | Ruins1_25[left2] + (ANYCLAW | WINGS | ENEMYPOGOS + DANGEROUSSKIPS) | Ruins1_25[left3] + (ANYCLAW | WINGS)"
   },
   {
     "name": "Soul_Jar-Entrance_Lower",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "Ruins1_23 + (ANYCLAW | WINGS) | Ruins1_23[right2] + Lever-Sanctum_Bottom?TRUE | Ruins1_23[top1] + Lever-Sanctum_Soul_Warrior?FALSE + Defeated_Sanctum_Warrior"
   },
   {
     "name": "Soul_Jar-Entrance_Middle",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "*Soul_Jar-Entrance_Lower"
   },
   {
     "name": "Soul_Jar-Entrance_Upper",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "Ruins1_23 + (LEFTCLAW | WINGS | RIGHTCLAW + (BACKGROUNDPOGOS | OBSCURESKIPS))"
   },
   {
     "name": "Soul_Jar-Shade_Soul",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "Ruins1_31[left2] | Ruins1_31 + (ANYCLAW + WINGS + (RIGHTCLAW | RIGHTDASH | RIGHTSUPERDASH) | LEFTCLAW + $SHRIEKPOGO[before:AREASOUL] | $SHRIEKPOGO[3,before:AREASOUL])"
   },
   {
     "name": "Soul_Jar-Soul_Master",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "Ruins1_24[right1]"
   },
   {
     "name": "Soul_Jar-Soul_Master_Dupe",
@@ -2057,11 +2057,11 @@
   },
   {
     "name": "Soul_Jar-West",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "*Geo_Chest-Soul_Master"
   },
   {
     "name": "Soul_Jar-Lighthouse",
-    "logic": "*Whispering_Root-Hive"
+    "logic": "Abyss_Lighthouse_room[left1]"
   },
   {
     "name": "Soul_Jar-Lighthouse_Dupe",
