@@ -42,21 +42,21 @@
     "y": 17.26632
   },
   {
-    "placement": "Soul_Jar-Center_1",
+    "placement": "Soul_Jar-Center_Right",
     "scene": "Ruins1_30",
     "objectName": "Ruins Vial Empty",
     "x": 57.461,
     "y": 33.26
   },
   {
-    "placement": "Soul_Jar-Center_2_Dupe",
+    "placement": "Soul_Jar-Center_Left_Dupe",
     "scene": "Ruins1_30",
     "objectName": "Ruins Light Stand",
     "x": 15.47312,
     "y": 25.9221
   },
   {
-    "placement": "Soul_Jar-Center_2",
+    "placement": "Soul_Jar-Center_Left",
     "scene": "Ruins1_30",
     "objectName": "Ruins Vial Empty (1)",
     "x": 9.63,
