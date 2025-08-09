@@ -52,6 +52,8 @@
     <WriteLinesToFile File="$(ExportDir)/$(TargetName)/SHA.txt" Lines="$(OutputFileString);@(FilesWithHashes->'%(FileHash)');$(OutputZipString);@(ZipFilesWithHashes->'%(FileHash)')" Overwrite="true" Encoding="UTF-8" />
   </Target>
   <ItemGroup>
+    <None Remove="Resources\Coords\EggBombCoords.json" />
+    <None Remove="Resources\Coords\HivePlatCoords.json" />
     <None Remove="Resources\DreamOrbCoords.json" />
     <None Remove="Resources\JarCoords.json" />
     <None Remove="Resources\logic.json" />
@@ -65,6 +67,8 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Coords\DreamOrbCoords.json" />
+    <EmbeddedResource Include="Resources\Coords\EggBombCoords.json" />
+    <EmbeddedResource Include="Resources\Coords\HivePlatCoords.json" />
     <EmbeddedResource Include="Resources\Coords\JarCoords.json" />
     <EmbeddedResource Include="Resources\logic.json" />
     <EmbeddedResource Include="Resources\LogicOverrides.json" />
