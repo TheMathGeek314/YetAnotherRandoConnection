@@ -6,6 +6,8 @@ namespace YetAnotherRandoConnection {
         public const string EssenceOrb = "Essence_Orb";
         public const string Chain = "Chain-Storerooms";
         public const string SoulJar = "Soul_Jar";
+        public const string EggBomb = "Jelly_Egg_Bomb";
+        public const string Telescope = "Lurien's_Telescope";
 
         public static readonly List<(string, string, int)> RootCounts = [
             ("Crossroads", SceneNames.Crossroads_07, 29),
@@ -176,6 +178,58 @@ namespace YetAnotherRandoConnection {
             "Soul_Jar-West",
             "Soul_Jar-Lighthouse",
             "Soul_Jar-Lighthouse_Dupe"
+        };
+
+        public static readonly List<string> HivePlatNames = new() {
+            "Hive_Platform-Lower_East",
+            "Hive_Platform-Lower_North",
+            "Hive_Platform-Lower_South",
+            "Hive_Platform-Lower_West",
+            "Hive_Platform-Upper_Right",
+            "Hive_Platform-Upper_Left",
+            "Hive_Platform-East_Right",
+            "Hive_Platform-East_Middle"
+        };
+
+        public static readonly List<string> EggBombNames = new() {
+            "Egg_Bomb-Map_Right",
+            "Egg_Bomb-Map_Left",
+            "Egg_Bomb-Tall_Room_Left",
+            "Egg_Bomb-Tall_Room_Right",
+            "Egg_Bomb-Notch_Corner_1",
+            "Egg_Bomb-Notch_Corner_2",
+            "Egg_Bomb-Notch_End",
+            "Egg_Bomb-Notch_Entrance",
+            "Egg_Bomb-Notch_Exit",
+            "Egg_Bomb-Notch_Left_1",
+            "Egg_Bomb-Notch_Left_2",
+            "Egg_Bomb-Notch_Lower_1",
+            "Egg_Bomb-Notch_Lower_2",
+            "Egg_Bomb-Notch_Lower_3",
+            "Egg_Bomb-Notch_Middle_1",
+            "Egg_Bomb-Notch_Middle_2",
+            "Egg_Bomb-Notch_Middle_3",
+            "Egg_Bomb-Notch_Middle_4",
+            "Egg_Bomb-Notch_Middle_5",
+            "Egg_Bomb-Notch_Middle_6",
+            "Egg_Bomb-Notch_Middle_7",
+            "Egg_Bomb-Notch_Middle_8",
+            "Egg_Bomb-Notch_Middle_9",
+            "Egg_Bomb-Notch_Middle_10",
+            "Egg_Bomb-Notch_Middle_11",
+            "Egg_Bomb-Notch_Middle_13",
+            "Egg_Bomb-Notch_Middle_14",
+            "Egg_Bomb-Notch_Middle_12",
+            "Egg_Bomb-Notch_Right_1",
+            "Egg_Bomb-Notch_Right_2",
+            "Egg_Bomb-Notch_Upper_1",
+            "Egg_Bomb-Notch_Upper_2",
+            "Egg_Bomb-Notch_Upper_3",
+            "Egg_Bomb-Notch_Upper_4",
+            "Egg_Bomb-Notch_Upper_5",
+            "Egg_Bomb-Notch_Upper_6",
+            "Egg_Bomb-Notch_Upper_7",
+            "Egg_Bomb-Notch_Upper_8"
         };
     }
 }

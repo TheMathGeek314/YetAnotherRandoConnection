@@ -52,8 +52,7 @@ namespace YetAnotherRandoConnection {
             using Stream t = typeof(LogicAdder).Assembly.GetManifestResourceStream("YetAnotherRandoConnection.Resources.terms.json");
             lmb.DeserializeFile(LogicFileType.Terms, fmt, t);
 
-            Term essence = lmb.GetTerm("ESSENCE");
-            lmb.AddItem(new SingleItem(Consts.EssenceOrb, new TermValue(essence, 1)));
+            lmb.AddItem(new SingleItem(Consts.EssenceOrb, new TermValue(lmb.GetTerm("ESSENCE"), 1)));
 
             foreach(string vine in Consts.VineNames) {
                 lmb.AddItem(new SingleItem(vine, new TermValue(lmb.GetTerm(vine), 1)));
@@ -62,6 +61,10 @@ namespace YetAnotherRandoConnection {
             lmb.AddItem(new SingleItem(Consts.Chain, new TermValue(lmb.GetTerm(Consts.Chain), 1)));
 
             lmb.AddItem(new EmptyItem(Consts.SoulJar));
+
+            lmb.AddItem(new EmptyItem(Consts.EggBomb));
+
+            lmb.AddItem(new EmptyItem(Consts.Telescope));
         }
     }
 }

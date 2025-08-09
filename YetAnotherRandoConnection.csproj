@@ -59,7 +59,10 @@
     <None Remove="Resources\logic.json" />
     <None Remove="Resources\LogicOverrides.json" />
     <None Remove="Resources\Pins\pin_dream_orb.png" />
+    <None Remove="Resources\Pins\pin_egg_bomb.png" />
+    <None Remove="Resources\Pins\pin_hive_platform.png" />
     <None Remove="Resources\Pins\pin_soul_jar.png" />
+    <None Remove="Resources\Pins\pin_telescope.png" />
     <None Remove="Resources\Pins\pin_vine.png" />
     <None Remove="Resources\terms.json" />
     <None Remove="Resources\VineCoords.json" />
@@ -73,7 +76,10 @@
     <EmbeddedResource Include="Resources\logic.json" />
     <EmbeddedResource Include="Resources\LogicOverrides.json" />
     <EmbeddedResource Include="Resources\Pins\pin_dream_orb.png" />
+    <EmbeddedResource Include="Resources\Pins\pin_egg_bomb.png" />
+    <EmbeddedResource Include="Resources\Pins\pin_hive_platform.png" />
     <EmbeddedResource Include="Resources\Pins\pin_soul_jar.png" />
+    <EmbeddedResource Include="Resources\Pins\pin_telescope.png" />
     <EmbeddedResource Include="Resources\Pins\pin_vine.png" />
     <EmbeddedResource Include="Resources\terms.json" />
     <EmbeddedResource Include="Resources\Coords\VineCoords.json" />

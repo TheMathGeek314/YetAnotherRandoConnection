@@ -48,8 +48,16 @@ namespace YetAnotherRandoConnection {
                     t.gameObject.SetActive(true);
                 cGiveInfo.placement.AddVisitFlag(VisitState.Opened);
             });
-            //jar.AddComponent<DropIntoPlace>();
-            return jar;
+
+            GameObject parent = new($"{jar.name} parent");
+            jar.transform.parent = parent.transform;
+            jar.transform.localPosition = Vector3.zero;
+            BoxCollider2D box = parent.AddComponent<BoxCollider2D>();
+            box.size = new Vector2(1, 2);
+            box.offset = new Vector2(0, -1.2f);
+            parent.layer = LayerMask.NameToLayer("Corpse");
+            parent.AddComponent<DropIntoPlace>();
+            return parent;
         }
 
         public override void ApplyTargetContext(GameObject obj, float x, float y, float elevation) {

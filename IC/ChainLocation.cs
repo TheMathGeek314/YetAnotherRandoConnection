@@ -8,8 +8,6 @@ using Satchel;
 
 namespace YetAnotherRandoConnection {
     public class ChainLocation: AutoLocation {
-        //There's only one chain location, so we don't need to worry about SubscribedLocations
-
         protected override void OnLoad() {
             On.PlayMakerFSM.OnEnable += EditChainFsm;
         }

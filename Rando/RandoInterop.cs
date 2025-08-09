@@ -9,6 +9,7 @@ using ItemChanger.Items;
 using ItemChanger.Locations;
 using ItemChanger.Tags;
 using ItemChanger.UIDefs;
+using Satchel;
 
 namespace YetAnotherRandoConnection {
     internal static class RandoInterop {
@@ -44,10 +45,14 @@ namespace YetAnotherRandoConnection {
             string orbCoords = assembly.GetManifestResourceNames().Single(str => str.EndsWith("DreamOrbCoords.json"));
             string vineCoords = assembly.GetManifestResourceNames().Single(str => str.EndsWith("VineCoords.json"));
             string jarCoords = assembly.GetManifestResourceNames().Single(str => str.EndsWith("JarCoords.json"));
+            string platCoords = assembly.GetManifestResourceNames().Single(str => str.EndsWith("HivePlatCoords.json"));
+            string bombCoords = assembly.GetManifestResourceNames().Single(str => str.EndsWith("EggBombCoords.json"));
 
             using Stream orbStream = assembly.GetManifestResourceStream(orbCoords);
             using Stream vineStream = assembly.GetManifestResourceStream(vineCoords);
             using Stream jarStream = assembly.GetManifestResourceStream(jarCoords);
+            using Stream platStream = assembly.GetManifestResourceStream(platCoords);
+            using Stream bombStream = assembly.GetManifestResourceStream(bombCoords);
 
             foreach(JsonDreamOrbCoords jsonOrb in new ParseJson(orbStream).parseFile<JsonDreamOrbCoords>())
                 jsonOrb.translate();
@@ -55,6 +60,10 @@ namespace YetAnotherRandoConnection {
                 jsonVine.translate();
             foreach(JsonJarCoords jsonJar in new ParseJson(jarStream).parseFile<JsonJarCoords>())
                 jsonJar.translate();
+            foreach(JsonPlatCoords jsonPlat in new ParseJson(platStream).parseFile<JsonPlatCoords>())
+                jsonPlat.translate();
+            foreach(JsonBombCoords jsonBomb in new ParseJson(bombStream).parseFile<JsonBombCoords>())
+                jsonBomb.translate();
 
             foreach((string area, string scene, int count) in Consts.RootCounts) {
                 for(int i = 1; i <= count; i++) {
@@ -81,19 +90,37 @@ namespace YetAnotherRandoConnection {
                 ObjectLocation objLoc = new() { name = name, objectName = JarCoords.placementToName[name], sceneName = scene, forceShiny = false, flingType = FlingType.Everywhere };
                 DefineLoc(objLoc, scene, "pin_soul_jar", coords.x, coords.y);
             }
+
+            foreach(string name in Consts.HivePlatNames) {
+                string scene = HivePlatCoords.placementToPosition[name].Item1;
+                Vector2 coords = HivePlatCoords.placementToPosition[name].Item2;
+                HivePlatformLocation hpLoc = new() { name = name, sceneName = scene };
+                DefineLoc(hpLoc, scene, "pin_hive_platform", coords.x, coords.y);
+            }
+
+            foreach(string name in Consts.EggBombNames) {
+                string scene = EggBombCoords.placementToPosition[name].Item1;
+                Vector2 coords = EggBombCoords.placementToPosition[name].Item2;
+                JellyEggBombLocation bombLoc = new() { name = name, sceneName = scene };
+                DefineLoc(bombLoc, scene, "pin_egg_bomb", coords.x, coords.y);
+            }
+
+            TelescopeLocation teleLoc = new() { name = Consts.Telescope, sceneName = SceneNames.Ruins2_Watcher_Room };
+            DefineLoc(teleLoc, SceneNames.Ruins2_Watcher_Room, "pin_telescope", 21f, 137f);
         }
 
         public static void DefineItems() {
             EssenceItem orbItem = EssenceItem.MakeEssenceItem(1);
             orbItem.name = Consts.EssenceOrb;
-            AddTag(orbItem);
+            InteropTag tag = AddTag(orbItem);
+            tag.Properties["PinSprite"] = new EmbeddedSprite("pin_dream_orb");
             Finder.DefineCustomItem(orbItem);
 
             System.Random rand = new();
             foreach(string vName in Consts.VineNames) {
                 VoidItem vineItem = new() { name = vName };
-                InteropTag tag = AddTag(vineItem);
-                tag.Properties["PinSprite"] = new EmbeddedSprite("pin_vine");
+                InteropTag tag1 = AddTag(vineItem);
+                tag1.Properties["PinSprite"] = new EmbeddedSprite("pin_vine");
                 vineItem.UIDef = new MsgUIDef {
                     name = new BoxedString(clean(vName)),
                     shopDesc = PullRandomVine(rand),
@@ -123,6 +150,27 @@ namespace YetAnotherRandoConnection {
                 sprite = new ItemChangerSprite("ShopIcons.Soul")
             };
             Finder.DefineCustomItem(jarItem);
+
+            VoidItem bombItem = new() { name = Consts.EggBomb };
+            InteropTag tag4 = AddTag(bombItem);
+            tag4.Properties["PinSprite"] = new EmbeddedSprite("pin_egg_bomb");
+            bombItem.UIDef = new MsgUIDef {
+                name = new BoxedString(clean(Consts.EggBomb)),
+                shopDesc = new BoxedString("Plucked straight from an ooma nest, they make the spiciest of omelettes."),
+                sprite = new EmbeddedSprite("pin_egg_bomb")
+            };
+            bombItem.OnGive += sploded;
+            Finder.DefineCustomItem(bombItem);
+
+            VoidItem telescopeItem = new() { name = Consts.Telescope };
+            InteropTag tag5 = AddTag(telescopeItem);
+            tag5.Properties["PinSprite"] = new EmbeddedSprite("pin_telescope");
+            telescopeItem.UIDef = new MsgUIDef {
+                name = new BoxedString(clean(Consts.Telescope)),
+                shopDesc = new BoxedString("Watcher? I hardly know her!"),
+                sprite = new EmbeddedSprite("pin_telescope")
+            };
+            Finder.DefineCustomItem(telescopeItem);
         }
 
         public static InteropTag AddTag(TaggableObject obj) {
@@ -148,6 +196,18 @@ namespace YetAnotherRandoConnection {
             if(GameManager.instance.sceneName == SceneNames.Ruins1_28) {
                 GameObject.Find("Chain Platform").GetComponent<PlayMakerFSM>().SendEvent("REMOTECUT");
             }
+        }
+
+        private static void sploded(ReadOnlyGiveEventArgs args) {
+            GameObject explosion = GameManager.instance.gameObject.FindGameObjectInChildren("Gas Explosion Recycle M(Clone)");
+            Vector3 position;
+            if(args == null || args.Transform == null) {
+                position = HeroController.instance.transform.position;
+            }
+            else {
+                position = args.Transform.position;
+            }
+            GameObject.Instantiate(explosion, position, Quaternion.identity).SetActive(true);
         }
 
         private static string clean(string name) {

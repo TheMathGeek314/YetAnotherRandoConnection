@@ -24,7 +24,7 @@ namespace YetAnotherRandoConnection {
 
         public override List<(string, string)> GetPreloadNames() {
             return [
-                ("Ruins1_31", "Ruins Vial Empty")
+                ("Ruins1_31", "Ruins Vial Empty"),
             ];
         }
     }

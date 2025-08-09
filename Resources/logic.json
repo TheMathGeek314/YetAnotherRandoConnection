@@ -2066,5 +2066,193 @@
   {
     "name": "Soul_Jar-Lighthouse_Dupe",
     "logic": "*Soul_Jar-Lighthouse"
+  },
+  {
+    "name": "Hive_Platform-Lower_East",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Hive_Platform-Lower_North",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Hive_Platform-Lower_South",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Hive_Platform-Lower_West",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Hive_Platform-Upper_Right",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Hive_Platform-Upper_Left",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Hive_Platform-East_Right",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Hive_Platform-East_Middle",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Map_Right",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Map_Left",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Tall_Room_Left",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Tall_Room_Right",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Corner_1",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Corner_2",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_End",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Entrance",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Exit",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Left_1",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Left_2",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Lower_1",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Lower_2",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Lower_3",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Middle_1",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Middle_2",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Middle_3",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Middle_4",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Middle_5",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Middle_6",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Middle_7",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Middle_8",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Middle_9",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Middle_10",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Middle_11",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Middle_13",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Middle_14",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Middle_12",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Right_1",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Right_2",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Upper_1",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Upper_2",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Upper_3",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Upper_4",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Upper_5",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Upper_6",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Upper_7",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Egg_Bomb-Notch_Upper_8",
+    "logic": "*Whispering_Root-Hive"
+  },
+  {
+    "name": "Lurien's_Telescope",
+    "logic": "Ruins2_Watcher_Room[bot1]"
   }
 ]

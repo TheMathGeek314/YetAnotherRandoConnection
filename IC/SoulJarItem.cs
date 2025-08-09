@@ -11,17 +11,11 @@ namespace YetAnotherRandoConnection {
             soulTotemSubtype = SoulTotemSubtype.B;
             UIDef = new MsgUIDef() {
                 name = new BoxedString("Soul Refill"),
-                shopDesc = new BoxedString("idk lorem ipsum yahoo.com or something"),
+                shopDesc = new BoxedString("Will that be CACHE or CREDIT?"),
                 sprite = new ItemChangerSprite("ShopIcons.Soul")
             };
         }
 
         public override string GetPreferredContainer() => Consts.SoulJar;
-
-        /*public override void GiveImmediate(GiveInfo info) {
-            if(info.Container != Consts.SoulJar) {
-                base.GiveImmediate(info);
-            }
-        }*/
     }
 }
