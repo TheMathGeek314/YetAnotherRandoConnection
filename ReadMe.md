@@ -1,3 +1,31 @@
 # YetAnotherRandoConnection
 
-A mod for the game Hollow Knight.
+A Randomizer connection with assorted additions including:
+- **Dream Orbs**
+	- Every orb from a whispering root is now its own check
+	- This adds 482 new locations and 1-essence items
+	- Whispering Root locations still grant 1 item on completion, but root essence items are removed when orbs are enabled
+- **Vines**
+	- Cutting vines will now grant a check instead of dropping the platform
+	- Obtaining a vine item will activate the platform instead
+	- This adds 19 vine items and locations, as well as 1 chain item and location
+	- When enabled, Lower Greenpath is removed from start locations
+	- If *CondensedSpoilerLogger* is installed, useful vines will have their own section
+- **Soul Jars**
+	- The jars in Sanctum are now checks
+	- This adds 13 locations in Sanctum, 2 locations in Abyss, and 15 soul refill items
+- **Hive Platforms**
+	- The breakable platforms in Hive are now checks
+	- The 8 platforms that are with reach of a Hive Guardian (big bee) will grant items when broken
+	- There are no corresponding items, this setting adds only locations
+- **Jelly Egg Bombs**
+	- The explosive eggs in Fog Canyon are now checks
+	- Breaking an egg location in any way will grant an item instead of exploding
+	- Obtaining an egg item will trigger an explosion at the check location
+	- In cases where the check location is not viable, the explosion will trigger at the knight's location
+	- This adds 38 new locations and items
+- **Telescope**
+	- Looking through Lurien's telescope will grant a check
+	- There is a minor change to the telescope cinematic
+	- This adds 1 new location and item
+	- The telescope item has no effect

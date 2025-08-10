@@ -1,6 +1,7 @@
 ﻿using ItemChanger;
 using RandomizerMod.RandomizerData;
 using RandomizerMod.RC;
+using System.Collections.Generic;
 
 namespace YetAnotherRandoConnection {
     public class RequestModifier {
@@ -13,6 +14,7 @@ namespace YetAnotherRandoConnection {
             RequestBuilder.OnUpdate.Subscribe(-100, ApplyTelescopeDef);
             RequestBuilder.OnUpdate.Subscribe(-499, SetupItems);
             RequestBuilder.OnUpdate.Subscribe(1200, RemoveRoots);
+            RequestBuilder.OnUpdate.Subscribe(-499.5f, DefinePools);
         }
 
         private static void AddAndEditLocation(RequestBuilder rb, string name, FlingType flingType, bool progressionPenalty, string scene) {
@@ -91,6 +93,7 @@ namespace YetAnotherRandoConnection {
             rb.EditItemRequest(Consts.EssenceOrb, info => {
                 info.getItemDef = () => new ItemDef() {
                     Name = Consts.EssenceOrb,
+                    Pool = PoolNames.Root,
                     MajorItem = false,
                     PriceCap = 1
                 };
@@ -103,6 +106,7 @@ namespace YetAnotherRandoConnection {
                 rb.EditItemRequest(vine, info => {
                     info.getItemDef = () => new ItemDef() {
                         Name = vine,
+                        Pool = "Vines",
                         MajorItem = false,
                         PriceCap = 50
                     };
@@ -114,6 +118,7 @@ namespace YetAnotherRandoConnection {
             rb.EditItemRequest(Consts.Chain, info => {
                 info.getItemDef = () => new ItemDef() {
                     Name = Consts.Chain,
+                    Pool = "Vines",
                     MajorItem = false,
                     PriceCap = 50
                 };
@@ -125,6 +130,7 @@ namespace YetAnotherRandoConnection {
             rb.EditItemRequest(Consts.SoulJar, info => {
                 info.getItemDef = () => new ItemDef() {
                     Name = "Soul Refill",
+                    Pool = PoolNames.Soul,
                     MajorItem = false,
                     PriceCap = 1
                 };
@@ -136,6 +142,7 @@ namespace YetAnotherRandoConnection {
             rb.EditItemRequest(Consts.EggBomb, info => {
                 info.getItemDef = () => new ItemDef() {
                     Name = Consts.EggBomb,
+                    Pool = "EggBombs",
                     MajorItem = false,
                     PriceCap = 100
                 };
@@ -147,6 +154,7 @@ namespace YetAnotherRandoConnection {
             rb.EditItemRequest(Consts.Telescope, info => {
                 info.getItemDef = () => new ItemDef() {
                     Name = Consts.Telescope,
+                    Pool = "Telescope",
                     MajorItem = false,
                     PriceCap = 1
                 };
@@ -159,6 +167,95 @@ namespace YetAnotherRandoConnection {
         private static void RemoveRoots(RequestBuilder rb) {
             if(YetAnotherRandoConnection.Settings.DreamOrbs) {
                 rb.RemoveItemsWhere(item => item.StartsWith("Whispering_Root-"));
+            }
+        }
+
+        private static void DefinePools(RequestBuilder rb) {
+            GlobalSettings ys = YetAnotherRandoConnection.Settings;
+            if(!ys.Any)
+                return;
+            if(rb.gs.SplitGroupSettings.RandomizeOnStart) {
+                if(ys.VineGroup >= 0 && ys.VineGroup <= 2) {
+                    ys.VineGroup = rb.rng.Next(3);
+                }
+                if(ys.HivePlatformGroup >= 0 && ys.HivePlatformGroup <= 2) {
+                    ys.HivePlatformGroup = rb.rng.Next(3);
+                }
+                if(ys.EggBombGroup >= 0 && ys.EggBombGroup <= 2) {
+                    ys.EggBombGroup = rb.rng.Next(3);
+                }
+                if(ys.TelescopeGroup >= 0 && ys.TelescopeGroup <= 2) {
+                    ys.TelescopeGroup = rb.rng.Next(3);
+                }
+            }
+
+            ItemGroupBuilder[] myGroups = [null, null, null, null];
+            int[] groupSettings = [ys.VineGroup, ys.HivePlatformGroup, ys.EggBombGroup, ys.TelescopeGroup];
+            for(int i = 0; i < groupSettings.Length; i++) {
+                if(groupSettings[i] > 0) {
+                    string label = RBConsts.SplitGroupPrefix + myGroups[i];
+                    foreach(ItemGroupBuilder igb in rb.EnumerateItemGroups()) {
+                        if(igb.label == label) {
+                            myGroups[i] = igb;
+                            break;
+                        }
+                    }
+                    myGroups[i] ??= rb.MainItemStage.AddItemGroup(label);
+                }
+            }
+
+            rb.OnGetGroupFor.Subscribe(0.01f, ResolveYarcGroup);
+            bool ResolveYarcGroup(RequestBuilder rb, string item, RequestBuilder.ElementType type, out GroupBuilder gb) {
+                if(type == RequestBuilder.ElementType.Item) {
+                    if(item == Consts.EssenceOrb) {
+                        gb = rb.GetGroupFor(ItemNames.Whispering_Root_Crossroads);
+                        return true;
+                    }
+                    if(Consts.VineNames.Contains(item) || item == Consts.Chain) {
+                        gb = myGroups[0];
+                        return true;
+                    }
+                    if(item == Consts.SoulJar) {
+                        gb = rb.GetGroupFor(ItemNames.Soul_Totem_A);
+                        return true;
+                    }
+                    if(item == Consts.EggBomb) {
+                        gb = myGroups[2];
+                        return true;
+                    }
+                    if(item == Consts.Telescope) {
+                        gb = myGroups[3];
+                        return true;
+                    }
+                }
+                else if(type == RequestBuilder.ElementType.Location) {
+                    if(item.StartsWith("DreamOrb_")) {
+                        gb = rb.GetGroupFor(ItemNames.Whispering_Root_Crossroads);
+                        return true;
+                    }
+                    if(Consts.VineNames.Contains(item) || item == Consts.Chain) {
+                        gb = myGroups[0];
+                        return true;
+                    }
+                    if(Consts.JarNames.Contains(item)) {
+                        gb = rb.GetGroupFor(ItemNames.Soul_Totem_A);
+                        return true;
+                    }
+                    if(Consts.HivePlatNames.Contains(item)) {
+                        gb = myGroups[1];
+                        return true;
+                    }
+                    if(Consts.EggBombNames.Contains(item)) {
+                        gb = myGroups[2];
+                        return true;
+                    }
+                    if(item == Consts.Telescope) {
+                        gb = myGroups[3];
+                        return true;
+                    }
+                }
+                gb = default;
+                return false;
             }
         }
     }

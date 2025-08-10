@@ -8,5 +8,17 @@
         public bool Telescope = false;
 
         public bool Any => DreamOrbs || Vines || SoulJars || HivePlatforms || JellyEggBombs || Telescope;
+
+        [MenuChanger.Attributes.MenuRange(-1, 99)]
+        public int VineGroup = -1;
+
+        [MenuChanger.Attributes.MenuRange(-1, 99)]
+        public int HivePlatformGroup = -1;
+
+        [MenuChanger.Attributes.MenuRange(-1, 99)]
+        public int EggBombGroup = -1;
+
+        [MenuChanger.Attributes.MenuRange(-1, 99)]
+        public int TelescopeGroup = -1;
     }
 }
