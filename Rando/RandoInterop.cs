@@ -201,11 +201,17 @@ namespace YetAnotherRandoConnection {
         private static void sploded(ReadOnlyGiveEventArgs args) {
             GameObject explosion = GameManager.instance.gameObject.FindGameObjectInChildren("Gas Explosion Recycle M(Clone)");
             Vector3 position;
-            if(args == null || args.Transform == null) {
-                position = HeroController.instance.transform.position;
+            if(args != null && args.Transform != null) {
+                position = args.Transform.position;
             }
             else {
-                position = args.Transform.position;
+                GameObject source = GameObject.Find(EggBombCoords.placementToName[args.Placement.Name]);
+                if(source != null) {
+                    position = source.transform.position;
+                }
+                else {
+                    position = HeroController.instance.transform.position;
+                }
             }
             GameObject.Instantiate(explosion, position, Quaternion.identity).SetActive(true);
         }
