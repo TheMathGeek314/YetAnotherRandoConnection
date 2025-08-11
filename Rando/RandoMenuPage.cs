@@ -9,7 +9,7 @@ namespace YetAnotherRandoConnection {
     public class RandoMenuPage {
         internal MenuPage YarcRandoPage;
         internal MenuElementFactory<GlobalSettings> yarcMEF;
-        internal VerticalItemPanel yarcVIP;
+        internal GridItemPanel yarcGIP;
 
         internal SmallButton JumpToYarcButton;
 
@@ -40,7 +40,7 @@ namespace YetAnotherRandoConnection {
         private RandoMenuPage(MenuPage landingPage) {
             YarcRandoPage = new MenuPage(Localize("YetAnotherRandoConnection"), landingPage);
             yarcMEF = new(YarcRandoPage, YetAnotherRandoConnection.Settings);
-            yarcVIP = new(YarcRandoPage, new(0, 300), 75f, true, yarcMEF.Elements);
+            yarcGIP = new(YarcRandoPage, new(0, 300), 3, SpaceParameters.VSPACE_LARGE, SpaceParameters.HSPACE_SMALL, true, yarcMEF.Elements);
             Localize(yarcMEF);
             foreach(IValueElement e in yarcMEF.Elements) {
                 e.SelfChanged += obj => SetTopLevelButtonColor();
