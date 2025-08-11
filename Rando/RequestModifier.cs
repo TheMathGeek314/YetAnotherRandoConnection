@@ -98,17 +98,27 @@ namespace YetAnotherRandoConnection {
             if(YetAnotherRandoConnection.Settings.DreamOrbs) {
                 rb.AddItemByName(Consts.EssenceOrb, 482);
             }
+            // If not randomized, we won't add these to vanilla since base rando also handles trees.
 
-            foreach(string vine in Consts.VineNames) {
-                rb.EditItemRequest(vine, info => {
-                    info.getItemDef = () => new ItemDef() {
+            foreach (string vine in Consts.VineNames)
+            {
+                rb.EditItemRequest(vine, info =>
+                {
+                    info.getItemDef = () => new ItemDef()
+                    {
                         Name = vine,
                         MajorItem = false,
                         PriceCap = 50
                     };
                 });
-                if(YetAnotherRandoConnection.Settings.Vines) {
+                if (YetAnotherRandoConnection.Settings.Vines)
+                {
                     rb.AddItemByName(vine);
+                }
+                else
+                {
+                    // Since vines have logical effects, rando needs to place them in request if not randomized.
+                    rb.AddToVanilla(vine, vine);
                 }
             }
             rb.EditItemRequest(Consts.Chain, info => {
@@ -118,7 +128,7 @@ namespace YetAnotherRandoConnection {
                     PriceCap = 50
                 };
             });
-            if(YetAnotherRandoConnection.Settings.Vines) {
+            if (YetAnotherRandoConnection.Settings.Vines) {
                 rb.AddItemByName(Consts.Chain);
             }
 
@@ -157,7 +167,8 @@ namespace YetAnotherRandoConnection {
         }
 
         private static void RemoveRoots(RequestBuilder rb) {
-            if(YetAnotherRandoConnection.Settings.DreamOrbs) {
+            if (YetAnotherRandoConnection.Settings.DreamOrbs)
+            {
                 rb.RemoveItemsWhere(item => item.StartsWith("Whispering_Root-"));
             }
         }
