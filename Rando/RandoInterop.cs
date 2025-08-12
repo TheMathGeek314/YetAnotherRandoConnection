@@ -154,6 +154,7 @@ namespace YetAnotherRandoConnection {
             VoidItem bombItem = new() { name = Consts.EggBomb };
             InteropTag tag4 = AddTag(bombItem);
             tag4.Properties["PinSprite"] = new EmbeddedSprite("pin_egg_bomb");
+            bombItem.AddTag<PersistentItemTag>().Persistence = Persistence.Persistent;
             bombItem.UIDef = new MsgUIDef {
                 name = new BoxedString(clean(Consts.EggBomb)),
                 shopDesc = new BoxedString("Plucked straight from an ooma nest, they make the spiciest of omelettes."),

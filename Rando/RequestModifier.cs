@@ -103,24 +103,19 @@ namespace YetAnotherRandoConnection {
             }
             // If not randomized, we won't add these to vanilla since base rando also handles trees.
 
-            foreach (string vine in Consts.VineNames)
-            {
-                rb.EditItemRequest(vine, info =>
-                {
-                    info.getItemDef = () => new ItemDef()
-                    {
+            foreach(string vine in Consts.VineNames) {
+                rb.EditItemRequest(vine, info => {
+                    info.getItemDef = () => new ItemDef() {
                         Name = vine,
                         Pool = "Vines",
                         MajorItem = false,
                         PriceCap = 50
                     };
                 });
-                if (YetAnotherRandoConnection.Settings.Vines)
-                {
+                if(YetAnotherRandoConnection.Settings.Vines) {
                     rb.AddItemByName(vine);
                 }
-                else
-                {
+                else {
                     // Since vines have logical effects, rando needs to place them in request if not randomized.
                     rb.AddToVanilla(vine, vine);
                 }
@@ -133,7 +128,7 @@ namespace YetAnotherRandoConnection {
                     PriceCap = 50
                 };
             });
-            if (YetAnotherRandoConnection.Settings.Vines) {
+            if(YetAnotherRandoConnection.Settings.Vines) {
                 rb.AddItemByName(Consts.Chain);
             }
 
@@ -175,8 +170,7 @@ namespace YetAnotherRandoConnection {
         }
 
         private static void RemoveRoots(RequestBuilder rb) {
-            if (YetAnotherRandoConnection.Settings.DreamOrbs)
-            {
+            if(YetAnotherRandoConnection.Settings.DreamOrbs) {
                 rb.RemoveItemsWhere(item => item.StartsWith("Whispering_Root-"));
             }
         }
@@ -204,7 +198,7 @@ namespace YetAnotherRandoConnection {
             int[] groupSettings = [ys.VineGroup, ys.HivePlatformGroup, ys.EggBombGroup, ys.TelescopeGroup];
             for(int i = 0; i < groupSettings.Length; i++) {
                 if(groupSettings[i] > 0) {
-                    string label = RBConsts.SplitGroupPrefix + myGroups[i];
+                    string label = RBConsts.SplitGroupPrefix + groupSettings[i];
                     foreach(ItemGroupBuilder igb in rb.EnumerateItemGroups()) {
                         if(igb.label == label) {
                             myGroups[i] = igb;
