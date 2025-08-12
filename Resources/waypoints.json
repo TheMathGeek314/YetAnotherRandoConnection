@@ -8,5 +8,9 @@
         "name": "Fungus1_06",
         "logic": "Fungus1_06[left1] + (Vine-Cornifer_Left_2 | ENEMYPOGOS | RIGHTDASH | RIGHTSUPERDASH | RIGHTCLAW | WINGS | SPELLAIRSTALL + $CASTSPELL[before:AREASOUL,after:ROOMSOUL]) | Fungus1_06[bot1]",
         "stateless": false
+    },
+    {
+        "name": "Fungus3_28",
+        "logic": "Fungus3_28[right1] + (ACID | ACIDSKIPS + (LEFTSKIPACID | WINGS + LEFTDASH | WINGS + RIGHTCLAW + SPELLAIRSTALL + $CASTSPELL[before:ROOMSOUL] | DAMAGEBOOSTS + $TAKEDAMAGE + FULLCLAW + FULLDASH))"
     }
 ]
