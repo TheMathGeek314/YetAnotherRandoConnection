@@ -207,7 +207,7 @@ namespace YetAnotherRandoConnection {
             }
             else {
                 if(EggBombCoords.placementToName.TryGetValue(args.Placement.Name, out string pos)) {
-                    //mostly for vanilla egg locations
+                    //for vanilla egg locations
                     GameObject source = GameObject.Find(pos);
                     if(source != null) {
                         position = source.transform.position;

@@ -1,7 +1,6 @@
 ﻿using ItemChanger;
 using RandomizerMod.RandomizerData;
 using RandomizerMod.RC;
-using System.Collections.Generic;
 
 namespace YetAnotherRandoConnection {
     public class RequestModifier {
@@ -100,6 +99,16 @@ namespace YetAnotherRandoConnection {
             });
             if(YetAnotherRandoConnection.Settings.DreamOrbs) {
                 rb.AddItemByName(Consts.EssenceOrb, 482);
+                if(!rb.gs.PoolSettings.WhisperingRoots) {
+                    foreach(string root in new string[] {
+                        "Crossroads", "Greenpath", "Leg_Eater", "Mantis_Village",
+                        "Deepnest", "Queens_Gardens", "Kingdoms_Edge", "Waterways",
+                        "City", "Resting_Grounds", "Spirits_Glade", "Crystal_Peak",
+                        "Howling_Cliffs", "Ancestral_Mound", "Hive"
+                    }) {
+                        rb.RemoveFromVanilla($"Whispering_Root-{root}");
+                    }
+                }
             }
             // If not randomized, we won't add these to vanilla since base rando also handles trees.
 

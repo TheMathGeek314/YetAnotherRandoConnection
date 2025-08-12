@@ -10,7 +10,7 @@ using Satchel;
 namespace YetAnotherRandoConnection {
     public class SoulJarContainer: Container {
         public override string Name => Consts.SoulJar;
-        //public override bool SupportsDrop => true;
+        public override bool SupportsDrop => true;
         public override bool SupportsInstantiate => true;
 
         public static GameObject jarPrefab;
