@@ -49,7 +49,8 @@ namespace YetAnotherRandoConnection {
                     GiveInfo gi = new() {
                         FlingType = FlingType.DirectDeposit,
                         Container = Container.Unknown,
-                        MessageType = MessageType.Corner
+                        MessageType = MessageType.Corner,
+                        Transform = self.gameObject.transform
                     };
                     Ref.Settings.Placements[Consts.Chain].GiveAll(gi);
                     self.FsmVariables.GetFsmGameObject("Vine").Value.SetActive(false);

@@ -66,7 +66,8 @@ namespace YetAnotherRandoConnection {
                 GiveInfo gi = new() {
                     FlingType = FlingType.StraightUp,
                     Container = Container.Unknown,
-                    MessageType = MessageType.Corner
+                    MessageType = MessageType.Corner,
+                    Transform = j.transform
                 };
                 ap.GiveAll(gi);
             });

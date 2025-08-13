@@ -9,7 +9,6 @@ using ItemChanger.Items;
 using ItemChanger.Locations;
 using ItemChanger.Tags;
 using ItemChanger.UIDefs;
-using Satchel;
 
 namespace YetAnotherRandoConnection {
     internal static class RandoInterop {
@@ -118,49 +117,17 @@ namespace YetAnotherRandoConnection {
 
             System.Random rand = new();
             foreach(string vName in Consts.VineNames) {
-                VoidItem vineItem = new() { name = vName };
-                InteropTag tag1 = AddTag(vineItem);
-                tag1.Properties["PinSprite"] = new EmbeddedSprite("pin_vine");
-                vineItem.UIDef = new MsgUIDef {
-                    name = new BoxedString(clean(vName)),
-                    shopDesc = PullRandomVine(rand),
-                    sprite = new EmbeddedSprite("pin_vine")
-                };
-                vineItem.OnGive += remoteVineCut;
+                VineItem vineItem = new(vName, PullRandomVine(rand));
                 Finder.DefineCustomItem(vineItem);
             }
 
-            VoidItem chainItem = new() { name = Consts.Chain };
-            InteropTag tag2 = AddTag(chainItem);
-            tag2.Properties["PinSprite"] = new EmbeddedSprite("pin_vine");
-            chainItem.UIDef = new MsgUIDef {
-                name = new BoxedString(clean(Consts.Chain)),
-                shopDesc = PullRandomVine(rand),
-                sprite = new EmbeddedSprite("pin_vine")
-            };
-            chainItem.OnGive += remoteChainCut;
+            ChainItem chainItem = new(PullRandomVine(rand));
             Finder.DefineCustomItem(chainItem);
 
-            SoulJarItem jarItem = new() { name = Consts.SoulJar };
-            InteropTag tag3 = AddTag(jarItem);
-            tag3.Properties["PinSprite"] = new EmbeddedSprite("pin_soul_jar");
-            jarItem.UIDef = new MsgUIDef {
-                name = new BoxedString("Soul Refill"),
-                shopDesc = new BoxedString("Will that be CACHE or CREDIT?"),
-                sprite = new ItemChangerSprite("ShopIcons.Soul")
-            };
+            SoulJarItem jarItem = new();
             Finder.DefineCustomItem(jarItem);
 
-            VoidItem bombItem = new() { name = Consts.EggBomb };
-            InteropTag tag4 = AddTag(bombItem);
-            tag4.Properties["PinSprite"] = new EmbeddedSprite("pin_egg_bomb");
-            bombItem.AddTag<PersistentItemTag>().Persistence = Persistence.Persistent;
-            bombItem.UIDef = new MsgUIDef {
-                name = new BoxedString(clean(Consts.EggBomb)),
-                shopDesc = new BoxedString("Plucked straight from an ooma nest, they make the spiciest of omelettes."),
-                sprite = new EmbeddedSprite("pin_egg_bomb")
-            };
-            bombItem.OnGive += sploded;
+            EggBombItem bombItem = new();
             Finder.DefineCustomItem(bombItem);
 
             VoidItem telescopeItem = new() { name = Consts.Telescope };
@@ -186,44 +153,7 @@ namespace YetAnotherRandoConnection {
             return new BoxedString(description);
         }
 
-        private static void remoteVineCut(ReadOnlyGiveEventArgs args) {
-            string name = args.Item.name;
-            if(GameManager.instance.sceneName == VineCoords.placementToPosition[name].Item1) {
-                GameObject.Find(VineCoords.placementToName[name]).GetComponentInChildren<VinePlatformCut>().Cut();
-            }
-        }
-
-        private static void remoteChainCut(ReadOnlyGiveEventArgs args) {
-            if(GameManager.instance.sceneName == SceneNames.Ruins1_28) {
-                GameObject.Find("Chain Platform").GetComponent<PlayMakerFSM>().SendEvent("REMOTECUT");
-            }
-        }
-
-        private static void sploded(ReadOnlyGiveEventArgs args) {
-            GameObject explosion = GameManager.instance.gameObject.FindGameObjectInChildren("Gas Explosion Recycle M(Clone)");
-            Vector3 position;
-            if(args != null && args.Transform != null) {
-                position = args.Transform.position;
-            }
-            else {
-                if(EggBombCoords.placementToName.TryGetValue(args.Placement.Name, out string pos)) {
-                    //for vanilla egg locations
-                    GameObject source = GameObject.Find(pos);
-                    if(source != null) {
-                        position = source.transform.position;
-                    }
-                    else {
-                        position = HeroController.instance.transform.position;
-                    }
-                }
-                else {
-                    position = HeroController.instance.transform.position;
-                }
-            }
-            GameObject.Instantiate(explosion, position, Quaternion.identity).SetActive(true);
-        }
-
-        private static string clean(string name) {
+        public static string clean(string name) {
             return name.Replace("_", " ").Replace("-", " - ");
         }
     }

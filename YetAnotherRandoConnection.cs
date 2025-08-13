@@ -5,7 +5,7 @@ using UnityEngine;
 namespace YetAnotherRandoConnection {
     public class YetAnotherRandoConnection: Mod, IGlobalSettings<GlobalSettings> {
         new public string GetName() => "YetAnotherRandoConnection";
-        public override string GetVersion() => "1.0.0.0";
+        public override string GetVersion() => "1.0.0.1";
 
         public static GlobalSettings Settings { get; set; } = new();
         public void OnLoadGlobal(GlobalSettings s) => Settings = s;

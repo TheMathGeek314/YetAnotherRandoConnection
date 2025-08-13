@@ -38,7 +38,8 @@ namespace YetAnotherRandoConnection {
                 GiveInfo giveInfo = new() {
                     FlingType = FlingType.DirectDeposit,
                     Container = Container.Unknown,
-                    MessageType = MessageType.Corner
+                    MessageType = MessageType.Corner,
+                    Transform = j.transform
                 };
                 Ref.Settings.Placements[EggBombCoords.nameToPlacement[key]].GiveAll(giveInfo);
             });
