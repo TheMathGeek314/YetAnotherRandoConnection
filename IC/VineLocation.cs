@@ -123,5 +123,10 @@ namespace YetAnotherRandoConnection {
                 vine.sprites.SetActive(true);
             }
         }
+
+        public static void clearFields() {
+            groundedPlatforms.Clear();
+            fallingPlatforms.Clear();
+        }
     }
 }
