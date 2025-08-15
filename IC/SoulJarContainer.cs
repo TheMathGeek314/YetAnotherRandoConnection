@@ -61,12 +61,16 @@ namespace YetAnotherRandoConnection {
         }
 
         public override void ApplyTargetContext(GameObject obj, float x, float y, float elevation) {
-            obj.transform.position = new Vector3(x, y - elevation + 0.8719f, -0.01f);
-            obj.SetActive(true);
+            doApplyTargetContext(obj, x, y, elevation, true);
         }
 
         public override void ApplyTargetContext(GameObject obj, GameObject target, float elevation) {
-            ApplyTargetContext(obj, target.transform.position.x, target.transform.position.y, elevation);
+            doApplyTargetContext(obj, target.transform.position.x, target.transform.position.y, elevation, target.activeSelf);
+        }
+
+        private void doApplyTargetContext(GameObject obj, float x, float y, float elevation, bool active) {
+            obj.transform.position = new Vector3(x, y - elevation + 0.8719f, -0.01f);
+            obj.SetActive(active);
         }
     }
 }
