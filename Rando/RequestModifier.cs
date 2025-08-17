@@ -21,6 +21,8 @@ namespace YetAnotherRandoConnection {
             rb.AddLocationByName(name);
             rb.EditLocationRequest(name, info => {
                 info.customPlacementFetch = (factory, placement) => {
+                    if(factory.TryFetchPlacement(name, out AbstractPlacement ap1))
+                        return ap1;
                     AbstractLocation absLoc = Finder.GetLocation(name);
                     absLoc.flingType = flingType;
                     AbstractPlacement ap = absLoc.Wrap();
