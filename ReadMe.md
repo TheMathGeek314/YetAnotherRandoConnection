@@ -5,6 +5,7 @@ A Randomizer connection with assorted additions including:
 	- Every orb from a whispering root is now its own check
 	- This adds 482 new locations and 1-essence items
 	- Whispering Root locations still grant 1 item on completion, but root essence items are removed when orbs are enabled
+	- If *FStats* is installed, the number of orbs obtained will be counted and displayed
 - **Vines**
 	- Cutting vines will now grant a check instead of dropping the platform
 	- Obtaining a vine item will activate the platform instead
@@ -24,8 +25,15 @@ A Randomizer connection with assorted additions including:
 	- Obtaining an egg item will trigger an explosion at the check location
 	- In cases where the check location is not viable, the explosion will trigger at the knight's location
 	- This adds 38 new locations and items
+	- If *FStats* is installed, the number of explosions triggered will be counted and displayed, including repeats of the same location
 - **Telescope**
 	- Looking through Lurien's telescope will grant a check
 	- There is a minor change to the telescope cinematic
 	- This adds 1 new location and item
 	- The telescope item has no effect
+	- If *FStats* is installed, the stats page will show the time Telescope was obtained
+- **Scarecrow**
+	- Slashing the scarecrow near Oro will grant a check
+	- Obtaining the scarecrow will trigger The Ritual™
+	- This adds 1 new location and item
+	- If *FStats* is installed, the stats page will show the time Scarecrow was obtained
