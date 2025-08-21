@@ -1,7 +1,17 @@
 [
     {
         "name": "Can_Break_Vines",
-        "logic": "SIDESLASH | CYCLONE | GREATSLASH | ANYDASHSLASH",
+        "logic": "Can_Break_Left_Vines | Can_Break_Right_Vines",
+        "stateless": true
+    },
+    {
+        "name": "Can_Break_Left_Vines",
+        "logic": "SIDESLASH | CYCLONE | GREATSLASH | LEFTDASHSLASH",
+        "stateless": true
+    },
+    {
+        "name": "Can_Break_Right_Vines",
+        "logic": "SIDESLASH | CYCLONE | GREATSLASH | RIGHTDASHSLASH",
         "stateless": true
     },
     {

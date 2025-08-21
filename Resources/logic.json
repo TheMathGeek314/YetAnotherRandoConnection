@@ -1933,7 +1933,7 @@
   },
   {
     "name": "Vine-Cornifer_Grub",
-    "logic": "(Fungus1_06 | Fungus1_06[bot1]) + (SIDESLASH | GREATSLASH | CYCLONE | LEFTDASHSLASH + DASHMASTER + OBSCURESKIPS | RIGHTDASHSLASH)"
+    "logic": "(Fungus1_06 | Fungus1_06[bot1]) + (Can_Break_Right_Vines | LEFTDASHSLASH + DASHMASTER + OBSCURESKIPS)"
   },
   {
     "name": "Vine-Cornifer_Left_1",
@@ -1941,7 +1941,7 @@
   },
   {
     "name": "Vine-Cornifer_Left_2",
-    "logic": "(Fungus1_06[left1] | Fungus1_06[bot1]) + (SIDESLASH | GREATSLASH | CYCLONE | LEFTDASHSLASH + RIGHTCLAW + DASHMASTER + OBSCURESKIPS | RIGHTDASHSLASH)"
+    "logic": "(Fungus1_06[left1] | Fungus1_06[bot1]) + (Can_Break_Right_Vines | LEFTDASHSLASH + DASHMASTER + RIGHTCLAW + OBSCURESKIPS)"
   },
   {
     "name": "Vine-Cornifer_Left_3",
@@ -1985,11 +1985,11 @@
   },
   {
     "name": "Vine-Root_Left",
-    "logic": "(Fungus1_13[left1] | Fungus1_13[right1] + Vine-Root_Left + Vine-Root_Right + (LEFTCLAW | WINGS + Vine-Vessel_Fragment | DAMAGEBOOSTS + $TAKEDAMAGE + WINGS | WINGS + RIGHTCLAW + (LEFTDASH | LEFTSUPERDASH) | ENEMYPOGOS + $SHRIEKPOGO[2,before:AREASOUL])) + Can_Break_Vines"
+    "logic": "(Fungus1_13[left1] | Fungus1_13[right1] + Vine-Root_Left + Vine-Root_Right + (LEFTCLAW | WINGS + Vine-Vessel_Fragment | DAMAGEBOOSTS + $TAKEDAMAGE + WINGS | WINGS + RIGHTCLAW + (LEFTDASH | LEFTSUPERDASH) | ENEMYPOGOS + $SHRIEKPOGO[2,before:AREASOUL])) + (Can_Break_Right_Vines | LEFTDASHSLASH + DASHMASTER + OBSCURESKIPS + RIGHTCLAW)"
   },
   {
     "name": "Vine-Root_Right",
-    "logic": "(Fungus1_13[left1] + Vine-Root_Left + Vine-Root_Right + WINGS + (ANYCLAW | PRECISEMOVEMENT) | Fungus1_13[right1] + (LEFTCLAW | WINGS + Vine-Vessel_Fragment | DAMAGEBOOSTS + $TAKEDAMAGE + WINGS | WINGS + RIGHTCLAW + (LEFTDASH | LEFTSUPERDASH) | ENEMYPOGOS + $SHRIEKPOGO[2,before:AREASOUL])) + Can_Break_Vines"
+    "logic": "(Fungus1_13[left1] + Vine-Root_Left + Vine-Root_Right + WINGS + (ANYCLAW | PRECISEMOVEMENT) | Fungus1_13[right1] + (LEFTCLAW | WINGS + Vine-Vessel_Fragment | DAMAGEBOOSTS + $TAKEDAMAGE + WINGS | WINGS + RIGHTCLAW + (LEFTDASH | LEFTSUPERDASH) | ENEMYPOGOS + $SHRIEKPOGO[2,before:AREASOUL])) + (Can_Break_Left_Vines | RIGHTDASHSLASH + DASHMASTER + OBSCURESKIPS + LEFTCLAW)"
   },
   {
     "name": "Vine-Stag_Journal",
@@ -1997,7 +1997,7 @@
   },
   {
     "name": "Vine-Stag_Lower",
-    "logic": "(Fungus1_22[left1] | Fungus1_22[top1]) + Can_Break_Vines"
+    "logic": "(Fungus1_22[left1] | Fungus1_22[top1]) + (Can_Break_Left_Vines | RIGHTDASHSLASH + DASHMASTER + OBSCURESKIPS)"
   },
   {
     "name": "Vine-Thorns",
