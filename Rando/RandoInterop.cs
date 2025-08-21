@@ -109,10 +109,7 @@ namespace YetAnotherRandoConnection {
         }
 
         public static void DefineItems() {
-            EssenceItem orbItem = EssenceItem.MakeEssenceItem(1);
-            orbItem.name = Consts.EssenceOrb;
-            InteropTag tag = AddTag(orbItem);
-            tag.Properties["PinSprite"] = new EmbeddedSprite("pin_dream_orb");
+            DreamOrbItem orbItem = new();
             Finder.DefineCustomItem(orbItem);
 
             System.Random rand = new();
@@ -130,7 +127,7 @@ namespace YetAnotherRandoConnection {
             EggBombItem bombItem = new();
             Finder.DefineCustomItem(bombItem);
 
-            VoidItem telescopeItem = new() { name = Consts.Telescope };
+            TelescopeItem telescopeItem = new() { name = Consts.Telescope };
             InteropTag tag5 = AddTag(telescopeItem);
             tag5.Properties["PinSprite"] = new EmbeddedSprite("pin_telescope");
             telescopeItem.UIDef = new MsgUIDef {

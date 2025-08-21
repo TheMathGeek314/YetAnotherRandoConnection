@@ -1,4 +1,5 @@
-﻿using Modding;
+﻿using ItemChanger;
+using Modding;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,9 +18,12 @@ namespace YetAnotherRandoConnection {
             instance = this;
         }
 
-        public override void Initialize(Dictionary<string, Dictionary<string, GameObject>> preloadedObjects) {
+        public override void Initialize(Dictionary<string, Dictionary<string, GameObject>> preloadedObjects)
+        {
             SoulJarContainer.jarPrefab = preloadedObjects["Ruins1_31"]["Ruins Vial Empty"];
             RandoInterop.Hook();
+            if (ModHooks.GetMod("FStatsMod") is Mod)
+                FStats_Interop.Hook();
         }
 
         public override List<(string, string)> GetPreloadNames() {
