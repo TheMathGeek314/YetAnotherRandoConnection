@@ -21,8 +21,7 @@ namespace YetAnotherRandoConnection {
             };
         }
 
-        public override void GiveImmediate(GiveInfo info)
-        {
+        public override void GiveImmediate(GiveInfo info) {
             RaycastHit2D raycast = Physics2D.Raycast(HeroController.instance.transform.position + new Vector3(0, 1, 0), Vector2.up, 50, LayerMask.GetMask("Terrain"));
             Vector3 origin = raycast.collider == null ? HeroController.instance.transform.position + new Vector3(0, 50, 0) : new Vector3(raycast.point.x, raycast.point.y - 2, 0);
             SummonHoppers(origin);
