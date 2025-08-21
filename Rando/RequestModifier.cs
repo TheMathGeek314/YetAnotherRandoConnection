@@ -11,6 +11,7 @@ namespace YetAnotherRandoConnection {
             RequestBuilder.OnUpdate.Subscribe(-100, ApplyHivePlatDefs);
             RequestBuilder.OnUpdate.Subscribe(-100, ApplyEggBombDefs);
             RequestBuilder.OnUpdate.Subscribe(-100, ApplyTelescopeDef);
+            RequestBuilder.OnUpdate.Subscribe(-100, ApplyScarecrowDef);
             RequestBuilder.OnUpdate.Subscribe(-499, SetupItems);
             RequestBuilder.OnUpdate.Subscribe(1200, RemoveRoots);
             RequestBuilder.OnUpdate.Subscribe(-499.5f, DefinePools);
@@ -85,6 +86,12 @@ namespace YetAnotherRandoConnection {
         public static void ApplyTelescopeDef(RequestBuilder rb) {
             if(YetAnotherRandoConnection.Settings.Telescope) {
                 AddAndEditLocation(rb, Consts.Telescope, FlingType.DirectDeposit, false, SceneNames.Ruins2_Watcher_Room);
+            }
+        }
+
+        public static void ApplyScarecrowDef(RequestBuilder rb) {
+            if(YetAnotherRandoConnection.Settings.Scarecrow) {
+                AddAndEditLocation(rb, Consts.Scarecrow, FlingType.Everywhere, false, SceneNames.Deepnest_East_16);
             }
         }
 
@@ -179,6 +186,18 @@ namespace YetAnotherRandoConnection {
             if(YetAnotherRandoConnection.Settings.Telescope) {
                 rb.AddItemByName(Consts.Telescope);
             }
+
+            rb.EditItemRequest(Consts.Scarecrow, info => {
+                info.getItemDef = () => new ItemDef() {
+                    Name = Consts.Scarecrow,
+                    Pool = "Scarecrow",
+                    MajorItem = false,
+                    PriceCap = 800
+                };
+            });
+            if(YetAnotherRandoConnection.Settings.Scarecrow) {
+                rb.AddItemByName(Consts.Scarecrow);
+            }
         }
 
         private static void RemoveRoots(RequestBuilder rb) {
@@ -204,10 +223,13 @@ namespace YetAnotherRandoConnection {
                 if(ys.TelescopeGroup >= 0 && ys.TelescopeGroup <= 2) {
                     ys.TelescopeGroup = rb.rng.Next(3);
                 }
+                if(ys.ScarecrowGroup >= 0 && ys.ScarecrowGroup <= 2) {
+                    ys.ScarecrowGroup = rb.rng.Next(3);
+                }
             }
 
-            ItemGroupBuilder[] myGroups = [null, null, null, null];
-            int[] groupSettings = [ys.VineGroup, ys.HivePlatformGroup, ys.EggBombGroup, ys.TelescopeGroup];
+            ItemGroupBuilder[] myGroups = [null, null, null, null, null];
+            int[] groupSettings = [ys.VineGroup, ys.HivePlatformGroup, ys.EggBombGroup, ys.TelescopeGroup, ys.ScarecrowGroup];
             for(int i = 0; i < groupSettings.Length; i++) {
                 if(groupSettings[i] > 0) {
                     string label = RBConsts.SplitGroupPrefix + groupSettings[i];
@@ -244,6 +266,10 @@ namespace YetAnotherRandoConnection {
                         gb = myGroups[3];
                         return true;
                     }
+                    if(item == Consts.Scarecrow) {
+                        gb = myGroups[4];
+                        return true;
+                    }
                 }
                 else if(type == RequestBuilder.ElementType.Location) {
                     if(item.StartsWith("DreamOrb_")) {
@@ -268,6 +294,10 @@ namespace YetAnotherRandoConnection {
                     }
                     if(item == Consts.Telescope) {
                         gb = myGroups[3];
+                        return true;
+                    }
+                    if(item == Consts.Scarecrow) {
+                        gb = myGroups[4];
                         return true;
                     }
                 }

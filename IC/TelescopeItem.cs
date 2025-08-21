@@ -1,7 +1,7 @@
-﻿using ItemChanger;
+﻿using Modding;
+using ItemChanger;
 using ItemChanger.Tags;
 using ItemChanger.UIDefs;
-using Modding;
 
 namespace YetAnotherRandoConnection {
     public class TelescopeItem: AbstractItem {
@@ -10,15 +10,15 @@ namespace YetAnotherRandoConnection {
             InteropTag tag = RandoInterop.AddTag(this);
             tag.Properties["PinSprite"] = new EmbeddedSprite("pin_telescope");
             UIDef = new MsgUIDef {
-                name = new BoxedString(name.Replace("_", " ")),
+                name = new BoxedString(RandoInterop.clean(name)),
                 shopDesc = new BoxedString("Watcher? I hardly know her!"),
                 sprite = new EmbeddedSprite("pin_telescope")
             };
         }
 
         public override void GiveImmediate(GiveInfo info) {
-            if (ModHooks.GetMod("FStatsMod") is Mod)
-                YARCStats.AddEntry(name.Replace("_", " "));
+            if(ModHooks.GetMod("FStatsMod") is Mod)
+                YARCStats.AddEntry(RandoInterop.clean(name));
         }
     }
 }

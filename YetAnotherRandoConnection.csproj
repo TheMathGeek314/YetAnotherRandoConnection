@@ -61,6 +61,7 @@
     <None Remove="Resources\Pins\pin_dream_orb.png" />
     <None Remove="Resources\Pins\pin_egg_bomb.png" />
     <None Remove="Resources\Pins\pin_hive_platform.png" />
+    <None Remove="Resources\Pins\pin_scarecrow.png" />
     <None Remove="Resources\Pins\pin_soul_jar.png" />
     <None Remove="Resources\Pins\pin_telescope.png" />
     <None Remove="Resources\Pins\pin_vine.png" />
@@ -78,6 +79,7 @@
     <EmbeddedResource Include="Resources\Pins\pin_dream_orb.png" />
     <EmbeddedResource Include="Resources\Pins\pin_egg_bomb.png" />
     <EmbeddedResource Include="Resources\Pins\pin_hive_platform.png" />
+    <EmbeddedResource Include="Resources\Pins\pin_scarecrow.png" />
     <EmbeddedResource Include="Resources\Pins\pin_soul_jar.png" />
     <EmbeddedResource Include="Resources\Pins\pin_telescope.png" />
     <EmbeddedResource Include="Resources\Pins\pin_vine.png" />

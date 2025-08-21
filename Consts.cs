@@ -8,6 +8,7 @@ namespace YetAnotherRandoConnection {
         public const string SoulJar = "Soul_Jar";
         public const string EggBomb = "Jelly_Egg_Bomb";
         public const string Telescope = "Lurien's_Telescope";
+        public const string Scarecrow = "Scarecrow";
 
         public static readonly List<(string, string, int)> RootCounts = [
             ("Crossroads", SceneNames.Crossroads_07, 29),

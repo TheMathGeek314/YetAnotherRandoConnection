@@ -19,20 +19,17 @@ namespace YetAnotherRandoConnection {
             };
         }
 
-        public override void GiveImmediate(GiveInfo info)
-        {
+        public override void GiveImmediate(GiveInfo info) {
             GameObject explosion = GameManager.instance.gameObject.FindGameObjectInChildren("Gas Explosion Recycle M(Clone)");
             Vector3 position;
-            if (info != null && info.Transform != null)
-            {
+            if(info != null && info.Transform != null) {
                 position = info.Transform.position;
             }
-            else
-            {
+            else {
                 position = HeroController.instance.transform.position;
             }
             GameObject.Instantiate(explosion, position, Quaternion.identity).SetActive(true);
-            if (ModHooks.GetMod("FStatsMod") is Mod)
+            if(ModHooks.GetMod("FStatsMod") is Mod)
                 YARCStats.Bombs++;
         }
     }

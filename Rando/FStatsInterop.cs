@@ -1,73 +1,61 @@
-using FStats;
-using FStats.StatControllers;
-using FStats.Util;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using FStats;
+using FStats.StatControllers;
+using FStats.Util;
 
-namespace YetAnotherRandoConnection
-{
-    public static class FStats_Interop
-    {
-        
-        public static void Hook()
-        {
+namespace YetAnotherRandoConnection {
+    public static class FStatsInterop {
+
+        public static void Hook() {
             API.OnGenerateFile += GenerateStats;
         }
 
-        private static void GenerateStats(Action<StatController> generateStats)
-        {
-            if (!YetAnotherRandoConnection.Settings.Any)
+        private static void GenerateStats(Action<StatController> generateStats) {
+            if(!YetAnotherRandoConnection.Settings.Any)
                 return;
 
             generateStats(new YARCStats());
         }
     }
 
-    public class YARCStats : StatController
-    {
+    public class YARCStats: StatController {
         public record KeyItem(string item, float timestamp);
         public static int Bombs = 0;
         public static int Orbs = 0;
         public static List<KeyItem> KeyItems = [];
         public static List<string> UsedKeys = [];
-        public static void AddEntry(string entry)
-        {
-            if (!UsedKeys.Contains(entry))
-            {
+        public static void AddEntry(string entry) {
+            if(!UsedKeys.Contains(entry)) {
                 KeyItem key = new(entry, FStatsMod.LS.Get<Common>().CountedTime);
                 KeyItems.Add(key);
                 UsedKeys.Add(entry);
             }
         }
-        public override IEnumerable<DisplayInfo> GetDisplayInfos()
-        {
+        public override IEnumerable<DisplayInfo> GetDisplayInfos() {
             List<string> rows = KeyItems.OrderBy(x => x.timestamp).Select(x => $"{x.item}: {x.timestamp.PlaytimeHHMMSS()}").ToList();
             bool orbRando = YetAnotherRandoConnection.Settings.DreamOrbs;
             string subTitle = "";
-            if (YetAnotherRandoConnection.Settings.DreamOrbs)
+            if(YetAnotherRandoConnection.Settings.DreamOrbs)
                 subTitle += $"Orbs obtained: {Orbs} / 482";
-            if (YetAnotherRandoConnection.Settings.JellyEggBombs)
-            {
-                if (subTitle.Length > 1)
+            if(YetAnotherRandoConnection.Settings.JellyEggBombs) {
+                if(subTitle.Length > 1)
                     subTitle += " | ";
                 subTitle += $"Bombs triggered: {Bombs}";
             }
-            yield return new()
-                {
-                    Title = "YARC",
-                    MainStat = subTitle,
-                    StatColumns = Columnize(rows),
-                    Priority = BuiltinScreenPriorityValues.ExtensionStats
-                };
+            yield return new() {
+                Title = "YARC",
+                MainStat = subTitle,
+                StatColumns = Columnize(rows),
+                Priority = BuiltinScreenPriorityValues.ExtensionStats
+            };
         }
         private const int COL_SIZE = 10;
-        private List<string> Columnize(List<string> rows)
-        {
+        private List<string> Columnize(List<string> rows) {
             int columnCount = (rows.Count + COL_SIZE - 1) / COL_SIZE;
             List<string> list = [];
-            for (int i = 0; i < columnCount; i++)
-            {
+            for(int i = 0; i < columnCount; i++) {
                 list.Add(string.Join("\n", rows.Slice(i, columnCount)));
             }
             return list;

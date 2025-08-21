@@ -2254,5 +2254,9 @@
   {
     "name": "Lurien's_Telescope",
     "logic": "Ruins2_Watcher_Room[bot1]"
+  },
+  {
+    "name": "Scarecrow",
+    "logic": "Deepnest_East_16[left1] | Deepnest_East_16[bot1]"
   }
 ]

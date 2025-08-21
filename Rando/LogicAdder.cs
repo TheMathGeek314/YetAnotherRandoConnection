@@ -65,6 +65,8 @@ namespace YetAnotherRandoConnection {
             lmb.AddItem(new EmptyItem(Consts.EggBomb));
 
             lmb.AddItem(new EmptyItem(Consts.Telescope));
+
+            lmb.AddItem(new EmptyItem(Consts.Scarecrow));
         }
     }
 }

@@ -27,6 +27,21 @@ namespace YetAnotherRandoConnection {
             IL.DreamPlantOrb.OnTriggerEnter2D += OrbGrant;
             if(!RandomizerMod.RandomizerMod.RS.GenerationSettings.PoolSettings.WhisperingRoots)
                 IL.DreamPlantOrb.OnTriggerEnter2D += RemoveEssence;
+
+            //unfinished
+            if(Consts.OrbAreas.TryGetValue(GameManager.instance.sceneName, out string region)) {
+                foreach((string area, string scene, int num) in Consts.RootCounts) {
+                    if(area != region)
+                        continue;
+                    for(int i = 1; i <= num; i++) {
+                        AbstractPlacement placement = Ref.Settings.Placements[Consts.GetOrbNumName(area, i)];
+                        if(!placement.AllObtained()) {
+                            //todo
+                        }
+                    }
+                }
+            }
+            //unfinished
         }
 
         private static void UnhookOrbs() {

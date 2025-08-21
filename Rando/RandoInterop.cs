@@ -5,10 +5,11 @@ using System.Reflection;
 using UnityEngine;
 using ConnectionMetadataInjector;
 using ItemChanger;
-using ItemChanger.Items;
 using ItemChanger.Locations;
+using ItemChanger.Modules;
 using ItemChanger.Tags;
 using ItemChanger.UIDefs;
+using RandomizerMod.RC;
 
 namespace YetAnotherRandoConnection {
     internal static class RandoInterop {
@@ -22,13 +23,23 @@ namespace YetAnotherRandoConnection {
             DefineLocations();
             DefineItems();
 
-            if(ModHooks.GetMod("CondensedSpoilerLogger") is Mod) {
-                CondensedSpoilerLogger.AddCategory("Useful Vines", (args) => true, Consts.UsefulVines);
-            }
+            RandoController.OnExportCompleted += EditModules;
 
-            if(ModHooks.GetMod("RandoSettingsManager") is Mod) {
+            if(ModHooks.GetMod("CondensedSpoilerLogger") is Mod)
+                CondensedSpoilerLogger.AddCategory("Useful Vines", (args) => true, Consts.UsefulVines);
+
+            if(ModHooks.GetMod("RandoSettingsManager") is Mod)
                 RSMInterop.Hook();
-            }
+
+            if(ModHooks.GetMod("FStatsMod") is Mod)
+                FStatsInterop.Hook();
+        }
+
+        private static void EditModules(RandoController controller) {
+            if(!YetAnotherRandoConnection.Settings.Any)
+                return;
+            if(YetAnotherRandoConnection.Settings.Scarecrow)
+                ItemChangerMod.Modules.Remove(ItemChangerMod.Modules.GetOrAdd<GreatHopperEasterEgg>());
         }
 
         public static void DefineLocations() {
@@ -106,6 +117,9 @@ namespace YetAnotherRandoConnection {
 
             TelescopeLocation teleLoc = new() { name = Consts.Telescope, sceneName = SceneNames.Ruins2_Watcher_Room };
             DefineLoc(teleLoc, SceneNames.Ruins2_Watcher_Room, "pin_telescope", 21f, 137f);
+
+            ScarecrowLocation scareLoc = new() { name = Consts.Scarecrow, sceneName = SceneNames.Deepnest_East_16 };
+            DefineLoc(scareLoc, SceneNames.Deepnest_East_16, "pin_scarecrow", 30, 17);
         }
 
         public static void DefineItems() {
@@ -136,6 +150,9 @@ namespace YetAnotherRandoConnection {
                 sprite = new EmbeddedSprite("pin_telescope")
             };
             Finder.DefineCustomItem(telescopeItem);
+
+            ScarecrowItem scarecrowItem = new();
+            Finder.DefineCustomItem(scarecrowItem);
         }
 
         public static InteropTag AddTag(TaggableObject obj) {
