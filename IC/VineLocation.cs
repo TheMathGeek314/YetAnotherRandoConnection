@@ -120,6 +120,7 @@ namespace YetAnotherRandoConnection {
                 Vector2 coords = VineCoords.placementToPosition[id].Item2;
                 vine.transform.position = new Vector3(coords.x, coords.y, vine.transform.position.z);
                 vine.body.isKinematic = true;
+                vine.body.velocity = Vector3.zero;
                 vine.sprites.SetActive(true);
             }
         }
