@@ -20,8 +20,7 @@ namespace YetAnotherRandoConnection {
 
         public override void GiveImmediate(GiveInfo info) {
             base.GiveImmediate(info);
-            if(ModHooks.GetMod("FStatsMod") is Mod)
-                YARCStats.Orbs++;
+            YARCModule.Instance.Orbs++;
         }
     }
 }
