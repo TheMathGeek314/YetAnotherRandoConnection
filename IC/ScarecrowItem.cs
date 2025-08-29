@@ -1,9 +1,9 @@
-﻿using System.Threading.Tasks;
+﻿using Modding;
+using System.Threading.Tasks;
 using UnityEngine;
 using ItemChanger;
 using ItemChanger.Tags;
 using ItemChanger.UIDefs;
-using Modding;
 
 namespace YetAnotherRandoConnection {
     public class ScarecrowItem: AbstractItem {
