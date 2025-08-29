@@ -21,12 +21,18 @@ namespace YetAnotherRandoConnection {
     }
 
     public class YARCStats: StatController {
+        public override void Initialize() 
+        {
+            YARCModule.OnItemObtained += AddEntry;
+        }
+        public override void Unload() 
+        {
+            YARCModule.OnItemObtained -= AddEntry;
+        }
         public record KeyItem(string item, float timestamp);
-        public static int Bombs = 0;
-        public static int Orbs = 0;
-        public static List<KeyItem> KeyItems = [];
-        public static List<string> UsedKeys = [];
-        public static void AddEntry(string entry) {
+        public List<KeyItem> KeyItems = [];
+        public List<string> UsedKeys = [];
+        public void AddEntry(string entry) {
             if(!UsedKeys.Contains(entry)) {
                 KeyItem key = new(entry, FStatsMod.LS.Get<Common>().CountedTime);
                 KeyItems.Add(key);
@@ -38,11 +44,11 @@ namespace YetAnotherRandoConnection {
             bool orbRando = YetAnotherRandoConnection.Settings.DreamOrbs;
             string subTitle = "";
             if(YetAnotherRandoConnection.Settings.DreamOrbs)
-                subTitle += $"Orbs obtained: {Orbs} / 482";
+                subTitle += $"Orbs obtained: {YARCModule.Instance.Orbs} / 482";
             if(YetAnotherRandoConnection.Settings.JellyEggBombs) {
                 if(subTitle.Length > 1)
                     subTitle += " | ";
-                subTitle += $"Bombs triggered: {Bombs}";
+                subTitle += $"Bombs triggered: {YARCModule.Instance.Bombs}";
             }
             yield return new() {
                 Title = "YARC",

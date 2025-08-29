@@ -17,8 +17,7 @@ namespace YetAnotherRandoConnection {
         }
 
         public override void GiveImmediate(GiveInfo info) {
-            if(ModHooks.GetMod("FStatsMod") is Mod)
-                YARCStats.AddEntry(RandoInterop.clean(name));
+            YARCModule.Instance.RecordItem(RandoInterop.clean(name));
         }
     }
 }

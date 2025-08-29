@@ -29,8 +29,7 @@ namespace YetAnotherRandoConnection {
                 position = HeroController.instance.transform.position;
             }
             GameObject.Instantiate(explosion, position, Quaternion.identity).SetActive(true);
-            if(ModHooks.GetMod("FStatsMod") is Mod)
-                YARCStats.Bombs++;
+            YARCModule.Instance.Bombs++;
         }
     }
 }
