@@ -21,12 +21,10 @@ namespace YetAnotherRandoConnection {
     }
 
     public class YARCStats: StatController {
-        public override void Initialize() 
-        {
+        public override void Initialize() {
             YARCModule.OnItemObtained += AddEntry;
         }
-        public override void Unload() 
-        {
+        public override void Unload() {
             YARCModule.OnItemObtained -= AddEntry;
         }
         public record KeyItem(string item, float timestamp);

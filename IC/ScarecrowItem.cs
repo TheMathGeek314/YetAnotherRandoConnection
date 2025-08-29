@@ -1,5 +1,4 @@
-﻿using Modding;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using UnityEngine;
 using ItemChanger;
 using ItemChanger.Tags;

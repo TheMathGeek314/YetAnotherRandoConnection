@@ -1,4 +1,3 @@
-using Modding;
 using ItemChanger;
 using ItemChanger.Items;
 using ItemChanger.Tags;

@@ -1,5 +1,4 @@
-﻿using Modding;
-using ItemChanger;
+﻿using ItemChanger;
 using ItemChanger.Tags;
 using ItemChanger.UIDefs;
 

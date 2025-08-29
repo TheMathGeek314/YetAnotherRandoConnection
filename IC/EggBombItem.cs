@@ -3,7 +3,6 @@ using ItemChanger;
 using ItemChanger.Tags;
 using ItemChanger.UIDefs;
 using Satchel;
-using Modding;
 
 namespace YetAnotherRandoConnection {
     public class EggBombItem: AbstractItem {
