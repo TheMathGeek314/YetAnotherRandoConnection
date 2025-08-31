@@ -7,14 +7,13 @@ using UnityEngine;
 using ItemChanger;
 using ItemChanger.Internal;
 using ItemChanger.Locations;
+using Satchel;
 
 namespace YetAnotherRandoConnection {
     public class VineLocation: AutoLocation {
         private static readonly Dictionary<string, VineLocation> SubscribedLocations = new();
         static FieldInfo _vineCutActivated;
         static FieldInfo _vineCutAudioSource;
-        private static Dictionary<string, Vector3> groundedPlatforms = new();
-        private static List<string> fallingPlatforms = new();
 
         protected override void OnLoad() {
             if(SubscribedLocations.Count == 0)
@@ -40,7 +39,6 @@ namespace YetAnotherRandoConnection {
 
         private static void UnhookVines() {
             IL.VinePlatformCut.OnTriggerEnter2D -= VineTrigger;
-            ;
             On.VinePlatformCut.Awake -= VineAwake;
             On.VinePlatform.Land -= VinePlatformLand;
             On.VinePlatform.Awake -= VinePlatformAwake;
@@ -61,7 +59,7 @@ namespace YetAnotherRandoConnection {
                 j.Disable(false);
 
                 //grant rando check
-                string key = $"{j.gameObject.scene.name}/{j.transform.parent.parent.name}";
+                string key = getIdName(j, true);
                 AbstractPlacement ap = Ref.Settings.Placements[VineCoords.nameToPlacement[key]];
                 GiveInfo gi = new() {
                     FlingType = FlingType.StraightUp,
@@ -75,59 +73,64 @@ namespace YetAnotherRandoConnection {
 
         private static void VineAwake(On.VinePlatformCut.orig_Awake orig, VinePlatformCut self) {
             orig(self);
-            string id = $"{self.gameObject.scene.name}/{self.transform.parent.parent.name}";
+            string id = getIdName(self, true);
             string placement = VineCoords.nameToPlacement[id];
             if(RandomizerMod.RandomizerMod.RS.TrackerData.pm.Get(placement) > 0) {
                 self.Cut();
-                fallingPlatforms.Add(id);
             }
-            if(Ref.Settings.Placements[placement].AllObtained()) {
+            else if(Ref.Settings.Placements[placement].AllObtained()) {
                 _vineCutActivated.SetValue(self, true);
                 self.sprites.SetActive(false);
             }
         }
 
-        //called if obtained in same room or on first entry
         private static void VinePlatformLand(On.VinePlatform.orig_Land orig, VinePlatform self) {
             orig(self);
-            string id = VineCoords.nameToPlacement[$"{self.gameObject.scene.name}/{self.gameObject.name}"];
-            if(!groundedPlatforms.ContainsKey(id))
-                groundedPlatforms.Add(id, self.transform.position);
-            else
-                groundedPlatforms[id] = self.transform.position;
-            uncutVine(id, self);
-            fallingPlatforms.Remove(id);
-        }
-
-        //should be called on second entry
-        private static void VinePlatformAwake(On.VinePlatform.orig_Awake orig, VinePlatform self) {
-            orig(self);
-            string id = VineCoords.nameToPlacement[$"{self.gameObject.scene.name}/{self.gameObject.name}"];
-            if(!fallingPlatforms.Contains(id) && groundedPlatforms.ContainsKey(id)) {
-                uncutVine(id, self);
-            }
-        }
-
-        private static async void uncutVine(string id, VinePlatform self) {
-            for(int i = 0; i < 1; i++)
-                await Task.Yield();
+            string id = VineCoords.nameToPlacement[getIdName(self)];
             if(!Ref.Settings.Placements[id].AllObtained()) {
                 VinePlatformCut vine = self.gameObject.GetComponentInChildren<VinePlatformCut>(true);
                 GameObject parent = vine.transform.parent.gameObject;
                 parent.SetActive(true);
-                parent.transform.position = groundedPlatforms[id];
+                Vector2 uncutPosition = VineCoords.placementToPosition[id].Item2;
                 _vineCutActivated.SetValue(vine, false);
-                Vector2 coords = VineCoords.placementToPosition[id].Item2;
-                vine.transform.position = new Vector3(coords.x, coords.y, vine.transform.position.z);
+                vine.transform.position = uncutPosition;
                 vine.body.isKinematic = true;
                 vine.body.velocity = Vector3.zero;
                 vine.sprites.SetActive(true);
             }
         }
 
-        public static void clearFields() {
-            groundedPlatforms.Clear();
-            fallingPlatforms.Clear();
+        private static void VinePlatformAwake(On.VinePlatform.orig_Awake orig, VinePlatform self) {
+            orig(self);
+            platformAfterOneFrame(self);
+        }
+
+        private static async void platformAfterOneFrame(VinePlatform self) {
+            await Task.Yield();
+            string id = VineCoords.nameToPlacement[getIdName(self)];
+            if(self.activatedSprite.activeSelf) {
+                GameObject platSprite = self.platformSprite;
+                VinePlatformCut vine = platSprite.GetComponentInChildren<VinePlatformCut>();
+                if(!Ref.Settings.Placements[id].AllObtained()) {
+                    platSprite.SetActive(true);
+                    platSprite.FindGameObjectInChildren("Sprites").SetActive(true);
+                    platSprite.GetComponent<SpriteRenderer>().enabled = false;
+                    _vineCutActivated.SetValue(vine, false);
+                }
+                Vector3 platSpritePosition = platSprite.transform.position;
+                Vector3 activePosition = self.activatedSprite.transform.position;
+                self.transform.position = activePosition;
+                self.activatedSprite.transform.position = activePosition;
+                platSprite.transform.position = platSpritePosition;
+                vine.body.isKinematic = true;
+                vine.body.velocity = Vector2.zero;
+                await Task.Yield();
+                self.collider.enabled = true;
+            }
+        }
+
+        public static string getIdName(MonoBehaviour self, bool useGrandparent = false) {
+            return $"{self.gameObject.scene.name}/{(useGrandparent ? self.transform.parent.parent.name : self.gameObject.name)}";
         }
     }
 }

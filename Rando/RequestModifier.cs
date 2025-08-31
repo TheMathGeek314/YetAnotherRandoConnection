@@ -15,7 +15,6 @@ namespace YetAnotherRandoConnection {
             RequestBuilder.OnUpdate.Subscribe(-499, SetupItems);
             RequestBuilder.OnUpdate.Subscribe(1200, RemoveRoots);
             RequestBuilder.OnUpdate.Subscribe(-499.5f, DefinePools);
-            RequestBuilder.OnUpdate.Subscribe(0, ResetVineFields);
         }
 
         private static void AddAndEditLocation(RequestBuilder rb, string name, FlingType flingType, bool progressionPenalty, string scene) {
@@ -304,10 +303,6 @@ namespace YetAnotherRandoConnection {
                 gb = default;
                 return false;
             }
-        }
-
-        public static void ResetVineFields(RequestBuilder rb) {
-            VineLocation.clearFields();
         }
     }
 }
