@@ -1965,19 +1965,19 @@
   },
   {
     "name": "Vine-Hunter_Left",
-    "logic": "(Fungus1_07[left1] | Fungus1_07[top1] | Fungus1_07[right1]) + Can_Break_Vines"
+    "logic": "Fungus1_07 + Can_Break_Vines"
   },
   {
     "name": "Vine-Hunter_Lower",
-    "logic": "(Fungus1_07[left1] | Fungus1_07[top1] | Fungus1_07[right1]) + Can_Break_Vines"
+    "logic": "Fungus1_07 + Can_Break_Vines"
   },
   {
     "name": "Vine-Hunter_Middle",
-    "logic": "(Fungus1_07[left1] | Fungus1_07[top1] | Fungus1_07[right1]) + Can_Break_Vines"
+    "logic": "Fungus1_07 + Can_Break_Vines"
   },
   {
     "name": "Vine-Hunter_Upper",
-    "logic": "(Fungus1_07[left1] | Fungus1_07[top1] | Fungus1_07[right1]) + Can_Break_Vines"
+    "logic": "Fungus1_07 + Can_Break_Vines"
   },
   {
     "name": "Vine-Moss_Knight",
@@ -2177,35 +2177,35 @@
   },
   {
     "name": "Egg_Bomb-Notch_Middle_6",
-    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
+    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + LEFTCLAW | WINGS + FIREBALL>1 + OBSCURESKIPS | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
   },
   {
     "name": "Egg_Bomb-Notch_Middle_7",
-    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
+    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + LEFTCLAW | WINGS + FIREBALL>1 + OBSCURESKIPS | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
   },
   {
     "name": "Egg_Bomb-Notch_Middle_8",
-    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
+    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + LEFTCLAW | WINGS + FIREBALL>1 + OBSCURESKIPS | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
   },
   {
     "name": "Egg_Bomb-Notch_Middle_9",
-    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
+    "logic": "Fungus3_28 + (RIGHTCLAW | SCREAM>1 + OBSCURESKIPS | WINGS + LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
   },
   {
     "name": "Egg_Bomb-Notch_Middle_10",
-    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
+    "logic": "Fungus3_28 + (RIGHTCLAW | SCREAM>1 + OBSCURESKIPS | WINGS + LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
   },
   {
     "name": "Egg_Bomb-Notch_Middle_11",
-    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
+    "logic": "Fungus3_28 + (RIGHTCLAW | SCREAM>1 + OBSCURESKIPS | WINGS + LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
   },
   {
     "name": "Egg_Bomb-Notch_Middle_12",
-    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
+    "logic": "Fungus3_28 + (RIGHTCLAW | SCREAM>1 + OBSCURESKIPS | WINGS + LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
   },
   {
     "name": "Egg_Bomb-Notch_Middle_13",
-    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
+    "logic": "Fungus3_28 + (RIGHTCLAW | SCREAM>1 + OBSCURESKIPS | WINGS + LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
   },
   {
     "name": "Egg_Bomb-Notch_Middle_14",
@@ -2213,11 +2213,11 @@
   },
   {
     "name": "Egg_Bomb-Notch_Right_1",
-    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + (ENEMYPOGOS | LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE))"
+    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + (ENEMYPOGOS | LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE | SCREAM))"
   },
   {
     "name": "Egg_Bomb-Notch_Right_2",
-    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + (LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE))"
+    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + (LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE | SCREAM))"
   },
   {
     "name": "Egg_Bomb-Notch_Upper_1",

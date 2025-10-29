@@ -20,6 +20,11 @@
         "stateless": false
     },
     {
+        "name": "Fungus1_07",
+        "logic": "Fungus1_07[right1] | Fungus1_07[top1] | Fungus1_07[left1]",
+        "stateless": false
+    },
+    {
         "name": "Fungus3_28",
         "logic": "Fungus3_28[right1] + (ACID | ACIDSKIPS + (LEFTSKIPACID | WINGS + LEFTDASH | WINGS + RIGHTCLAW + SPELLAIRSTALL + $CASTSPELL[before:ROOMSOUL] | DAMAGEBOOSTS + $TAKEDAMAGE + FULLCLAW + FULLDASH))"
     }
