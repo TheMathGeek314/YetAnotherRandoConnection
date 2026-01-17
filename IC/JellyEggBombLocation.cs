@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using MonoMod.Cil;
+using UnityEngine;
 using ItemChanger;
 using ItemChanger.Internal;
 using ItemChanger.Locations;
+using Satchel;
 
 namespace YetAnotherRandoConnection {
     public class JellyEggBombLocation: AutoLocation {
@@ -41,7 +43,13 @@ namespace YetAnotherRandoConnection {
                     MessageType = MessageType.Corner,
                     Transform = j.transform
                 };
-                Ref.Settings.Placements[EggBombCoords.nameToPlacement[key]].GiveAll(giveInfo);
+                if(EggBombCoords.nameToPlacement.TryGetValue(key, out string placement)) {
+                    Ref.Settings.Placements[placement].GiveAll(giveInfo);
+                }
+                else {
+                    GameObject explosion = GameManager.instance.gameObject.FindGameObjectInChildren("Gas Explosion Recycle M(Clone)");
+                    GameObject.Instantiate(explosion, j.transform.position, Quaternion.identity).SetActive(true);
+                }
             });
         }
     }
