@@ -4,7 +4,7 @@ A Randomizer connection with assorted additions including:
 - **Dream Orbs**
 	- Every orb from a whispering root is now its own check
 	- This adds 482 new locations and 1-essence items
-	- Whispering Root locations still grant 1 item on completion, but root essence items are removed when orbs are enabled
+	- Whispering Root items and locations are fully removed if orbs are enabled, the base rando setting is ignored
 	- If *FStats* is installed, the number of orbs obtained will be counted and displayed
 - **Vines**
 	- Cutting vines will now grant a check instead of dropping the platform

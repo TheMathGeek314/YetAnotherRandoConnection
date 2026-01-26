@@ -202,6 +202,7 @@ namespace YetAnotherRandoConnection {
         private static void RemoveRoots(RequestBuilder rb) {
             if(YetAnotherRandoConnection.Settings.DreamOrbs) {
                 rb.RemoveItemsWhere(item => item.StartsWith("Whispering_Root-"));
+                rb.RemoveLocationsWhere(loc => loc.StartsWith("Whispering_Root-"));
             }
         }
 
