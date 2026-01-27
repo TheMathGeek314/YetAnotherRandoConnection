@@ -57,12 +57,14 @@ namespace YetAnotherRandoConnection {
             string jarCoords = assembly.GetManifestResourceNames().Single(str => str.EndsWith("JarCoords.json"));
             string platCoords = assembly.GetManifestResourceNames().Single(str => str.EndsWith("HivePlatCoords.json"));
             string bombCoords = assembly.GetManifestResourceNames().Single(str => str.EndsWith("EggBombCoords.json"));
+            string spikeCoords = assembly.GetManifestResourceNames().Single(str => str.EndsWith("StalactiteCoords.json"));
 
             using Stream orbStream = assembly.GetManifestResourceStream(orbCoords);
             using Stream vineStream = assembly.GetManifestResourceStream(vineCoords);
             using Stream jarStream = assembly.GetManifestResourceStream(jarCoords);
             using Stream platStream = assembly.GetManifestResourceStream(platCoords);
             using Stream bombStream = assembly.GetManifestResourceStream(bombCoords);
+            using Stream spikeStream = assembly.GetManifestResourceStream(spikeCoords);
 
             foreach(JsonDreamOrbCoords jsonOrb in new ParseJson(orbStream).parseFile<JsonDreamOrbCoords>())
                 jsonOrb.translate();
@@ -74,6 +76,8 @@ namespace YetAnotherRandoConnection {
                 jsonPlat.translate();
             foreach(JsonBombCoords jsonBomb in new ParseJson(bombStream).parseFile<JsonBombCoords>())
                 jsonBomb.translate();
+            foreach(JsonSpikeCoords jsonSpike in new ParseJson(spikeStream).parseFile<JsonSpikeCoords>())
+                jsonSpike.translate();
 
             foreach((string area, string scene, int count) in Consts.RootCounts) {
                 for(int i = 1; i <= count; i++) {
@@ -120,6 +124,12 @@ namespace YetAnotherRandoConnection {
 
             ScarecrowLocation scareLoc = new() { name = Consts.Scarecrow, sceneName = SceneNames.Deepnest_East_16 };
             DefineLoc(scareLoc, SceneNames.Deepnest_East_16, "pin_scarecrow", 30, 17);
+
+            foreach(string name in Consts.StalactiteNames) {
+                (string scene, Vector2 coords) = StalactiteCoords.placementToPosition[name];
+                StalactiteLocation spikeLoc = new() { name = name, sceneName = scene };
+                DefineLoc(spikeLoc, scene, "pin_stalactite", coords.x, coords.y);
+            }
         }
 
         public static void DefineItems() {

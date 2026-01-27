@@ -7,8 +7,9 @@
         public bool JellyEggBombs = false;
         public bool Telescope = false;
         public bool Scarecrow = false;
+        public bool Stalactites = false;
 
-        public bool Any => DreamOrbs || Vines || SoulJars || HivePlatforms || JellyEggBombs || Telescope || Scarecrow;
+        public bool Any => DreamOrbs || Vines || SoulJars || HivePlatforms || JellyEggBombs || Telescope || Scarecrow || Stalactites;
 
         [MenuChanger.Attributes.MenuRange(-1, 99)]
         public int VineGroup = -1;
@@ -24,5 +25,8 @@
 
         [MenuChanger.Attributes.MenuRange(-1, 99)]
         public int ScarecrowGroup = -1;
+
+        [MenuChanger.Attributes.MenuRange(-1, 99)]
+        public int StalactiteGroup = -1;
     }
 }

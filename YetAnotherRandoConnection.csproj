@@ -54,6 +54,7 @@
   <ItemGroup>
     <None Remove="Resources\Coords\EggBombCoords.json" />
     <None Remove="Resources\Coords\HivePlatCoords.json" />
+    <None Remove="Resources\Coords\StalactiteCoords.json" />
     <None Remove="Resources\DreamOrbCoords.json" />
     <None Remove="Resources\JarCoords.json" />
     <None Remove="Resources\logic.json" />
@@ -74,6 +75,7 @@
     <EmbeddedResource Include="Resources\Coords\EggBombCoords.json" />
     <EmbeddedResource Include="Resources\Coords\HivePlatCoords.json" />
     <EmbeddedResource Include="Resources\Coords\JarCoords.json" />
+    <EmbeddedResource Include="Resources\Coords\StalactiteCoords.json" />
     <EmbeddedResource Include="Resources\logic.json" />
     <EmbeddedResource Include="Resources\LogicOverrides.json" />
     <EmbeddedResource Include="Resources\Pins\pin_dream_orb.png" />
@@ -83,6 +85,7 @@
     <EmbeddedResource Include="Resources\Pins\pin_soul_jar.png" />
     <EmbeddedResource Include="Resources\Pins\pin_telescope.png" />
     <EmbeddedResource Include="Resources\Pins\pin_vine.png" />
+    <EmbeddedResource Include="Resources\Pins\pin_stalactite.png" />
     <EmbeddedResource Include="Resources\terms.json" />
     <EmbeddedResource Include="Resources\Coords\VineCoords.json" />
     <EmbeddedResource Include="Resources\waypoints.json" />

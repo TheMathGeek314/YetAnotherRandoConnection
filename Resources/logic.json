@@ -2258,5 +2258,273 @@
   {
     "name": "Scarecrow",
     "logic": "Deepnest_East_16[left1] | Deepnest_East_16[bot1]"
+  },
+  {
+    "name": "Stalactite-King's_Pass_Focus_Tablet",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-King's_Pass_Hidden",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-King's_Pass_Lifeblood",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-King's_Pass_Spike_Pit_1",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-King's_Pass_Spike_Pit_2",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-King's_Pass_Spike_Pit_3",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-King's_Pass_Spike_Pit_4",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-King's_Pass_Spike_Pit_5",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Brooding_Mawlek",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Cornifer_1",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Cornifer_2",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Cornifer_3",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Acid_Grub",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Aspid_Arena_1",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Aspid_Arena_2",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Above_Crossroads_Lever",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-East_of_Black_Egg_1",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-East_of_Black_Egg_2",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Peak_Toll_Left_1",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Peak_Toll_Left_2",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Peak_Toll_Left_3",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Peak_Toll_Right_1",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Peak_Toll_Right_2",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Baldur_Shell_Left",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Baldur_Shell_Lower",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Baldur_Shell_Grub_1",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Baldur_Shell_Grub_2",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Baldur_Shell_Upper",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Markoth_Right",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Markoth_Left",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Markoth_Upper_1",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Markoth_Upper_2",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Markoth_Journal_1",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Markoth_Journal_2",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Markoth_Journal_3",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Camp_Grub_Entrance_1",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Camp_Grub_Entrance_2",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Camp_Grub_1",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Camp_Grub_2",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Camp_Grub_3",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Camp_Left",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Camp_Middle",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Camp_Upper_1",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Camp_Upper_2",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Hornet_1",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Hornet_2",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Hornet_3",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Hornet_4",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Hornet_5",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Oro_Dive_Entrance_1",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Oro_Dive_Entrance_2",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Oro_Dive_Second_1",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Oro_Dive_Second_2",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Oro_Dive_Primal_Aspids",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Oro_Dive_Grub_Path_1",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Oro_Dive_Grub_Path_2",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Oro_Dive_Grub_Path_3",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Oro_Dive_Grub_1",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Oro_Dive_Grub_2",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Oro_Dive_Grub_3",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Oro_Dive_Grub_4",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Quick_Slash_Entrance_1",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Quick_Slash_Entrance_2",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Quick_Slash_Exit_1",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Quick_Slash_Exit_2",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Quick_Slash_Exit_3",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Stalactite-Quick_Slash_Exit_4",
+    "logic": "*Dirtmouth_Stag"
   }
 ]

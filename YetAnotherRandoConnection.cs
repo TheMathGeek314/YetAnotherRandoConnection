@@ -5,7 +5,7 @@ using UnityEngine;
 namespace YetAnotherRandoConnection {
     public class YetAnotherRandoConnection: Mod, IGlobalSettings<GlobalSettings> {
         new public string GetName() => "YetAnotherRandoConnection";
-        public override string GetVersion() => "1.1.0.4";
+        public override string GetVersion() => "1.2.0.0";
 
         public static GlobalSettings Settings { get; set; } = new();
         public void OnLoadGlobal(GlobalSettings s) => Settings = s;
@@ -17,8 +17,7 @@ namespace YetAnotherRandoConnection {
             instance = this;
         }
 
-        public override void Initialize(Dictionary<string, Dictionary<string, GameObject>> preloadedObjects)
-        {
+        public override void Initialize(Dictionary<string, Dictionary<string, GameObject>> preloadedObjects) {
             SoulJarContainer.jarPrefab = preloadedObjects["Ruins1_31"]["Ruins Vial Empty"];
             ScarecrowItem.hopperPrefab1 = preloadedObjects["Deepnest_East_16"]["Giant Hopper Summon/Giant Hopper"];
             ScarecrowItem.hopperPrefab2 = preloadedObjects["Deepnest_East_16"]["Giant Hopper Summon/Giant Hopper (1)"];

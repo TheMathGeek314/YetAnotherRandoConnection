@@ -12,6 +12,7 @@ namespace YetAnotherRandoConnection {
             RequestBuilder.OnUpdate.Subscribe(-100, ApplyEggBombDefs);
             RequestBuilder.OnUpdate.Subscribe(-100, ApplyTelescopeDef);
             RequestBuilder.OnUpdate.Subscribe(-100, ApplyScarecrowDef);
+            RequestBuilder.OnUpdate.Subscribe(-100, ApplyStalactiteDef);
             RequestBuilder.OnUpdate.Subscribe(-499, SetupItems);
             RequestBuilder.OnUpdate.Subscribe(1200, RemoveRoots);
             RequestBuilder.OnUpdate.Subscribe(-499.5f, DefinePools);
@@ -91,6 +92,14 @@ namespace YetAnotherRandoConnection {
         public static void ApplyScarecrowDef(RequestBuilder rb) {
             if(YetAnotherRandoConnection.Settings.Scarecrow) {
                 AddAndEditLocation(rb, Consts.Scarecrow, FlingType.Everywhere, false, SceneNames.Deepnest_East_16);
+            }
+        }
+
+        public static void ApplyStalactiteDef(RequestBuilder rb) {
+            if(YetAnotherRandoConnection.Settings.Stalactites) {
+                foreach(string spikeName in Consts.StalactiteNames) {
+                    AddAndEditLocation(rb, spikeName, FlingType.Everywhere, false, StalactiteCoords.placementToPosition[spikeName].Item1);
+                }
             }
         }
 
@@ -226,10 +235,13 @@ namespace YetAnotherRandoConnection {
                 if(ys.ScarecrowGroup >= 0 && ys.ScarecrowGroup <= 2) {
                     ys.ScarecrowGroup = rb.rng.Next(3);
                 }
+                if(ys.ScarecrowGroup >= 0 && ys.StalactiteGroup <= 2) {
+                    ys.StalactiteGroup = rb.rng.Next(3);
+                }
             }
 
-            ItemGroupBuilder[] myGroups = [null, null, null, null, null];
-            int[] groupSettings = [ys.VineGroup, ys.HivePlatformGroup, ys.EggBombGroup, ys.TelescopeGroup, ys.ScarecrowGroup];
+            ItemGroupBuilder[] myGroups = [null, null, null, null, null, null];
+            int[] groupSettings = [ys.VineGroup, ys.HivePlatformGroup, ys.EggBombGroup, ys.TelescopeGroup, ys.ScarecrowGroup, ys.StalactiteGroup];
             for(int i = 0; i < groupSettings.Length; i++) {
                 if(groupSettings[i] > 0) {
                     string label = RBConsts.SplitGroupPrefix + groupSettings[i];
@@ -298,6 +310,10 @@ namespace YetAnotherRandoConnection {
                     }
                     if(item == Consts.Scarecrow) {
                         gb = myGroups[4];
+                        return true;
+                    }
+                    if(Consts.StalactiteNames.Contains(item)) {
+                        gb = myGroups[5];
                         return true;
                     }
                 }

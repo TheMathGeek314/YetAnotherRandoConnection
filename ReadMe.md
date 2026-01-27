@@ -37,3 +37,7 @@ A Randomizer connection with assorted additions including:
 	- Obtaining the scarecrow will trigger The Ritual™
 	- This adds 1 new location and item
 	- If *FStats* is installed, the stats page will show the time Scarecrow was obtained
+- **Stalactites**
+	- When stalactites fall from the ceiling, they will grant a check upon landing
+	- This adds 67 locations but has no corresponding items
+	- Upslashing a falling spike will cancel granting an item
