@@ -1,0 +1,471 @@
+[
+  {
+    "scene": "Crossroads_08",
+    "objectName": "Stalactite Hazard",
+    "locationName": "Stalactite-Aspid_Arena_1",
+    "x": 22.53,
+    "y": 25.67
+  },
+  {
+    "scene": "Crossroads_08",
+    "objectName": "Stalactite Hazard 1",
+    "locationName": "Stalactite-Aspid_Arena_2",
+    "x": 32.25,
+    "y": 26.91
+  },
+  {
+    "scene": "Crossroads_16",
+    "objectName": "Stalactite Hazard",
+    "locationName": "Stalactite-Above_Crossroads_Lever",
+    "x": 31.97,
+    "y": 15.72
+  },
+  {
+    "scene": "Crossroads_25",
+    "objectName": "Stalactite Hazard",
+    "locationName": "Stalactite-Brooding_Mawlek",
+    "x": 45.92,
+    "y": 15.58
+  },
+  {
+    "scene": "Crossroads_33",
+    "objectName": "Stalactite Hazard",
+    "locationName": "Stalactite-Cornifer_1",
+    "x": 20.01,
+    "y": 17.1
+  },
+  {
+    "scene": "Crossroads_33",
+    "objectName": "Stalactite Hazard 1",
+    "locationName": "Stalactite-Cornifer_2",
+    "x": 22.61,
+    "y": 17.1
+  },
+  {
+    "scene": "Crossroads_33",
+    "objectName": "Stalactite Hazard 3",
+    "locationName": "Stalactite-Cornifer_3",
+    "x": 26.07,
+    "y": 18.11
+  },
+  {
+    "scene": "Crossroads_35",
+    "objectName": "Stalactite Hazard",
+    "locationName": "Stalactite-Acid_Grub",
+    "x": 12.87,
+    "y": 47.39
+  },
+  {
+    "scene": "Crossroads_39",
+    "objectName": "Stalactite Hazard",
+    "locationName": "Stalactite-East_of_Black_Egg_1",
+    "x": 52.22063,
+    "y": 19.03596
+  },
+  {
+    "scene": "Crossroads_39",
+    "objectName": "Stalactite Hazard 1",
+    "locationName": "Stalactite-East_of_Black_Egg_2",
+    "x": 68.64,
+    "y": 12.19
+  },
+  {
+    "scene": "Deepnest_East_11",
+    "objectName": "Stalactite Hazard",
+    "locationName": "Stalactite-Camp_Grub_Entrance_1",
+    "x": 67.94,
+    "y": 51.49
+  },
+  {
+    "scene": "Deepnest_East_11",
+    "objectName": "Stalactite Hazard (1)",
+    "locationName": "Stalactite-Camp_Grub_Entrance_2",
+    "x": 79.08,
+    "y": 50.8
+  },
+  {
+    "scene": "Deepnest_East_11",
+    "objectName": "Stalactite Hazard (2)",
+    "locationName": "Stalactite-Camp_Grub_1",
+    "x": 89.57,
+    "y": 68.09
+  },
+  {
+    "scene": "Deepnest_East_11",
+    "objectName": "Stalactite Hazard (3)",
+    "locationName": "Stalactite-Camp_Grub_3",
+    "x": 66.7,
+    "y": 72.88
+  },
+  {
+    "scene": "Deepnest_East_11",
+    "objectName": "Stalactite Hazard (4)",
+    "locationName": "Stalactite-Camp_Grub_2",
+    "x": 75.84,
+    "y": 73.24
+  },
+  {
+    "scene": "Deepnest_East_11",
+    "objectName": "Stalactite Hazard (6)",
+    "locationName": "Stalactite-Camp_Middle",
+    "x": 45.1613,
+    "y": 79.09
+  },
+  {
+    "scene": "Deepnest_East_11",
+    "objectName": "Stalactite Hazard (7)",
+    "locationName": "Stalactite-Camp_Upper_1",
+    "x": 51.12,
+    "y": 104.72
+  },
+  {
+    "scene": "Deepnest_East_11",
+    "objectName": "Stalactite Hazard (8)",
+    "locationName": "Stalactite-Camp_Upper_2",
+    "x": 57.11,
+    "y": 104.41
+  },
+  {
+    "scene": "Deepnest_East_11",
+    "objectName": "Stalactite Hazard (9)",
+    "locationName": "Stalactite-Camp_Left",
+    "x": 23.01,
+    "y": 66.23
+  },
+  {
+    "scene": "Deepnest_East_12",
+    "objectName": "Stalactite Hazard (10)",
+    "locationName": "Stalactite-Hornet_1",
+    "x": 25.74,
+    "y": 20.05
+  },
+  {
+    "scene": "Deepnest_East_12",
+    "objectName": "Stalactite Hazard (3)",
+    "locationName": "Stalactite-Hornet_3",
+    "x": 60.02,
+    "y": 21.98
+  },
+  {
+    "scene": "Deepnest_East_12",
+    "objectName": "Stalactite Hazard (4)",
+    "locationName": "Stalactite-Hornet_4",
+    "x": 65.83,
+    "y": 23.23
+  },
+  {
+    "scene": "Deepnest_East_12",
+    "objectName": "Stalactite Hazard (5)",
+    "locationName": "Stalactite-Hornet_5",
+    "x": 70.67,
+    "y": 21.77
+  },
+  {
+    "scene": "Deepnest_East_12",
+    "objectName": "Stalactite Hazard (9)",
+    "locationName": "Stalactite-Hornet_2",
+    "x": 29.35,
+    "y": 19.82
+  },
+  {
+    "scene": "Deepnest_East_14",
+    "objectName": "Stalactite Hazard",
+    "locationName": "Stalactite-Oro_Dive_Entrance_1",
+    "x": 137,
+    "y": 59.54
+  },
+  {
+    "scene": "Deepnest_East_14",
+    "objectName": "Stalactite Hazard (1)",
+    "locationName": "Stalactite-Oro_Dive_Entrance_2",
+    "x": 142.57,
+    "y": 58.73
+  },
+  {
+    "scene": "Deepnest_East_14",
+    "objectName": "Stalactite Hazard (10)",
+    "locationName": "Stalactite-Oro_Dive_Grub_3",
+    "x": 148.46,
+    "y": 27.9
+  },
+  {
+    "scene": "Deepnest_East_14",
+    "objectName": "Stalactite Hazard (11)",
+    "locationName": "Stalactite-Oro_Dive_Grub_4",
+    "x": 150.73,
+    "y": 27.9
+  },
+  {
+    "scene": "Deepnest_East_14",
+    "objectName": "Stalactite Hazard (2)",
+    "locationName": "Stalactite-Oro_Dive_Second_1",
+    "x": 122.46,
+    "y": 41.22
+  },
+  {
+    "scene": "Deepnest_East_14",
+    "objectName": "Stalactite Hazard (3)",
+    "locationName": "Stalactite-Oro_Dive_Second_2",
+    "x": 124.21,
+    "y": 41.83
+  },
+  {
+    "scene": "Deepnest_East_14",
+    "objectName": "Stalactite Hazard (4)",
+    "locationName": "Stalactite-Oro_Dive_Primal_Aspids",
+    "x": 101.72,
+    "y": 63
+  },
+  {
+    "scene": "Deepnest_East_14",
+    "objectName": "Stalactite Hazard (5)",
+    "locationName": "Stalactite-Oro_Dive_Grub_Path_1",
+    "x": 108.65,
+    "y": 12.93
+  },
+  {
+    "scene": "Deepnest_East_14",
+    "objectName": "Stalactite Hazard (6)",
+    "locationName": "Stalactite-Oro_Dive_Grub_Path_2",
+    "x": 124.52,
+    "y": 21.97
+  },
+  {
+    "scene": "Deepnest_East_14",
+    "objectName": "Stalactite Hazard (7)",
+    "locationName": "Stalactite-Oro_Dive_Grub_Path_3",
+    "x": 139.32,
+    "y": 25.07
+  },
+  {
+    "scene": "Deepnest_East_14",
+    "objectName": "Stalactite Hazard (8)",
+    "locationName": "Stalactite-Oro_Dive_Grub_1",
+    "x": 144.75,
+    "y": 27.9
+  },
+  {
+    "scene": "Deepnest_East_14",
+    "objectName": "Stalactite Hazard (9)",
+    "locationName": "Stalactite-Oro_Dive_Grub_2",
+    "x": 146.74,
+    "y": 27.9
+  },
+  {
+    "scene": "Deepnest_East_14b",
+    "objectName": "Stalactite Hazard (12)",
+    "locationName": "Stalactite-Quick_Slash_Entrance_1",
+    "x": 42.06,
+    "y": 22.95
+  },
+  {
+    "scene": "Deepnest_East_14b",
+    "objectName": "Stalactite Hazard (13)",
+    "locationName": "Stalactite-Quick_Slash_Entrance_2",
+    "x": 43.91,
+    "y": 22.95
+  },
+  {
+    "scene": "Deepnest_East_14b",
+    "objectName": "Stalactite Hazard (14)",
+    "locationName": "Stalactite-Quick_Slash_Exit_2",
+    "x": 25.4,
+    "y": 53.94
+  },
+  {
+    "scene": "Deepnest_East_14b",
+    "objectName": "Stalactite Hazard (15)",
+    "locationName": "Stalactite-Quick_Slash_Exit_1",
+    "x": 28.33,
+    "y": 51.74
+  },
+  {
+    "scene": "Deepnest_East_14b",
+    "objectName": "Stalactite Hazard (17)",
+    "locationName": "Stalactite-Quick_Slash_Exit_3",
+    "x": 15.85,
+    "y": 65.05
+  },
+  {
+    "scene": "Deepnest_East_14b",
+    "objectName": "Stalactite Hazard (18)",
+    "locationName": "Stalactite-Quick_Slash_Exit_4",
+    "x": 13.53,
+    "y": 67.01
+  },
+  {
+    "scene": "Deepnest_East_18",
+    "objectName": "Stalactite Hazard (10)",
+    "locationName": "Stalactite-Markoth_Upper_2",
+    "x": 19.04,
+    "y": 32.3
+  },
+  {
+    "scene": "Deepnest_East_18",
+    "objectName": "Stalactite Hazard (11)",
+    "locationName": "Stalactite-Markoth_Upper_1",
+    "x": 14.13,
+    "y": 32.4
+  },
+  {
+    "scene": "Deepnest_East_18",
+    "objectName": "Stalactite Hazard (12)",
+    "locationName": "Stalactite-Markoth_Left",
+    "x": 22.01,
+    "y": 13.94
+  },
+  {
+    "scene": "Deepnest_East_18",
+    "objectName": "Stalactite Hazard (13)",
+    "locationName": "Stalactite-Markoth_Journal_1",
+    "x": 53.7,
+    "y": 32.89
+  },
+  {
+    "scene": "Deepnest_East_18",
+    "objectName": "Stalactite Hazard (14)",
+    "locationName": "Stalactite-Markoth_Journal_2",
+    "x": 54.89,
+    "y": 32.89
+  },
+  {
+    "scene": "Deepnest_East_18",
+    "objectName": "Stalactite Hazard (15)",
+    "locationName": "Stalactite-Markoth_Journal_3",
+    "x": 56.08,
+    "y": 32.89
+  },
+  {
+    "scene": "Deepnest_East_18",
+    "objectName": "Stalactite Hazard (5)",
+    "locationName": "Stalactite-Markoth_Right",
+    "x": 55.21,
+    "y": 13.28
+  },
+  {
+    "scene": "Fungus1_28",
+    "objectName": "Stalactite Hazard",
+    "locationName": "Stalactite-Baldur_Shell_Left",
+    "x": 24.68359,
+    "y": 31.86248
+  },
+  {
+    "scene": "Fungus1_28",
+    "objectName": "Stalactite Hazard (1)",
+    "locationName": "Stalactite-Baldur_Shell_Lower",
+    "x": 37.49,
+    "y": 13.7
+  },
+  {
+    "scene": "Fungus1_28",
+    "objectName": "Stalactite Hazard (2)",
+    "locationName": "Stalactite-Baldur_Shell_Upper",
+    "x": 66.41,
+    "y": 65.02
+  },
+  {
+    "scene": "Fungus1_28",
+    "objectName": "Stalactite Hazard (3)",
+    "locationName": "Stalactite-Baldur_Shell_Grub_1",
+    "x": 84.47,
+    "y": 56.35
+  },
+  {
+    "scene": "Fungus1_28",
+    "objectName": "Stalactite Hazard (4)",
+    "locationName": "Stalactite-Baldur_Shell_Grub_2",
+    "x": 89.19,
+    "y": 57.05
+  },
+  {
+    "scene": "Mines_33",
+    "objectName": "Stalactite Hazard",
+    "locationName": "Stalactite-Peak_Toll_Left_3",
+    "x": 27.41323,
+    "y": 17.09
+  },
+  {
+    "scene": "Mines_33",
+    "objectName": "Stalactite Hazard (1)",
+    "locationName": "Stalactite-Peak_Toll_Left_2",
+    "x": 17.34,
+    "y": 15.07
+  },
+  {
+    "scene": "Mines_33",
+    "objectName": "Stalactite Hazard (2)",
+    "locationName": "Stalactite-Peak_Toll_Left_1",
+    "x": 11.92,
+    "y": 12.75
+  },
+  {
+    "scene": "Mines_33",
+    "objectName": "Stalactite Hazard (3)",
+    "locationName": "Stalactite-Peak_Toll_Right_1",
+    "x": 73.91,
+    "y": 16.51
+  },
+  {
+    "scene": "Mines_33",
+    "objectName": "Stalactite Hazard (4)",
+    "locationName": "Stalactite-Peak_Toll_Right_2",
+    "x": 81.4,
+    "y": 16.76
+  },
+  {
+    "scene": "Tutorial_01",
+    "objectName": "Stalactite Hazard",
+    "locationName": "Stalactite-King's_Pass_Focus_Tablet",
+    "x": 124.39,
+    "y": 37.12
+  },
+  {
+    "scene": "Tutorial_01",
+    "objectName": "Stalactite Hazard",
+    "locationName": "Stalactite-King's_Pass_Spike_Pit_1",
+    "x": 140.12,
+    "y": 49.57
+  },
+  {
+    "scene": "Tutorial_01",
+    "objectName": "Stalactite Hazard (1)",
+    "locationName": "Stalactite-King's_Pass_Lifeblood",
+    "x": 86.43,
+    "y": 51.89
+  },
+  {
+    "scene": "Tutorial_01",
+    "objectName": "Stalactite Hazard 1",
+    "locationName": "Stalactite-King's_Pass_Spike_Pit_2",
+    "x": 144.84,
+    "y": 49.47
+  },
+  {
+    "scene": "Tutorial_01",
+    "objectName": "Stalactite Hazard 2",
+    "locationName": "Stalactite-King's_Pass_Spike_Pit_3",
+    "x": 148.12,
+    "y": 49.65
+  },
+  {
+    "scene": "Tutorial_01",
+    "objectName": "Stalactite Hazard 3",
+    "locationName": "Stalactite-King's_Pass_Spike_Pit_4",
+    "x": 150.11,
+    "y": 49.76
+  },
+  {
+    "scene": "Tutorial_01",
+    "objectName": "Stalactite Hazard 4",
+    "locationName": "Stalactite-King's_Pass_Spike_Pit_5",
+    "x": 152.83,
+    "y": 50.15
+  },
+  {
+    "scene": "Tutorial_01",
+    "objectName": "Stalactite Hazard 5",
+    "locationName": "Stalactite-King's_Pass_Hidden",
+    "x": 60.88,
+    "y": 50.87
+  }
+]
