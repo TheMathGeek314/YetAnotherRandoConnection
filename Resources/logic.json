@@ -2261,270 +2261,270 @@
   },
   {
     "name": "Stalactite-King's_Pass_Focus_Tablet",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Tutorial_01"
   },
   {
     "name": "Stalactite-King's_Pass_Hidden",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Tutorial_01"
   },
   {
     "name": "Stalactite-King's_Pass_Lifeblood",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Tutorial_01"
   },
   {
     "name": "Stalactite-King's_Pass_Spike_Pit_1",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Tutorial_01 + (Plank-King's_Pass?TRUE | FULLCLAW | LEFTCLAW + WINGS + RIGHTDASH + LONGMARK + BACKGROUNDPOGOS | WINGS + (RIGHTCLAW | ENEMYPOGOS))"
   },
   {
     "name": "Stalactite-King's_Pass_Spike_Pit_2",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-King's_Pass_Spike_Pit_1"
   },
   {
     "name": "Stalactite-King's_Pass_Spike_Pit_3",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-King's_Pass_Spike_Pit_1"
   },
   {
     "name": "Stalactite-King's_Pass_Spike_Pit_4",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-King's_Pass_Spike_Pit_1"
   },
   {
     "name": "Stalactite-King's_Pass_Spike_Pit_5",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-King's_Pass_Spike_Pit_1"
   },
   {
     "name": "Stalactite-Brooding_Mawlek",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Crossroads_25[left1] | Crossroads_25[right1]"
   },
   {
     "name": "Stalactite-Cornifer_1",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Crossroads_33"
   },
   {
     "name": "Stalactite-Cornifer_2",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Crossroads_33"
   },
   {
     "name": "Stalactite-Cornifer_3",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Crossroads_33"
   },
   {
     "name": "Stalactite-Acid_Grub",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Crossroads_35[right1] | Crossroads_35[bot1] + (RIGHTCLAW + (ACID | ACIDSKIPS + (LEFTSUPERDASH + LEFTCLAW | WINGS + LEFTDASH)) | ACID + $SHRIEKPOGO[1,2,before:ITEMSOUL] | ACIDSKIPS + LEFTDASH + $SHRIEKPOGO[1,2,1,before:ITEMSOUL])"
   },
   {
     "name": "Stalactite-Aspid_Arena_1",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Crossroads_08"
   },
   {
     "name": "Stalactite-Aspid_Arena_2",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Crossroads_08"
   },
   {
     "name": "Stalactite-Above_Crossroads_Lever",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Crossroads_16[left1] | Crossroads_16[right1] | Crossroads_16[bot1]"
   },
   {
     "name": "Stalactite-East_of_Black_Egg_1",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Crossroads_39[left1] | Crossroads_39[right1]"
   },
   {
     "name": "Stalactite-East_of_Black_Egg_2",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Crossroads_39[left1] | Crossroads_39[right1]"
   },
   {
     "name": "Stalactite-Peak_Toll_Left_1",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Mines_33[left1] + (LANTERN | DARKROOMS)"
   },
   {
     "name": "Stalactite-Peak_Toll_Left_2",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-Peak_Toll_Left_1"
   },
   {
     "name": "Stalactite-Peak_Toll_Left_3",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-Peak_Toll_Left_1"
   },
   {
     "name": "Stalactite-Peak_Toll_Right_1",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Mines_33[right1] + (LANTERN | DARKROOMS)"
   },
   {
     "name": "Stalactite-Peak_Toll_Right_2",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-Peak_Toll_Right_1"
   },
   {
     "name": "Stalactite-Baldur_Shell_Left",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus1_28[left1] | Fungus1_28[left2]"
   },
   {
     "name": "Stalactite-Baldur_Shell_Lower",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus1_28[left1] | Fungus1_28[left2]"
   },
   {
     "name": "Stalactite-Baldur_Shell_Grub_1",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus1_28[left1]"
   },
   {
     "name": "Stalactite-Baldur_Shell_Grub_2",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-Baldur_Shell_Grub_1"
   },
   {
     "name": "Stalactite-Baldur_Shell_Upper",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Fungus1_28[left1]"
   },
   {
     "name": "Stalactite-Markoth_Right",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_East_18[bot1] | Deepnest_East_18"
   },
   {
     "name": "Stalactite-Markoth_Left",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_East_18[bot1] | Deepnest_East_18"
   },
   {
     "name": "Stalactite-Markoth_Upper_1",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_East_18"
   },
   {
     "name": "Stalactite-Markoth_Upper_2",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_East_18"
   },
   {
     "name": "Stalactite-Markoth_Journal_1",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Wanderer's_Journal-Kingdom's_Edge_Requires_Dive"
   },
   {
     "name": "Stalactite-Markoth_Journal_2",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Wanderer's_Journal-Kingdom's_Edge_Requires_Dive"
   },
   {
     "name": "Stalactite-Markoth_Journal_3",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Wanderer's_Journal-Kingdom's_Edge_Requires_Dive"
   },
   {
     "name": "Stalactite-Camp_Grub_Entrance_1",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_East_11"
   },
   {
     "name": "Stalactite-Camp_Grub_Entrance_2",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_East_11"
   },
   {
     "name": "Stalactite-Camp_Grub_1",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_East_11 + Wall-Edge_Camp_Grub?TRUE + (ANYCLAW | WINGS | PRECISEMOVEMENT)"
   },
   {
     "name": "Stalactite-Camp_Grub_2",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_East_11 + Wall-Edge_Camp_Grub?TRUE + (ANYCLAW | WINGS | PRECISEMOVEMENT + (LEFTDASH | DAMAGEBOOSTS + $TAKEDAMAGE))"
   },
   {
     "name": "Stalactite-Camp_Grub_3",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-Camp_Grub_2"
   },
   {
     "name": "Stalactite-Camp_Left",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_East_11[left1] | Deepnest_East_11[top1] + Broke_Camp_Bench_Wall | Deepnest_East_11[right1] | Deepnest_East_11[bot1] + (RIGHTCLAW | WINGS | LEFTDASH | ENEMYPOGOS | LEFTCLAW + SPELLAIRSTALL + $CASTSPELL)"
   },
   {
     "name": "Stalactite-Camp_Middle",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_East_11[left1] | Deepnest_East_11[top1] + Broke_Camp_Bench_Wall | Deepnest_East_11[right1] | Deepnest_East_11[bot1] + (RIGHTCLAW | LEFTCLAW + ENEMYPOGOS | WINGS | FULLDASH + ENEMYPOGOS | ENEMYPOGOS + DANGEROUSSKIPS)"
   },
   {
     "name": "Stalactite-Camp_Upper_1",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-Camp_Middle"
   },
   {
     "name": "Stalactite-Camp_Upper_2",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-Camp_Middle"
   },
   {
     "name": "Stalactite-Hornet_1",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_East_12[left1] | Deepnest_East_12[right1]"
   },
   {
     "name": "Stalactite-Hornet_2",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-Hornet_1"
   },
   {
     "name": "Stalactite-Hornet_3",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-Hornet_1"
   },
   {
     "name": "Stalactite-Hornet_4",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-Hornet_1"
   },
   {
     "name": "Stalactite-Hornet_5",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-Hornet_1"
   },
   {
     "name": "Stalactite-Oro_Dive_Entrance_1",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_East_14[top2]"
   },
   {
     "name": "Stalactite-Oro_Dive_Entrance_2",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-Oro_Dive_Entrance_1"
   },
   {
     "name": "Stalactite-Oro_Dive_Second_1",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_East_14[top2] + Broke_Oro_Quake_Floor_2"
   },
   {
     "name": "Stalactite-Oro_Dive_Second_2",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-Oro_Dive_Second_1"
   },
   {
     "name": "Stalactite-Oro_Dive_Primal_Aspids",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_East_14[top2] + Broke_Oro_Quake_Floor_2 + (RIGHTCLAW | WINGS | LEFTCLAW + ENEMYPOGOS | FULLDASH + DAMAGEBOOSTS + ENEMYPOGOS + COMPLEXSKIPS + $TAKEDAMAGE + $TAKEDAMAGE)"
   },
   {
     "name": "Stalactite-Oro_Dive_Grub_Path_1",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_East_14[door1] + Wall-420_Rock?TRUE | Deepnest_East_14[top2] + Broke_Oro_Quake_Floor_2 + Broke_Oro_Quake_Floor_3 + (RIGHTCLAW | WINGS | LEFTCLAW + ENEMYPOGOS | FULLDASH + DAMAGEBOOSTS + ENEMYPOGOS + COMPLEXSKIPS + $TAKEDAMAGE + $TAKEDAMAGE) + (RIGHTDASH | SPIKETUNNELS) | Deepnest_East_14[left1] + (RIGHTDASH | SPIKETUNNELS)"
   },
   {
     "name": "Stalactite-Oro_Dive_Grub_Path_2",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "(Deepnest_East_14[door1] + Wall-420_Rock?TRUE | Deepnest_East_14[top2] + Broke_Oro_Quake_Floor_2 + Broke_Oro_Quake_Floor_3 + (RIGHTCLAW | WINGS | LEFTCLAW + ENEMYPOGOS | FULLDASH + DAMAGEBOOSTS + ENEMYPOGOS + COMPLEXSKIPS + $TAKEDAMAGE + $TAKEDAMAGE) + (RIGHTDASH | SPIKETUNNELS) | Deepnest_East_14[left1] + (RIGHTDASH | SPIKETUNNELS)) + (WINGS | ANYCLAW | $SHADESKIP[2HITS])"
   },
   {
     "name": "Stalactite-Oro_Dive_Grub_Path_3",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-Oro_Dive_Grub_Path_2"
   },
   {
     "name": "Stalactite-Oro_Dive_Grub_1",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "(Deepnest_East_14[door1] + Wall-420_Rock?TRUE | Deepnest_East_14[top2] + Broke_Oro_Quake_Floor_2 + Broke_Oro_Quake_Floor_3 + (RIGHTCLAW | WINGS | LEFTCLAW + ENEMYPOGOS | FULLDASH + DAMAGEBOOSTS + ENEMYPOGOS + COMPLEXSKIPS + $TAKEDAMAGE + $TAKEDAMAGE) + (RIGHTDASH | SPIKETUNNELS) | Deepnest_East_14[left1] + (RIGHTDASH | SPIKETUNNELS)) + (WINGS | ANYCLAW | $SHADESKIP[2HITS] + (BACKGROUNDPOGOS | ENEMYPOGOS + (ANYDASH | SPELLAIRSTALL + $CASTSPELL[before:ROOMSOUL])))"
   },
   {
     "name": "Stalactite-Oro_Dive_Grub_2",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-Oro_Dive_Grub_1"
   },
   {
     "name": "Stalactite-Oro_Dive_Grub_3",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-Oro_Dive_Grub_1"
   },
   {
     "name": "Stalactite-Oro_Dive_Grub_4",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-Oro_Dive_Grub_1"
   },
   {
     "name": "Stalactite-Quick_Slash_Entrance_1",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_East_14b[right1] + (WINGS | LEFTCLAW | $SHADESKIP[2HITS] + PRECISEMOVEMENT)"
   },
   {
     "name": "Stalactite-Quick_Slash_Entrance_2",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-Quick_Slash_Entrance_1"
   },
   {
     "name": "Stalactite-Quick_Slash_Exit_1",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Deepnest_East_14b[top1] | Deepnest_East_14b[right1] + (FULLCLAW | WINGS | ENEMYPOGOS + DANGEROUSSKIPS)"
   },
   {
     "name": "Stalactite-Quick_Slash_Exit_2",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-Quick_Slash_Exit_1"
   },
   {
     "name": "Stalactite-Quick_Slash_Exit_3",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-Quick_Slash_Exit_1"
   },
   {
     "name": "Stalactite-Quick_Slash_Exit_4",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "*Stalactite-Quick_Slash_Exit_1"
   }
 ]
