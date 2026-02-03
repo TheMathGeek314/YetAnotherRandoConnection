@@ -1961,7 +1961,7 @@
   },
   {
     "name": "Vine-Durandas",
-    "logic": "(Fungus1_09[left1] + (LEFTCLAW | RIGHTCLAW + WINGS | WINGS + $SHADESKIP | $SHRIEKPOGO[before:ROOMSOUL,after:AREASOUL]) | Fungus1_09[right1] + ((Vine-Durandas + WINGS) | (LEFTCLAW + (LEFTSUPERDASH + RIGHTCLAW + (LEFTDASH | WINGS) | WINGS + LEFTDASH) | RIGHTCLAW + LEFTDASH + WINGS + LEFTSUPERDASH + DANGEROUSSKIPS + PRECISEMOVEMENT | LEFTDASH + (RIGHTCLAW + $SHRIEKPOGO[1,1,1,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[1,1,1,1,1,1,before:AREASOUL,after:AREASOUL]) | LEFTCLAW + (RIGHTCLAW | DIFFICULTSKIPS) + $SHRIEKPOGO[2,before:AREASOUL,after:AREASOUL,NOSTALL]))) + Can_Break_Vines"
+    "logic": "(Fungus1_09[left1] + (LEFTCLAW | RIGHTCLAW + WINGS | WINGS + $SHADESKIP | $SHRIEKPOGO[before:ROOMSOUL,after:AREASOUL]) | Fungus1_09[right1] + ((Vine-Durandas + (WINGS | RIGHTCLAW)) | (LEFTCLAW + (LEFTSUPERDASH + RIGHTCLAW + (LEFTDASH | WINGS) | WINGS + LEFTDASH) | RIGHTCLAW + LEFTDASH + WINGS + LEFTSUPERDASH + DANGEROUSSKIPS + PRECISEMOVEMENT | LEFTDASH + (RIGHTCLAW + $SHRIEKPOGO[1,1,1,before:AREASOUL,after:AREASOUL] | $SHRIEKPOGO[1,1,1,1,1,1,before:AREASOUL,after:AREASOUL]) | LEFTCLAW + (RIGHTCLAW | DIFFICULTSKIPS) + $SHRIEKPOGO[2,before:AREASOUL,after:AREASOUL,NOSTALL]))) + Can_Break_Vines"
   },
   {
     "name": "Vine-Hunter_Left",
@@ -2125,7 +2125,7 @@
   },
   {
     "name": "Egg_Bomb-Notch_End",
-    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
+    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS) | FIREBALL>1 | SCREAM)"
   },
   {
     "name": "Egg_Bomb-Notch_Entrance",
@@ -2185,23 +2185,23 @@
   },
   {
     "name": "Egg_Bomb-Notch_Middle_8",
-    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + LEFTCLAW | WINGS + FIREBALL>1 + OBSCURESKIPS | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
+    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + LEFTCLAW | WINGS + (FIREBALL>1 | SCREAM>1 + PRECISEMOVEMENT) + OBSCURESKIPS | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
   },
   {
     "name": "Egg_Bomb-Notch_Middle_9",
-    "logic": "Fungus3_28 + (RIGHTCLAW | SCREAM>1 + OBSCURESKIPS | WINGS + LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
+    "logic": "Fungus3_28 + (RIGHTCLAW | SCREAM + OBSCURESKIPS | WINGS + (LEFTCLAW | FIREBALL>1 + ENEMYPOGOS + OBSCURESKIPS) | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
   },
   {
     "name": "Egg_Bomb-Notch_Middle_10",
-    "logic": "Fungus3_28 + (RIGHTCLAW | SCREAM>1 + OBSCURESKIPS | WINGS + LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
+    "logic": "Fungus3_28 + (RIGHTCLAW | SCREAM + OBSCURESKIPS | WINGS + (LEFTCLAW | FIREBALL>1 + OBSCURESKIPS) | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
   },
   {
     "name": "Egg_Bomb-Notch_Middle_11",
-    "logic": "Fungus3_28 + (RIGHTCLAW | SCREAM>1 + OBSCURESKIPS | WINGS + LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
+    "logic": "Fungus3_28 + (RIGHTCLAW | SCREAM + OBSCURESKIPS | WINGS + LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
   },
   {
     "name": "Egg_Bomb-Notch_Middle_12",
-    "logic": "Fungus3_28 + (RIGHTCLAW | SCREAM>1 + OBSCURESKIPS | WINGS + LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
+    "logic": "Fungus3_28 + (RIGHTCLAW | SCREAM + OBSCURESKIPS | WINGS + (LEFTCLAW | FIREBALL>1 + OBSCURESKIPS) | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
   },
   {
     "name": "Egg_Bomb-Notch_Middle_13",
@@ -2209,11 +2209,11 @@
   },
   {
     "name": "Egg_Bomb-Notch_Middle_14",
-    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
+    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + (LEFTCLAW | FIREBALL>1 + ENEMYPOGOS + OBSCURESKIPS) | Collapser-Fog_Canyon_Charm_Notch?FALSE + (WINGS | ENEMYPOGOS))"
   },
   {
     "name": "Egg_Bomb-Notch_Right_1",
-    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + (ENEMYPOGOS | LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE | SCREAM))"
+    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + (ENEMYPOGOS | LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE | SCREAM)) | Fungus3_28[right1] + FIREBALL>1 + OBSCURESKIPS"
   },
   {
     "name": "Egg_Bomb-Notch_Right_2",
@@ -2249,7 +2249,7 @@
   },
   {
     "name": "Egg_Bomb-Notch_Upper_8",
-    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + (LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE))"
+    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + (LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE | SCREAM>1 + ENEMYPOGOS + OBSCURESKIPS))"
   },
   {
     "name": "Lurien's_Telescope",
