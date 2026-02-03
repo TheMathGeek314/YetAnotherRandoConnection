@@ -2213,7 +2213,7 @@
   },
   {
     "name": "Egg_Bomb-Notch_Right_1",
-    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + (ENEMYPOGOS | LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE | SCREAM)) | Fungus3_28[right1] + FIREBALL>1"
+    "logic": "Fungus3_28 + (RIGHTCLAW | WINGS + (ENEMYPOGOS | LEFTCLAW | Collapser-Fog_Canyon_Charm_Notch?FALSE | SCREAM)) | Fungus3_28[right1] + FIREBALL>1 + OBSCURESKIPS"
   },
   {
     "name": "Egg_Bomb-Notch_Right_2",
