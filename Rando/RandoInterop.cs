@@ -3,12 +3,13 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using UnityEngine;
-using ConnectionMetadataInjector;
 using ItemChanger;
 using ItemChanger.Locations;
 using ItemChanger.Modules;
 using ItemChanger.Tags;
 using ItemChanger.UIDefs;
+using RandomizerMod.Logging;
+using RandomizerMod.RandomizerData;
 using RandomizerMod.RC;
 
 namespace YetAnotherRandoConnection {
@@ -24,6 +25,7 @@ namespace YetAnotherRandoConnection {
             DefineItems();
 
             RandoController.OnExportCompleted += EditModules;
+            SettingsLog.AfterLogSettings += LogRandoSettings;
 
             if(ModHooks.GetMod("CondensedSpoilerLogger") is Mod)
                 CondensedSpoilerLogger.AddCategory("Useful Vines", (args) => true, Consts.UsefulVines);
@@ -40,6 +42,11 @@ namespace YetAnotherRandoConnection {
                 return;
             if(YetAnotherRandoConnection.Settings.Scarecrow)
                 ItemChangerMod.Modules.Remove(ItemChangerMod.Modules.GetOrAdd<GreatHopperEasterEgg>());
+        }
+
+        private static void LogRandoSettings(LogArguments args, TextWriter w) {
+            w.WriteLine("Logging YetAnotherRandoConnection settings:");
+            w.WriteLine(JsonUtil.Serialize(YetAnotherRandoConnection.Settings));
         }
 
         public static void DefineLocations() {
@@ -167,7 +174,7 @@ namespace YetAnotherRandoConnection {
 
         public static InteropTag AddTag(TaggableObject obj) {
             InteropTag tag = obj.GetOrAddTag<InteropTag>();
-            tag.Message = SupplementalMetadata.InteropTagMessage;
+            tag.Message = "RandoSupplementalMetadata";
             tag.Properties["ModSource"] = YetAnotherRandoConnection.instance.GetName();
             return tag;
         }

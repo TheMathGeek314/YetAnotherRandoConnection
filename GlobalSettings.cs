@@ -1,4 +1,6 @@
-﻿namespace YetAnotherRandoConnection {
+﻿using Newtonsoft.Json;
+
+namespace YetAnotherRandoConnection {
     public class GlobalSettings {
         public bool DreamOrbs = false;
         public bool Vines = false;
@@ -9,6 +11,7 @@
         public bool Scarecrow = false;
         public bool Stalactites = false;
 
+        [JsonIgnore]
         public bool Any => DreamOrbs || Vines || SoulJars || HivePlatforms || JellyEggBombs || Telescope || Scarecrow || Stalactites;
 
         [MenuChanger.Attributes.MenuRange(-1, 99)]
