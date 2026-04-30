@@ -75,6 +75,7 @@ namespace YetAnotherRandoConnection {
             orig(self);
         }
 
+        //never called I guess??
         private static IEnumerator OrbStart(On.DreamPlant.orig_CheckOrbs orig, DreamPlant self) {
             foreach((string area, string room, int count) in Consts.RootCounts) {
                 if(self.gameObject.scene.name != room)
@@ -124,7 +125,10 @@ namespace YetAnotherRandoConnection {
             }
             if(num == -1)
                 return null;
-            return $"DreamOrb_{Consts.OrbAreas[sceneName]}_{num}";
+            if(Consts.OrbAreas.TryGetValue(sceneName, out string areaName)) {
+                return $"DreamOrb_{areaName}_{num}";
+            }
+            return $"DreamOrb_{sceneName}_{num}";
         }
     }
 }
