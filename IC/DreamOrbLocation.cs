@@ -49,7 +49,7 @@ namespace YetAnotherRandoConnection {
                             i => i.MatchCall<EventRegister>("SendEvent"));
             cursor.Emit(OpCodes.Ldarg_0);
             cursor.EmitDelegate<Action<DreamPlantOrb>>(j => {
-                if(YetAnotherRandoConnection.Settings.DreamOrbs) {
+                if(YetAnotherRandoConnection.Settings.DreamOrbs && SubscribedLocations.ContainsKey(j.gameObject.scene.name)) {
                     string placementName = orbNameToPlacement(j.gameObject.name, j.gameObject.scene.name);
                     if(string.IsNullOrEmpty(placementName))
                         return;
@@ -66,10 +66,12 @@ namespace YetAnotherRandoConnection {
         }
 
         private static void OrbShow(On.DreamPlantOrb.orig_Show orig, DreamPlantOrb self) {
-            string placementName = orbNameToPlacement(self.gameObject.name, self.gameObject.scene.name);
-            if(!string.IsNullOrEmpty(placementName)) {
-                if(!Ref.Settings.Placements[placementName].AllObtained()) {
-                    _pickedUp.SetValue(self, false);
+            if(SubscribedLocations.ContainsKey(self.gameObject.scene.name)) {
+                string placementName = orbNameToPlacement(self.gameObject.name, self.gameObject.scene.name);
+                if(!string.IsNullOrEmpty(placementName)) {
+                    if(!Ref.Settings.Placements[placementName].AllObtained()) {
+                        _pickedUp.SetValue(self, false);
+                    }
                 }
             }
             orig(self);
