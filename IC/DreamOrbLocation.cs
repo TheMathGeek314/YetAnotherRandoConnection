@@ -78,23 +78,28 @@ namespace YetAnotherRandoConnection {
         }
 
         private static void PlantAwake(On.DreamPlant.orig_Awake orig, DreamPlant self) {
-            self.SetSpriteFlash(self.GetComponent<SpriteFlash>());
-            self.SetAudioSource(self.GetComponent<AudioSource>());
-            tk2dSpriteAnimator anim = self.GetComponent<tk2dSpriteAnimator>();
-            self.SetAnim(anim);
-            foreach((string area, string room, int count) in Consts.RootCounts) {
-                if(self.gameObject.scene.name != room)
-                    continue;
-                bool completed = true;
-                for(int i = 1; i <= count; i++) {
-                    string name = Consts.GetOrbNumName(area, i);
-                    if(!Ref.Settings.Placements[name].AllObtained()) {
-                        completed = false;
-                        break;
+            if(SubscribedLocations.ContainsKey(self.gameObject.scene.name)) {
+                self.SetSpriteFlash(self.GetComponent<SpriteFlash>());
+                self.SetAudioSource(self.GetComponent<AudioSource>());
+                tk2dSpriteAnimator anim = self.GetComponent<tk2dSpriteAnimator>();
+                self.SetAnim(anim);
+                foreach((string area, string room, int count) in Consts.RootCounts) {
+                    if(self.gameObject.scene.name != room)
+                        continue;
+                    bool completed = true;
+                    for(int i = 1; i <= count; i++) {
+                        string name = Consts.GetOrbNumName(area, i);
+                        if(!Ref.Settings.Placements[name].AllObtained()) {
+                            completed = false;
+                            break;
+                        }
                     }
+                    GameManager.instance.StartCoroutine(PlantLateAwake(self, completed, anim));
+                    break;
                 }
-                GameManager.instance.StartCoroutine(PlantLateAwake(self, completed, anim));
-                break;
+            }
+            else {
+                orig(self);
             }
         }
 
@@ -105,8 +110,7 @@ namespace YetAnotherRandoConnection {
                 self.SetActivated(true);
                 if(anim)
                     anim.Play("Completed");
-                if(self.dreamDialogue)
-                    self.dreamDialogue.SetActive(true);
+                self.dreamDialogue?.SetActive(true);
             }
         }
 
