@@ -20,6 +20,10 @@
         "logic": "ORIG | Fungus1_13[left1] + Vine-Root_Left + Vine-Root_Right + WINGS + (ANYCLAW | PRECISEMOVEMENT)"
     },
     {
+        "name": "Fungus1_21",
+        "logic": "ORIG | Fungus1_21[right1] + Vine-Moss_Knight"
+    },
+    {
         "name": "Geo_Chest-Greenpath",
         "logic": "ORIG | Fungus1_13[left1] + Vine-Root_Left + Vine-Root_Right + WINGS + (ANYCLAW | PRECISEMOVEMENT)"
     },
