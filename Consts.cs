@@ -9,6 +9,7 @@ namespace YetAnotherRandoConnection {
         public const string EggBomb = "Jelly_Egg_Bomb";
         public const string Telescope = "Lurien's_Telescope";
         public const string Scarecrow = "Scarecrow";
+        public const string LoveJar = "Love_Jar";
 
         public static readonly List<(string, string, int)> RootCounts = [
             ("Crossroads", SceneNames.Crossroads_07, 29),
@@ -163,7 +164,7 @@ namespace YetAnotherRandoConnection {
             "You stupid.\r\n\r\nNo I not.\r\n\r\nWhat's 9 + 10?\r\n\r\n21.\r\n\r\nYou stupid."
         };
 
-        public static readonly List<string> JarNames = new() {
+        public static readonly List<string> SoulJarNames = new() {
             "Soul_Jar-Shade_Soul",
             "Soul_Jar-Entrance_Lower",
             "Soul_Jar-Entrance_Middle",
@@ -301,6 +302,28 @@ namespace YetAnotherRandoConnection {
             "Stalactite-Quick_Slash_Exit_2",
             "Stalactite-Quick_Slash_Exit_3",
             "Stalactite-Quick_Slash_Exit_4"
+        };
+
+        public static readonly List<string> LoveJarNames = new() {
+            "Love_Jar-Outer_Lower",
+            "Love_Jar-Outer_Upper",
+            "Love_Jar-Lower_1",
+            "Love_Jar-Lower_2",
+            "Love_Jar-Lower_3",
+            "Love_Jar-Lower_4",
+            "Love_Jar-Upper_1",
+            "Love_Jar-Upper_2",
+            "Love_Jar-Upper_3"
+        };
+
+        public static readonly Dictionary<LoveJarContents, (string, int)> LoveJarTypes = new() {
+            { LoveJarContents.Empty, ("Empty", 2) },
+            { LoveJarContents.Crawlid, ("Crawlid", 1) },
+            { LoveJarContents.Husk, ("Husk", 1) },
+            { LoveJarContents.LeapingHusk, ("Leaping_Husk", 1) },
+            { LoveJarContents.Obble, ("Obble", 1) },
+            { LoveJarContents.Sentry, ("Sentry", 1) },
+            { LoveJarContents.Vengefly, ("Vengefly", 2) }
         };
     }
 }

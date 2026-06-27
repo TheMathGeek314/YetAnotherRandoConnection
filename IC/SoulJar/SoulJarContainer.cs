@@ -13,10 +13,10 @@ namespace YetAnotherRandoConnection {
         public override bool SupportsDrop => true;
         public override bool SupportsInstantiate => true;
 
-        public static GameObject jarPrefab;
+        public static GameObject soulJarPrefab;
 
         public override GameObject GetNewContainer(ContainerInfo info) {
-            GameObject jar = GameObject.Instantiate(jarPrefab);
+            GameObject jar = GameObject.Instantiate(soulJarPrefab);
             jar.name = $"{jar.name}-{info.giveInfo.placement.Name}";
             jar.SetActive(true);
             FsmState soulState = jar.GetComponent<PlayMakerFSM>().GetValidState("Soul");

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Love_Jar-Outer_Lower",
+    "scene": "Ruins2_11_b",
+    "objectName": "Break Jar",
+    "x": 36.77,
+    "y": 3.52
+  },
+  {
+    "name": "Love_Jar-Outer_Upper",
+    "scene": "Ruins2_11_b",
+    "objectName": "Break Jar (1)",
+    "x": 57.2898,
+    "y": 18.6405
+  },
+  {
+    "name": "Love_Jar-Lower_1",
+    "scene": "Ruins2_11",
+    "objectName": "Break Jar (4)",
+    "x": 41.9892,
+    "y": 73.5768
+  },
+  {
+    "name": "Love_Jar-Lower_2",
+    "scene": "Ruins2_11",
+    "objectName": "Break Jar (2)",
+    "x": 53.99,
+    "y": 73.57
+  },
+  {
+    "name": "Love_Jar-Lower_3",
+    "scene": "Ruins2_11",
+    "objectName": "Break Jar (6)",
+    "x": 66.93,
+    "y": 73.4989
+  },
+  {
+    "name": "Love_Jar-Lower_4",
+    "scene": "Ruins2_11",
+    "objectName": "Break Jar (5)",
+    "x": 75.2006,
+    "y": 73.5339
+  },
+  {
+    "name": "Love_Jar-Upper_1",
+    "scene": "Ruins2_11",
+    "objectName": "Break Jar (8)",
+    "x": 66.79,
+    "y": 85.6
+  },
+  {
+    "name": "Love_Jar-Upper_2",
+    "scene": "Ruins2_11",
+    "objectName": "Break Jar (7)",
+    "x": 56.62,
+    "y": 85.6
+  },
+  {
+    "name": "Love_Jar-Upper_3",
+    "scene": "Ruins2_11",
+    "objectName": "Break Jar (3)",
+    "x": 48.24,
+    "y": 85.62
+  }
+]

@@ -10,9 +10,10 @@ namespace YetAnotherRandoConnection {
         public bool Telescope = false;
         public bool Scarecrow = false;
         public bool Stalactites = false;
+        public bool LoveJars = false;
 
         [JsonIgnore]
-        public bool Any => DreamOrbs || Vines || SoulJars || HivePlatforms || JellyEggBombs || Telescope || Scarecrow || Stalactites;
+        public bool Any => DreamOrbs || Vines || SoulJars || HivePlatforms || JellyEggBombs || Telescope || Scarecrow || Stalactites || LoveJars;
 
         [MenuChanger.Attributes.MenuRange(-1, 99)]
         public int VineGroup = -1;
@@ -31,5 +32,8 @@ namespace YetAnotherRandoConnection {
 
         [MenuChanger.Attributes.MenuRange(-1, 99)]
         public int StalactiteGroup = -1;
+
+        [MenuChanger.Attributes.MenuRange(-1, 99)]
+        public int LoveJarGroup = -1;
     }
 }

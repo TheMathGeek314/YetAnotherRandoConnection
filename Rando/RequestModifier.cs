@@ -1,4 +1,5 @@
 ﻿using ItemChanger;
+using ItemChanger.Placements;
 using RandomizerMod.RandomizerData;
 using RandomizerMod.RC;
 
@@ -7,12 +8,13 @@ namespace YetAnotherRandoConnection {
         public static void Hook() {
             RequestBuilder.OnUpdate.Subscribe(-100, ApplyOrbDefs);
             RequestBuilder.OnUpdate.Subscribe(-100, ApplyVineDefs);
-            RequestBuilder.OnUpdate.Subscribe(-100, ApplyJarDefs);
+            RequestBuilder.OnUpdate.Subscribe(-100, ApplySoulJarDefs);
             RequestBuilder.OnUpdate.Subscribe(-100, ApplyHivePlatDefs);
             RequestBuilder.OnUpdate.Subscribe(-100, ApplyEggBombDefs);
             RequestBuilder.OnUpdate.Subscribe(-100, ApplyTelescopeDef);
             RequestBuilder.OnUpdate.Subscribe(-100, ApplyScarecrowDef);
             RequestBuilder.OnUpdate.Subscribe(-100, ApplyStalactiteDef);
+            RequestBuilder.OnUpdate.Subscribe(-100, ApplyLoveJarDefs);
             RequestBuilder.OnUpdate.Subscribe(-499, SetupItems);
             RequestBuilder.OnUpdate.Subscribe(1200, RemoveRoots);
             RequestBuilder.OnUpdate.Subscribe(-499.5f, DefinePools);
@@ -59,10 +61,10 @@ namespace YetAnotherRandoConnection {
             }
         }
 
-        public static void ApplyJarDefs(RequestBuilder rb) {
+        public static void ApplySoulJarDefs(RequestBuilder rb) {
             if(YetAnotherRandoConnection.Settings.SoulJars) {
-                foreach(string jarName in Consts.JarNames) {
-                    AddAndEditLocation(rb, jarName, FlingType.Everywhere, false, JarCoords.placementToPosition[jarName].Item1);
+                foreach(string jarName in Consts.SoulJarNames) {
+                    AddAndEditLocation(rb, jarName, FlingType.Everywhere, false, SoulJarCoords.placementToPosition[jarName].Item1);
                 }
             }
         }
@@ -99,6 +101,31 @@ namespace YetAnotherRandoConnection {
             if(YetAnotherRandoConnection.Settings.Stalactites) {
                 foreach(string spikeName in Consts.StalactiteNames) {
                     AddAndEditLocation(rb, spikeName, FlingType.Everywhere, false, StalactiteCoords.placementToPosition[spikeName].Item1);
+                }
+            }
+        }
+
+        public static void ApplyLoveJarDefs(RequestBuilder rb) {
+            if(YetAnotherRandoConnection.Settings.LoveJars) {
+                foreach(string loveName in Consts.LoveJarNames) {
+                    rb.AddLocationByName(loveName);
+                    rb.EditLocationRequest(loveName, info => {
+                        info.customPlacementFetch = (factory, placement) => {
+                            if(factory.TryFetchPlacement(loveName, out AbstractPlacement ap1))
+                                return ap1;
+                            AbstractLocation absLoc = Finder.GetLocation(loveName);
+                            absLoc.flingType = FlingType.Everywhere;
+                            MutablePlacement mp = absLoc.Wrap() as MutablePlacement;
+                            factory.AddPlacement(mp);
+                            return mp;
+                        };
+                        info.getLocationDef = () => new() {
+                            Name = loveName,
+                            FlexibleCount = false,
+                            AdditionalProgressionPenalty = false,
+                            SceneName = loveName.Contains("Outer") ? SceneNames.Ruins2_11_b : SceneNames.Ruins2_11
+                        };
+                    });
                 }
             }
         }
@@ -168,7 +195,7 @@ namespace YetAnotherRandoConnection {
                 };
             });
             if(YetAnotherRandoConnection.Settings.SoulJars) {
-                rb.AddItemByName(Consts.SoulJar, Consts.JarNames.Count);
+                rb.AddItemByName(Consts.SoulJar, Consts.SoulJarNames.Count);
             }
 
             rb.EditItemRequest(Consts.EggBomb, info => {
@@ -206,6 +233,20 @@ namespace YetAnotherRandoConnection {
             if(YetAnotherRandoConnection.Settings.Scarecrow) {
                 rb.AddItemByName(Consts.Scarecrow);
             }
+
+            foreach(LoveJarContents type in Consts.LoveJarTypes.Keys) {
+                string name = RandoInterop.GetLoveJarName(type);
+                rb.EditItemRequest(name, info => {
+                    info.getItemDef = () => new ItemDef() {
+                        Name = name,
+                        Pool = "LoveJars",
+                        MajorItem = false,
+                        PriceCap = 1
+                    };
+                });
+                if(YetAnotherRandoConnection.Settings.LoveJars)
+                    rb.AddItemByName(name, Consts.LoveJarTypes[type].Item2);
+            }
         }
 
         private static void RemoveRoots(RequestBuilder rb) {
@@ -238,10 +279,13 @@ namespace YetAnotherRandoConnection {
                 if(ys.ScarecrowGroup >= 0 && ys.StalactiteGroup <= 2) {
                     ys.StalactiteGroup = rb.rng.Next(3);
                 }
+                if(ys.LoveJarGroup >= 0 && ys.LoveJarGroup <= 2) {
+                    ys.LoveJarGroup = rb.rng.Next(3);
+                }
             }
 
-            ItemGroupBuilder[] myGroups = [null, null, null, null, null, null];
-            int[] groupSettings = [ys.VineGroup, ys.HivePlatformGroup, ys.EggBombGroup, ys.TelescopeGroup, ys.ScarecrowGroup, ys.StalactiteGroup];
+            ItemGroupBuilder[] myGroups = [null, null, null, null, null, null, null];
+            int[] groupSettings = [ys.VineGroup, ys.HivePlatformGroup, ys.EggBombGroup, ys.TelescopeGroup, ys.ScarecrowGroup, ys.StalactiteGroup, ys.LoveJarGroup];
             for(int i = 0; i < groupSettings.Length; i++) {
                 if(groupSettings[i] > 0) {
                     string label = RBConsts.SplitGroupPrefix + groupSettings[i];
@@ -282,6 +326,10 @@ namespace YetAnotherRandoConnection {
                         gb = myGroups[4];
                         return true;
                     }
+                    if(item.StartsWith(Consts.LoveJar)) {
+                        gb = myGroups[6];
+                        return true;
+                    }
                 }
                 else if(type == RequestBuilder.ElementType.Location) {
                     if(item.StartsWith("DreamOrb_")) {
@@ -292,7 +340,7 @@ namespace YetAnotherRandoConnection {
                         gb = myGroups[0];
                         return true;
                     }
-                    if(Consts.JarNames.Contains(item)) {
+                    if(Consts.SoulJarNames.Contains(item)) {
                         gb = rb.GetGroupFor(ItemNames.Soul_Totem_A);
                         return true;
                     }
@@ -314,6 +362,10 @@ namespace YetAnotherRandoConnection {
                     }
                     if(Consts.StalactiteNames.Contains(item)) {
                         gb = myGroups[5];
+                        return true;
+                    }
+                    if(Consts.LoveJarNames.Contains(item)) {
+                        gb = myGroups[6];
                         return true;
                     }
                 }

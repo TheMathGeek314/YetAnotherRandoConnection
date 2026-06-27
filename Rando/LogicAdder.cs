@@ -67,6 +67,10 @@ namespace YetAnotherRandoConnection {
             lmb.AddItem(new EmptyItem(Consts.Telescope));
 
             lmb.AddItem(new EmptyItem(Consts.Scarecrow));
+
+            foreach(LoveJarContents type in Consts.LoveJarTypes.Keys) {
+                lmb.AddItem(new EmptyItem(RandoInterop.GetLoveJarName(type)));
+            }
         }
     }
 }

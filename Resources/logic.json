@@ -2526,5 +2526,41 @@
   {
     "name": "Stalactite-Quick_Slash_Exit_4",
     "logic": "*Stalactite-Quick_Slash_Exit_1"
+  },
+  {
+    "name": "Love_Jar-Outer_Lower",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Love_Jar-Outer_Upper",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Love_Jar-Lower_1",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Love_Jar-Lower_2",
+    "logic": "*Love_Jar-Lower_1"
+  },
+  {
+    "name": "Love_Jar-Lower_3",
+    "logic": "*Love_Jar-Lower_1"
+  },
+  {
+    "name": "Love_Jar-Lower_4",
+    "logic": "*Love_Jar-Lower_1"
+  },
+  {
+    "name": "Love_Jar-Upper_1",
+    "logic": "*Dirtmouth_Stag"
+  },
+  {
+    "name": "Love_Jar-Upper_2",
+    "logic": "*Love_Jar-Upper_1"
+  },
+  {
+    "name": "Love_Jar-Upper_3",
+    "logic": "*Love_Jar-Upper_1"
   }
 ]

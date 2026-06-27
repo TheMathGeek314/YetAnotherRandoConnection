@@ -20,6 +20,13 @@ namespace YetAnotherRandoConnection {
             LogicAdder.Hook();
 
             Container.DefineContainer<SoulJarContainer>();
+            Container.DefineContainer<LoveJarEmptyContainer>();
+            Container.DefineContainer<LoveJarCrawlidContainer>();
+            Container.DefineContainer<LoveJarHuskContainer>();
+            Container.DefineContainer<LoveJarLeapingContainer>();
+            Container.DefineContainer<LoveJarObbleContainer>();
+            Container.DefineContainer<LoveJarSentryContainer>();
+            Container.DefineContainer<LoveJarVengeflyContainer>();
 
             DefineLocations();
             DefineItems();
@@ -42,6 +49,8 @@ namespace YetAnotherRandoConnection {
                 return;
             if(YetAnotherRandoConnection.Settings.Scarecrow)
                 ItemChangerMod.Modules.Remove(ItemChangerMod.Modules.GetOrAdd<GreatHopperEasterEgg>());
+            if(YetAnotherRandoConnection.Settings.LoveJars)
+                ItemChangerMod.Modules.GetOrAdd<LoveJarModule>();
         }
 
         private static void LogRandoSettings(LogArguments args, TextWriter w) {
@@ -61,30 +70,34 @@ namespace YetAnotherRandoConnection {
 
             string orbCoords = assembly.GetManifestResourceNames().Single(str => str.EndsWith("DreamOrbCoords.json"));
             string vineCoords = assembly.GetManifestResourceNames().Single(str => str.EndsWith("VineCoords.json"));
-            string jarCoords = assembly.GetManifestResourceNames().Single(str => str.EndsWith("JarCoords.json"));
+            string soulJarCoords = assembly.GetManifestResourceNames().Single(str => str.EndsWith("SoulJarCoords.json"));
             string platCoords = assembly.GetManifestResourceNames().Single(str => str.EndsWith("HivePlatCoords.json"));
             string bombCoords = assembly.GetManifestResourceNames().Single(str => str.EndsWith("EggBombCoords.json"));
             string spikeCoords = assembly.GetManifestResourceNames().Single(str => str.EndsWith("StalactiteCoords.json"));
+            string loveJarCoords = assembly.GetManifestResourceNames().Single(str => str.EndsWith("LoveJarCoords.json"));
 
             using Stream orbStream = assembly.GetManifestResourceStream(orbCoords);
             using Stream vineStream = assembly.GetManifestResourceStream(vineCoords);
-            using Stream jarStream = assembly.GetManifestResourceStream(jarCoords);
+            using Stream soulJarStream = assembly.GetManifestResourceStream(soulJarCoords);
             using Stream platStream = assembly.GetManifestResourceStream(platCoords);
             using Stream bombStream = assembly.GetManifestResourceStream(bombCoords);
             using Stream spikeStream = assembly.GetManifestResourceStream(spikeCoords);
+            using Stream loveJarStream = assembly.GetManifestResourceStream(loveJarCoords);
 
             foreach(JsonDreamOrbCoords jsonOrb in new ParseJson(orbStream).parseFile<JsonDreamOrbCoords>())
                 jsonOrb.translate();
             foreach(JsonVineCoords jsonVine in new ParseJson(vineStream).parseFile<JsonVineCoords>())
                 jsonVine.translate();
-            foreach(JsonJarCoords jsonJar in new ParseJson(jarStream).parseFile<JsonJarCoords>())
-                jsonJar.translate();
+            foreach(JsonSoulJarCoords jsonSoulJar in new ParseJson(soulJarStream).parseFile<JsonSoulJarCoords>())
+                jsonSoulJar.translate();
             foreach(JsonPlatCoords jsonPlat in new ParseJson(platStream).parseFile<JsonPlatCoords>())
                 jsonPlat.translate();
             foreach(JsonBombCoords jsonBomb in new ParseJson(bombStream).parseFile<JsonBombCoords>())
                 jsonBomb.translate();
             foreach(JsonSpikeCoords jsonSpike in new ParseJson(spikeStream).parseFile<JsonSpikeCoords>())
                 jsonSpike.translate();
+            foreach(JsonLoveJarCoords jsonLoveJar in new ParseJson(loveJarStream).parseFile<JsonLoveJarCoords>())
+                jsonLoveJar.translate();
 
             foreach((string area, string scene, int count) in Consts.RootCounts) {
                 for(int i = 1; i <= count; i++) {
@@ -105,10 +118,10 @@ namespace YetAnotherRandoConnection {
             ChainLocation chainLoc = new() { name = Consts.Chain, sceneName = SceneNames.Ruins1_28 };
             DefineLoc(chainLoc, SceneNames.Ruins1_28, "pin_vine", 96.39f, 15.7f);
 
-            foreach(string name in Consts.JarNames) {
-                string scene = JarCoords.placementToPosition[name].Item1;
-                Vector2 coords = JarCoords.placementToPosition[name].Item2;
-                ObjectLocation objLoc = new() { name = name, objectName = JarCoords.placementToName[name], sceneName = scene, forceShiny = false, flingType = FlingType.Everywhere };
+            foreach(string name in Consts.SoulJarNames) {
+                string scene = SoulJarCoords.placementToPosition[name].Item1;
+                Vector2 coords = SoulJarCoords.placementToPosition[name].Item2;
+                ObjectLocation objLoc = new() { name = name, objectName = SoulJarCoords.placementToName[name], sceneName = scene, forceShiny = false, flingType = FlingType.Everywhere };
                 DefineLoc(objLoc, scene, "pin_soul_jar", coords.x, coords.y);
             }
 
@@ -137,6 +150,12 @@ namespace YetAnotherRandoConnection {
                 StalactiteLocation spikeLoc = new() { name = name, sceneName = scene };
                 DefineLoc(spikeLoc, scene, "pin_stalactite", coords.x, coords.y);
             }
+
+            foreach(string name in Consts.LoveJarNames) {
+                (string scene, Vector2 coords) = LoveJarCoords.nameToPosition[name];
+                ObjectLocation loveLoc = new() { name = name, objectName = LoveJarCoords.nameToObjectName[name], sceneName = scene, forceShiny = false, flingType = FlingType.Everywhere };
+                DefineLoc(loveLoc, scene, "pin_love_jar", coords.x, coords.y);
+            }
         }
 
         public static void DefineItems() {
@@ -152,8 +171,8 @@ namespace YetAnotherRandoConnection {
             ChainItem chainItem = new(PullRandomVine(rand));
             Finder.DefineCustomItem(chainItem);
 
-            SoulJarItem jarItem = new();
-            Finder.DefineCustomItem(jarItem);
+            SoulJarItem soulJarItem = new();
+            Finder.DefineCustomItem(soulJarItem);
 
             EggBombItem bombItem = new();
             Finder.DefineCustomItem(bombItem);
@@ -170,6 +189,11 @@ namespace YetAnotherRandoConnection {
 
             ScarecrowItem scarecrowItem = new();
             Finder.DefineCustomItem(scarecrowItem);
+
+            foreach(LoveJarContents type in Consts.LoveJarTypes.Keys) {
+                LoveJarItem loveJarItem = new(type);
+                Finder.DefineCustomItem(loveJarItem);
+            }
         }
 
         public static InteropTag AddTag(TaggableObject obj) {
@@ -186,6 +210,10 @@ namespace YetAnotherRandoConnection {
 
         public static string clean(string name) {
             return name.Replace("_", " ").Replace("-", " - ");
+        }
+
+        public static string GetLoveJarName(LoveJarContents type) {
+            return Consts.LoveJar + "-" + Consts.LoveJarTypes[type].Item1;
         }
     }
 }
