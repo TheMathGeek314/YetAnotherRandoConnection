@@ -41,3 +41,7 @@ A Randomizer connection with assorted additions including:
 	- When stalactites fall from the ceiling, they will grant a check upon landing
 	- This adds 67 locations but has no corresponding items
 	- Upslashing a falling spike will cancel granting an item
+- **Love Jars**
+	- The jars in Tower of Love are now checks
+	- Obtaining jar items does nothing, but items will appear as physical jars where locations permit
+	- This adds 9 items and locations

@@ -12,7 +12,7 @@ namespace YetAnotherRandoConnection {
             AddTag<PersistentItemTag>().Persistence = Persistence.Persistent;
             UIDef = new MsgUIDef {
                 name = new BoxedString(RandoInterop.clean(name)),
-                shopDesc = new BoxedString("A necessity for any who wish to start their own collection"),
+                shopDesc = new BoxedString("A necessity for any who wish to start their own collection."),
                 sprite = new EmbeddedSprite("pin_love_jar")
             };
         }

@@ -40,7 +40,7 @@ namespace YetAnotherRandoConnection {
         private RandoMenuPage(MenuPage landingPage) {
             YarcRandoPage = new MenuPage(Localize("YetAnotherRandoConnection"), landingPage);
             yarcMEF = new(YarcRandoPage, YetAnotherRandoConnection.Settings);
-            yarcGIP = new(YarcRandoPage, new(0, 300), 3, SpaceParameters.VSPACE_LARGE, SpaceParameters.HSPACE_SMALL, true, yarcMEF.Elements);
+            yarcGIP = new(YarcRandoPage, new(0, 250), 3, 100, SpaceParameters.HSPACE_SMALL, true, yarcMEF.Elements);
             Localize(yarcMEF);
             foreach(IValueElement e in yarcMEF.Elements) {
                 e.SelfChanged += obj => SetTopLevelButtonColor();
