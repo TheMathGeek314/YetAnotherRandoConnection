@@ -53,7 +53,8 @@ namespace YetAnotherRandoConnection {
                 bool hopper = lmb.LogicLookup.TryGetValue("Defeated_Any_Great_Hopper", out _);
                 if (hopper)
                 {
-                    lmb.DoLogicEdit(new("Defeated_Any_Great_Hopper", "ORIG | Scarecrow"));
+                    lmb.DoSubst(new("Defeated_Any_Great_Hopper", "Deepnest_East_16[bot1]", "Scarecrow"));
+                    lmb.DoSubst(new("Defeated_Any_Great_Hopper", "Deepnest_East_16[left1]", "Scarecrow"));
                 }
             }
 
