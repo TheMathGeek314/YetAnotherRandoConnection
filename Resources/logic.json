@@ -2529,15 +2529,15 @@
   },
   {
     "name": "Love_Jar-Outer_Lower",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Ruins2_11_b[right1] | Ruins2_11_b[left1] | Ruins2_11_b[bot1] + Lever-Tower_of_Love?FALSE"
   },
   {
     "name": "Love_Jar-Outer_Upper",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Ruins2_11_b[right1] | Ruins2_11_b[left1] | Ruins2_11_b[bot1] + Lever-Tower_of_Love?FALSE + (ANYCLAW | $SHRIEKPOGO[1])"
   },
   {
     "name": "Love_Jar-Lower_1",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Ruins2_11[right1] + (WINGS | LEFTCLAW | RIGHTCLAW + (RIGHTDASH | PRECISEMOVEMENT))"
   },
   {
     "name": "Love_Jar-Lower_2",
@@ -2553,7 +2553,7 @@
   },
   {
     "name": "Love_Jar-Upper_1",
-    "logic": "*Dirtmouth_Stag"
+    "logic": "Ruins2_11[right1] + (LEFTCLAW | RIGHTCLAW + (WINGS | RIGHTDASH | PRECISEMOVEMENT) | $SHRIEKPOGO[1])"
   },
   {
     "name": "Love_Jar-Upper_2",

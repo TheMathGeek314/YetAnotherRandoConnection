@@ -1,6 +1,7 @@
 {
-  "Int": [
+  "SignedByte": [
     "Chain-Storerooms",
+    "Scarecrow",
     "Vine-Root_Left",
     "Vine-Root_Right",
     "Vine-Vessel_Fragment",

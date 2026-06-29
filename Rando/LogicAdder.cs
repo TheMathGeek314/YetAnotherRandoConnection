@@ -46,6 +46,22 @@ namespace YetAnotherRandoConnection {
             lmb.DeserializeFile(LogicFileType.LogicEdit, fmt, str);
 
             DefineTermsAndItems(lmb, fmt);
+            
+            // Conditional overrides - only override if specific settings are enabled
+            if (YetAnotherRandoConnection.Settings.Scarecrow)
+            {
+                bool hopper = lmb.LogicLookup.TryGetValue("Defeated_Any_Great_Hopper", out _);
+                if (hopper)
+                {
+                    lmb.DoLogicEdit(new("Defeated_Any_Great_Hopper", "ORIG | Scarecrow"));
+                }
+            }
+
+            if (YetAnotherRandoConnection.Settings.LoveJars)
+            {
+                lmb.DoLogicEdit(new("Collector's_Map", "Ruins2_11[right1] + (LEFTCLAW | RIGHTCLAW + (WINGS | RIGHTDASH | PRECISEMOVEMENT) | $SHRIEKPOGO[5,before:AREASOUL]) + Defeated_Collector"));
+                lmb.DoSubst(new("Defeated_Collector", "WINGS", "$SHRIEKPOGO[1]"));
+            }
         }
 
         private static void DefineTermsAndItems(LogicManagerBuilder lmb, JsonLogicFormat fmt) {
@@ -66,7 +82,7 @@ namespace YetAnotherRandoConnection {
 
             lmb.AddItem(new EmptyItem(Consts.Telescope));
 
-            lmb.AddItem(new EmptyItem(Consts.Scarecrow));
+            lmb.AddItem(new SingleItem(Consts.Scarecrow, new TermValue(lmb.GetTerm(Consts.Scarecrow), 1)));
 
             foreach(LoveJarContents type in Consts.LoveJarTypes.Keys) {
                 lmb.AddItem(new EmptyItem(RandoInterop.GetLoveJarName(type)));
