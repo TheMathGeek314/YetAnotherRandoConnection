@@ -1,11 +1,8 @@
 using ConnectionSettingsRando;
 
-namespace YetAnotherRandoConnection
-{
-    internal static class CSRInterop
-    {
-        public static void Hook()
-        {
+namespace YetAnotherRandoConnection {
+    internal static class CSRInterop {
+        public static void Hook() {
             CSR.Register(
             YetAnotherRandoConnection.instance.GetName(),
             () => YetAnotherRandoConnection.Settings,
