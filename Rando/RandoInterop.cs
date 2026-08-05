@@ -34,6 +34,9 @@ namespace YetAnotherRandoConnection {
             RandoController.OnExportCompleted += EditModules;
             SettingsLog.AfterLogSettings += LogRandoSettings;
 
+            if(ModHooks.GetMod("ConnectionSettingsRando") is Mod)
+                CSRInterop.Hook();
+
             if(ModHooks.GetMod("CondensedSpoilerLogger") is Mod)
                 CondensedSpoilerLogger.AddCategory("Useful Vines", (args) => true, Consts.UsefulVines);
 
